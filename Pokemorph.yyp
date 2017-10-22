@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "16795070-3566-4de7-b9e0-fb675c069e3b",
+            "Value": {
+                "id": "9a93c9bb-b848-4522-9675-23c06b815f30",
+                "resourcePath": "sprites\\battle_jigglypuff\\battle_jigglypuff.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "177c1ba9-48d8-40d3-adae-f6801762e86d",
             "Value": {
                 "id": "807af032-5c7e-4d77-a8db-467f0015e17d",
@@ -339,6 +347,14 @@
             "Value": {
                 "id": "0e742d08-0f5b-425d-b36a-16599cfd94e1",
                 "resourcePath": "sprites\\battle_gyarados\\battle_gyarados.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1f6affa1-8ca8-423a-ae5c-5ceb8e980e8e",
+            "Value": {
+                "id": "dcc06824-b1f8-4617-a951-7d98dc2cf484",
+                "resourcePath": "sprites\\battle_koffing\\battle_koffing.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -479,6 +495,14 @@
             }
         },
         {
+            "Key": "2d229f5f-6f27-4bb8-b4cc-cc23f2c3dd02",
+            "Value": {
+                "id": "72f4f4a6-dfb9-4eb9-8ad1-f2f0126148f6",
+                "resourcePath": "sprites\\battle_kingler\\battle_kingler.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2e233d54-0660-475c-be33-5b66859425d5",
             "Value": {
                 "id": "7442363d-dcd0-4490-8a34-a21f87f1b5aa",
@@ -507,6 +531,14 @@
             "Value": {
                 "id": "4e042668-74d1-4ee8-92cc-c47745831f5b",
                 "resourcePath": "sprites\\spr_hud_background\\spr_hud_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "30b7ffdf-fb00-4189-ad3d-76049b8b65d7",
+            "Value": {
+                "id": "a0799b8f-f922-495c-a925-35d8ed69a971",
+                "resourcePath": "sprites\\battle_marowak\\battle_marowak.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -631,6 +663,14 @@
             }
         },
         {
+            "Key": "3a452b6a-37dc-4b24-bc1f-9098ca53442c",
+            "Value": {
+                "id": "ed9f2105-ac3c-4af8-bb63-96ddef157ddf",
+                "resourcePath": "sprites\\battle_krabby\\battle_krabby.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3b2982e6-6922-4de9-9d8c-bea620884541",
             "Value": {
                 "id": "e02c9909-71b1-4f2c-b70e-76c80cb411ae",
@@ -663,6 +703,22 @@
             }
         },
         {
+            "Key": "415737ad-501d-45c0-a7b8-5b2f922a23cb",
+            "Value": {
+                "id": "2e55c8b1-0668-4b04-bc51-1f0f4350b11a",
+                "resourcePath": "sprites\\battle_kadabra\\battle_kadabra.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "41b7e7e7-0a7d-4baa-8555-adc385010213",
+            "Value": {
+                "id": "bcf71013-1408-4db1-b8ee-675e0f1faada",
+                "resourcePath": "sprites\\battle_lapras\\battle_lapras.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4334512e-611f-40bd-bfe2-7dd0246f3577",
             "Value": {
                 "id": "844330fe-ca69-4b6d-b829-499a0b397fea",
@@ -676,6 +732,14 @@
                 "id": "e5e6f817-0fd0-4fef-9ef5-0aabcccad8a3",
                 "resourcePath": "objects\\oHUD\\oHUD.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "44ef949e-74be-46eb-9461-f7e8cd3f34f8",
+            "Value": {
+                "id": "8d1172c4-b8da-43f0-a2d8-9a2fdf659a46",
+                "resourcePath": "sprites\\battle_kakuna\\battle_kakuna.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -839,6 +903,14 @@
             }
         },
         {
+            "Key": "59fd48e1-2729-4fad-824b-0d0a2dcebe68",
+            "Value": {
+                "id": "dcae8b1e-5276-4866-b671-615cf9ea486b",
+                "resourcePath": "sprites\\battle_metapod\\battle_metapod.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a184621-006e-42fc-89a6-5296d40bacf3",
             "Value": {
                 "id": "cd6f27f8-b3f2-4e6a-b54e-f2af7f348ce5",
@@ -895,11 +967,27 @@
             }
         },
         {
+            "Key": "629a773c-f988-4ed3-8947-a8b7ffd00096",
+            "Value": {
+                "id": "fa2548fa-b26e-441c-8d0a-4b49609da7a2",
+                "resourcePath": "sprites\\battle_jolteon\\battle_jolteon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "62f1d476-3fad-47ef-8d90-752bd8756757",
             "Value": {
                 "id": "5f25dab4-afd4-40ec-bba5-57874730ac05",
                 "resourcePath": "sounds\\mus_gymBattle\\mus_gymBattle.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "6434f0ec-c2a7-4063-92f8-05bdcc4d9032",
+            "Value": {
+                "id": "d23dec3b-5b59-40e0-8de9-a5d407ee2c96",
+                "resourcePath": "sprites\\battle_machoke\\battle_machoke.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1023,6 +1111,14 @@
             }
         },
         {
+            "Key": "743fe1f2-3f6c-465a-b73e-9980ff0fa6af",
+            "Value": {
+                "id": "cac48427-2290-4140-9c86-8e508c04bbff",
+                "resourcePath": "sprites\\battle_mewtwo\\battle_mewtwo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7613f04b-d351-4cf8-a834-487bfc8ba4bd",
             "Value": {
                 "id": "b1485d76-cb14-4288-8b04-a9a153895523",
@@ -1035,6 +1131,14 @@
             "Value": {
                 "id": "5f0ff80c-c2a9-4279-bff3-d81ae3e65f5c",
                 "resourcePath": "sprites\\title_background\\title_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "76f5e372-8013-441b-b79e-135a9545568b",
+            "Value": {
+                "id": "8f64c2fb-c31a-458c-9f08-7bddf2eb2deb",
+                "resourcePath": "sprites\\battle_magnemite\\battle_magnemite.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1207,6 +1311,14 @@
             }
         },
         {
+            "Key": "85f9fa55-b9e6-4485-80e8-88d86e0edaab",
+            "Value": {
+                "id": "75c21954-25b5-40fa-8599-d6630e8a91df",
+                "resourcePath": "sprites\\battle_muk\\battle_muk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8606902d-679b-4db9-92ce-f5c5b1dadd34",
             "Value": {
                 "id": "ecde1d17-da16-4cc2-8344-20b39880c55e",
@@ -1227,6 +1339,14 @@
             "Value": {
                 "id": "33efa580-c69f-44c4-af07-bfa81f55163d",
                 "resourcePath": "sprites\\battle_gengar\\battle_gengar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "88efa0a2-7b9c-4284-9ee4-0cc8b8676a84",
+            "Value": {
+                "id": "c86b0d83-dc23-4021-bead-02a31946356f",
+                "resourcePath": "sprites\\battle_moltres\\battle_moltres.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1287,11 +1407,27 @@
             }
         },
         {
+            "Key": "8eec669b-e611-418a-bc9a-d9e527abe2c4",
+            "Value": {
+                "id": "d29d29fd-49f1-4a0b-b5cc-b8bd5d826ac2",
+                "resourcePath": "sprites\\battle_machop\\battle_machop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "911fbd1a-ec95-4778-ab6b-f4351c9073fe",
             "Value": {
                 "id": "ff94e538-56ba-4364-a5de-cfbf1e52931f",
                 "resourcePath": "scripts\\regen\\regen.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "912a5e27-c61d-443d-a5d0-9c6fefdda315",
+            "Value": {
+                "id": "ac39f1ba-40e6-4a33-9887-000cca50a9b7",
+                "resourcePath": "sprites\\battle_jynx\\battle_jynx.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1415,6 +1551,14 @@
             }
         },
         {
+            "Key": "a2cfcdc6-efd6-4f1b-9c81-81d2885bfb7c",
+            "Value": {
+                "id": "6f18f540-b1ce-4d94-a1dc-45fde6099a4e",
+                "resourcePath": "sprites\\battle_hitmonchan\\battle_hitmonchan.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a433589d-658e-4434-88a1-adcc57fed4a4",
             "Value": {
                 "id": "a8311852-ab00-4d07-a8c8-19894a06572f",
@@ -1431,10 +1575,34 @@
             }
         },
         {
+            "Key": "a5e7bb30-5a78-4d50-bd35-1245241fa87c",
+            "Value": {
+                "id": "7272d5fe-b53f-4b18-862b-e198285292b3",
+                "resourcePath": "sprites\\battle_mankey\\battle_mankey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a68ef0ce-5c06-462e-bcee-d3cb07f8ab57",
+            "Value": {
+                "id": "0db77880-a93d-4200-89ad-02598a32d318",
+                "resourcePath": "sprites\\battle_magmar\\battle_magmar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a68f5fe1-d5a2-4e31-b2d4-64b509ed76ba",
             "Value": {
                 "id": "d5af3f52-5bc4-4857-92a8-25cd4fe93636",
                 "resourcePath": "sprites\\battle_flareon\\battle_flareon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a7035234-b97d-4fea-a6a8-859722952ebd",
+            "Value": {
+                "id": "b917c5f5-ed6a-4598-8e77-fa855a41db2b",
+                "resourcePath": "sprites\\battle_horsea\\battle_horsea.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1479,6 +1647,14 @@
             }
         },
         {
+            "Key": "ab1fb539-ef62-460f-be73-195fa3b0924a",
+            "Value": {
+                "id": "4ca45b72-3ef9-4cdc-82e1-c8c91388f01b",
+                "resourcePath": "sprites\\battle_meowth\\battle_meowth.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ab5c1f29-556a-456a-bae8-15e478ad3837",
             "Value": {
                 "id": "66a55ced-f527-4d0f-8981-bda397d353f0",
@@ -1487,11 +1663,27 @@
             }
         },
         {
+            "Key": "abf82e22-e56a-435a-94af-195a8745ff76",
+            "Value": {
+                "id": "d808dba7-e482-450c-9f9c-193e9de6ebf4",
+                "resourcePath": "sprites\\battle_lickitung\\battle_lickitung.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ac608378-0974-42aa-b48b-d3ca2a80e44b",
             "Value": {
                 "id": "1fd346b1-5efa-40e2-92f9-333cb152e57c",
                 "resourcePath": "sounds\\mus_credits_intro\\mus_credits_intro.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "ac839a00-0aa7-46b1-a9e0-0c8b648e5373",
+            "Value": {
+                "id": "055e3126-b03b-4b44-9ca4-7df5e273d3d8",
+                "resourcePath": "sprites\\battle_magikarp\\battle_magikarp.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1524,6 +1716,14 @@
                 "id": "371e1398-5b57-4f43-b43b-2a8e80cce3de",
                 "resourcePath": "views\\11ef35e7-1799-412c-8f27-c1ff0a6da94c-room.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b2dbcfc6-94f6-407b-9c1a-bf0c7ddb6d21",
+            "Value": {
+                "id": "06055ca9-24a2-43dc-990b-48be3bd0c9aa",
+                "resourcePath": "sprites\\battle_mew\\battle_mew.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1599,6 +1799,14 @@
             }
         },
         {
+            "Key": "bd07427d-9e9a-4eb3-a5e2-a304b55b3e9a",
+            "Value": {
+                "id": "d3db2842-2972-4bd3-9263-596f4b00a943",
+                "resourcePath": "sprites\\battle_machamp\\battle_machamp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bd6b4c86-0aed-47de-a621-d52ebfcf2fb4",
             "Value": {
                 "id": "23a64b80-fee1-4a19-89d6-656ee8370cd8",
@@ -1652,6 +1860,14 @@
                 "id": "ec74ab07-6fe5-4148-b9b3-7cac19a03177",
                 "resourcePath": "tilesets\\tiles_interiors\\tiles_interiors.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "c31570ce-db2b-4a3e-a7e7-ba5143e464b4",
+            "Value": {
+                "id": "138f5e39-2800-47e1-943f-84a85cb480bc",
+                "resourcePath": "sprites\\battle_hitmonlee\\battle_hitmonlee.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1775,11 +1991,27 @@
             }
         },
         {
+            "Key": "d16d0da5-29bd-43cb-9d24-2afec8d5725b",
+            "Value": {
+                "id": "6b266ae9-e874-4e73-b656-b8691070e6dc",
+                "resourcePath": "sprites\\battle_haunter\\battle_haunter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d1d54bbf-ba7b-428f-9fae-849317188d63",
             "Value": {
                 "id": "f28ff243-018c-4ae2-af9e-7564f175c535",
                 "resourcePath": "views\\d1d54bbf-ba7b-428f-9fae-849317188d63.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d31f25f7-48e4-4d94-9f39-6d872c9ec700",
+            "Value": {
+                "id": "5349d83f-597a-4dde-8787-5a3e3e5dc5bd",
+                "resourcePath": "sprites\\battle_miss_mime\\battle_miss_mime.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1867,6 +2099,14 @@
             "Value": {
                 "id": "707d50bf-ac03-4d94-92e8-4824021b1ddb",
                 "resourcePath": "sprites\\battle_butterfree\\battle_butterfree.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dd5873c1-778f-4a0c-9d6c-8a2c33224de1",
+            "Value": {
+                "id": "a0e0b5a9-fd15-436c-abe2-89095cd0de18",
+                "resourcePath": "sprites\\battle_kabuto\\battle_kabuto.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1959,11 +2199,27 @@
             }
         },
         {
+            "Key": "e3742a4a-11fb-46a8-bb60-60ee20c24fc1",
+            "Value": {
+                "id": "b1d7da7d-4b4c-4050-9684-8f806b965661",
+                "resourcePath": "sprites\\battle_kabutops\\battle_kabutops.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e45a6744-6067-4206-bce8-7a9696e19b68",
             "Value": {
                 "id": "be1db069-be1a-419d-bb1e-5edea806a99d",
                 "resourcePath": "rooms\\rm_welcome\\rm_welcome.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "e463921e-a96c-44ef-b80e-d32a653c6935",
+            "Value": {
+                "id": "1c2daa8b-2a44-4ff8-ab0d-4fa05520a952",
+                "resourcePath": "sprites\\battle_ivysaur\\battle_ivysaur.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2111,6 +2367,14 @@
             }
         },
         {
+            "Key": "efe2662f-7006-439a-b726-1e0176fc6ef8",
+            "Value": {
+                "id": "fb8b8ebd-c7a3-4e07-8404-98cc0f4b6140",
+                "resourcePath": "sprites\\battle_hypno\\battle_hypno.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "effd1bbe-e9e1-478e-b21b-d0d7386fe98f",
             "Value": {
                 "id": "c28a82bf-03d1-4cfa-a02f-13d240ff8d02",
@@ -2191,6 +2455,14 @@
             }
         },
         {
+            "Key": "f7e02e91-a896-4afd-9e43-7280ec13123f",
+            "Value": {
+                "id": "7bb39c58-7193-4adb-92dc-552dd277b57f",
+                "resourcePath": "sprites\\battle_magneton\\battle_magneton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f84fe375-d5f5-4242-a541-c81c4b110e24",
             "Value": {
                 "id": "8f18d501-9211-431f-8dbc-f3ace9da65ad",
@@ -2220,6 +2492,14 @@
                 "id": "8a410164-40bb-47fe-b51d-2e5f2bd77175",
                 "resourcePath": "scripts\\poison\\poison.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fa81239a-a873-4bf0-beeb-d18f425b652d",
+            "Value": {
+                "id": "bd848c8a-e086-4e4a-8f43-36604b0b29ba",
+                "resourcePath": "sprites\\battle_kangaskan\\battle_kangaskan.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
