@@ -6,7 +6,7 @@
 
 var list = argument[0];
 var position = argument[1];
-var move = argument[2];
+//var move = argument[2]; //was erroring
 var level = argument[3];
 
 ds_grid_add(list, position, 0, move);
