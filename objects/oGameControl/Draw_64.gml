@@ -5,3 +5,4 @@
 draw_sprite(border_case, 0, x, y);
 
 //Vaniloth was here
+//then Valtur Naa rode through
