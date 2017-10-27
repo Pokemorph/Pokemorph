@@ -1407,6 +1407,14 @@
             }
         },
         {
+            "Key": "6fa14eb0-d6a6-43ab-b055-9daa59dd208d",
+            "Value": {
+                "id": "756f0876-2bcc-4884-9150-0ce89aaa1d56",
+                "resourcePath": "objects\\testUI\\testUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6fa7eccb-2de5-4bfd-b0c4-e37c88e8bbfa",
             "Value": {
                 "id": "8dbc2c49-39f8-480c-a1fd-dbf8ac21e010",
@@ -2099,6 +2107,14 @@
             "Value": {
                 "id": "6f18f540-b1ce-4d94-a1dc-45fde6099a4e",
                 "resourcePath": "sprites\\battle_hitmonchan\\battle_hitmonchan.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a3f19b0b-4cfa-46f5-a4d2-02b48877eae1",
+            "Value": {
+                "id": "6bdb53df-1bb0-49fe-8362-14f92464d926",
+                "resourcePath": "sprites\\sprTestUI\\sprTestUI.yy",
                 "resourceType": "GMSprite"
             }
         },
