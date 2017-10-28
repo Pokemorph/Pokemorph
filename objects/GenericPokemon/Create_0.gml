@@ -2,5 +2,3 @@
 // You can write your code in this editor
 
 //A generic pokemon object to hold basic pokemon info that all pokemon have in common
-var base_hp
-var //oh gawd plz help
