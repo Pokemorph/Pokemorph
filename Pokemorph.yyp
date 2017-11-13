@@ -159,14 +159,6 @@
             }
         },
         {
-            "Key": "0c79a418-edef-4bf0-912c-7c2176bcd005",
-            "Value": {
-                "id": "fe499138-8d75-49d0-b2b1-da2010e81b07",
-                "resourcePath": "sprites\\spr_battlebutton_pokedex\\spr_battlebutton_pokedex.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "0cea3e20-857a-4666-9cd7-5bb5fdc76b2c",
             "Value": {
                 "id": "17989875-b1b5-4e9a-8f78-f0f2230822d2",
@@ -259,6 +251,14 @@
             "Value": {
                 "id": "c9e416ff-b9c8-420e-b84d-04308688f4e3",
                 "resourcePath": "sprites\\spr_doorway_brick\\spr_doorway_brick.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "13cef5fc-94a3-4cad-a327-2641767414b5",
+            "Value": {
+                "id": "91f6025c-e375-4259-8a27-3f78139d6d78",
+                "resourcePath": "sprites\\cursor_dex\\cursor_dex.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -403,6 +403,14 @@
             "Value": {
                 "id": "eb48c0f5-9627-4feb-9d7c-a0e64973b884",
                 "resourcePath": "sprites\\battle_squirtle\\battle_squirtle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1e29c038-f31c-4291-ad01-b5fa09133782",
+            "Value": {
+                "id": "b1078849-1669-4011-961d-242632f6e71b",
+                "resourcePath": "sprites\\ui_healthbar\\ui_healthbar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1847,6 +1855,14 @@
             }
         },
         {
+            "Key": "8ab39cd4-85fe-4bfd-9db6-fc66829fb357",
+            "Value": {
+                "id": "cd221e0a-e9e6-4e6a-96bc-a59a22ee47f7",
+                "resourcePath": "sprites\\cursor_ball\\cursor_ball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8b3d5720-9585-48aa-9702-47a2c5fe7a2b",
             "Value": {
                 "id": "e07e2ffb-c9b0-4307-accd-b91e7aaf1de2",
@@ -2051,14 +2067,6 @@
             "Value": {
                 "id": "f8ef9317-bad9-4e11-a128-f4e045db6378",
                 "resourcePath": "sprites\\battle_tentacruel\\battle_tentacruel.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "9d19bd2f-2de2-4d3f-a9bd-7c05f75bf188",
-            "Value": {
-                "id": "8758aeab-7e8a-4c80-a19e-fc8690633e66",
-                "resourcePath": "sprites\\spr_battlebutton_surrender\\spr_battlebutton_surrender.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2307,6 +2315,14 @@
             "Value": {
                 "id": "c66a8883-3398-4c63-bac6-c5a853d9c1ae",
                 "resourcePath": "sprites\\battle_tauros\\battle_tauros.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b0c890b7-0b0c-4e86-95ca-8e2f613c3ea0",
+            "Value": {
+                "id": "697de2d6-fbfc-4fa9-a986-7ee1fcdf4e3c",
+                "resourcePath": "sprites\\ui_healthbar_back\\ui_healthbar_back.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3268,6 +3284,14 @@
                 "id": "ed930b9c-fbbc-453d-8359-5ed7b4df8679",
                 "resourcePath": "scripts\\ai_lookat\\ai_lookat.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f2a00395-0f92-4ca2-9a0b-49d7e2405fdd",
+            "Value": {
+                "id": "f9198f9f-3bb8-40d3-91ba-72a7639a58c5",
+                "resourcePath": "sprites\\ui_healthbar_sample\\ui_healthbar_sample.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
