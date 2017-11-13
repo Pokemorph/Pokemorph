@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "496e3ae2-30ae-4c84-8c82-c0cae55aaa90",
+            "Value": {
+                "id": "e68f320a-7039-4bec-8933-f9cb3721bc4e",
+                "resourcePath": "objects\\GenericPokemon\\GenericPokemon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4a023809-2342-4086-98a8-1b33c71c5f0f",
             "Value": {
                 "id": "eac97302-fb6f-47f2-93ef-e4fe8ab59643",
