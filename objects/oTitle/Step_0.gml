@@ -7,7 +7,7 @@ if state == 0 {
 	audio_play_sound(snd_joker, 10, false);
 	state++;
 } else if state == 1 {
-	if image_alpha < 1		image_alpha += 0.05;
+	if image_alpha < 1		image_alpha += 0.2/GAME_SPEED;
 	else if !audio_is_playing(snd_joker) {
         sprite_index = title_gamemaker;
         timer += 1/room_speed;
@@ -30,7 +30,7 @@ if state == 0 {
 } else if state == 3 {  //switch to game title
     audio_play_sound(mus_title, 10, true);
     sprite_index = title_background;
-    buttons[5] = instance_create_depth(x+sprite_width/2, y, -10, oButtonTitle);
+    buttons[5] = instance_create_depth(x+sprite_width/2, y+8, -10, oButtonTitle);
     button = instance_create_depth(x+sprite_width/2, y+440, -10, oTitleContinue);
     timer += 1/room_speed;
     state++;

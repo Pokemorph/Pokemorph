@@ -4,7 +4,9 @@
 window_set_size(sprite_width, sprite_height);
 display_set_gui_maximise(1, 1, 0, 0);
 view_visible[0]=true;
-view_xport[0]=80;
-view_yport[0]=60;
-view_wport[0]=640;
-view_hport[0]=480;
+//view_xport[0]=80;
+//view_yport[0]=60;
+//view_wport[0]=640;
+//view_hport[0]=480;
+camera_set_view_pos(view_camera[0], 80, 60)
+camera_set_view_size(view_camera[0], 640, 480);

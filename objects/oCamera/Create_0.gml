@@ -10,7 +10,8 @@ camera_set_proj_mat(camera, projection_matrix);
 
 view_camera[0] = camera;
 
-follow = oPlayer;
+if instance_exists(oPlayer)	follow = oPlayer;
+else						follow = noone;
 state = 0;
 target_x = follow.x;
 target_y = follow.y;

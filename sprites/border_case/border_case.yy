@@ -6,33 +6,34 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 703,
+    "bbox_bottom": 899,
     "bbox_left": 0,
-    "bbox_right": 999,
+    "bbox_right": 1335,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 0,
     "coltolerance": 0,
+    "edgeFiltering": false,
     "frames": [
         {
-            "id": "bd9e3fbc-8a3a-44bb-b18b-c1d03aaceedb",
+            "id": "e8e05ba3-53c7-4a08-984d-9377a62ff9df",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "0f7aa1b5-ec0d-4ee9-9245-f956c4a82c91",
             "compositeImage": {
-                "id": "8584ee43-5b76-420f-b7d5-cb6e189eb66c",
+                "id": "41d9c5c6-a798-462d-89b4-4aac38e4ded1",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "bd9e3fbc-8a3a-44bb-b18b-c1d03aaceedb",
+                "FrameId": "e8e05ba3-53c7-4a08-984d-9377a62ff9df",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "f3394753-d310-48e3-9c2b-e83155037594",
+                    "id": "c7103ab4-f5e9-4fad-939e-f906f36cedf7",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "bd9e3fbc-8a3a-44bb-b18b-c1d03aaceedb",
-                    "LayerId": "348373cc-62b4-4b5a-90fc-519bd48faa7f"
+                    "FrameId": "e8e05ba3-53c7-4a08-984d-9377a62ff9df",
+                    "LayerId": "b1e894cb-cf21-4494-817b-82bd541c973a"
                 }
             ]
         }
@@ -42,7 +43,7 @@
     "height": 900,
     "layers": [
         {
-            "id": "348373cc-62b4-4b5a-90fc-519bd48faa7f",
+            "id": "b1e894cb-cf21-4494-817b-82bd541c973a",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "0f7aa1b5-ec0d-4ee9-9245-f956c4a82c91",
@@ -54,6 +55,7 @@
         }
     ],
     "origin": 0,
+    "originLocked": false,
     "playbackSpeed": 0,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,

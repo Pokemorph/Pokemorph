@@ -44,13 +44,16 @@ intro = mus_pallet_intro;
 music_pause = true;
 
 //resize the screen if necessary
-var screen_height = display_get_height();
+var screen_height = window_get_height();
 if screen_height != 900 {	//run resize code
 	//screen_height -= 80;
 	global.win_scale = screen_height/900;	
 } else global.win_scale = 1;
 window_set_size(global.win_scale*1336, screen_height);
+camera_set_view_size(view_camera[0], 1336, 900);
 display_set_gui_maximise(global.win_scale, global.win_scale, 0, 0);
+alarm[0] = 1;
+/*
 view_visible[0]=true;
 view_xport[0]=400*global.win_scale;
 view_yport[0]=156*global.win_scale;
