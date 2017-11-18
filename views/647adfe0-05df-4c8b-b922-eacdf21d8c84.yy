@@ -12,7 +12,8 @@
         "7cd57a10-bc14-491d-b8c9-262aa98d73f9",
         "1e29c038-f31c-4291-ad01-b5fa09133782",
         "b0c890b7-0b0c-4e86-95ca-8e2f613c3ea0",
-        "f2a00395-0f92-4ca2-9a0b-49d7e2405fdd"
+        "f2a00395-0f92-4ca2-9a0b-49d7e2405fdd",
+        "7077b635-ac7d-4a95-90f2-6a807d94c66d"
     ],
     "filterType": "GMSprite",
     "folderName": "battle ui",

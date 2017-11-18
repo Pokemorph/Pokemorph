@@ -1471,11 +1471,27 @@
             }
         },
         {
+            "Key": "7077b635-ac7d-4a95-90f2-6a807d94c66d",
+            "Value": {
+                "id": "49aaeae7-b16e-492b-b2e5-b67de635ffa9",
+                "resourcePath": "sprites\\sprite_battle\\sprite_battle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71006ac3-f558-4714-8281-8dc5e419fd8f",
             "Value": {
                 "id": "9c66f119-d86a-4ca2-ba24-72e7a7512b33",
                 "resourcePath": "sprites\\battle_willow\\battle_willow.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "71301a58-2cf1-4bf1-ac79-21eb984e9f87",
+            "Value": {
+                "id": "5e5a36f4-ae91-4255-94e8-b8f769bf08ad",
+                "resourcePath": "objects\\oCursor\\oCursor.yy",
+                "resourceType": "GMObject"
             }
         },
         {

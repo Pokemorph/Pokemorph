@@ -43,6 +43,9 @@ music = mus_pallet;
 intro = mus_pallet_intro;
 music_pause = true;
 
+//inialize mouse cursor
+cursor_sprite = cursor_ball;
+
 //resize the screen if necessary
 var screen_height = window_get_height();
 if screen_height != 900 {	//run resize code
