@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "4a4d1bf7-e457-440c-a62d-80fd07f2dd4d",
+            "Value": {
+                "id": "1d5f9f1a-64c8-4784-a0a5-847796b88b88",
+                "resourcePath": "views\\4a4d1bf7-e457-440c-a62d-80fd07f2dd4d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4a9ef98e-b031-44c4-bd86-39afe224f010",
             "Value": {
                 "id": "49fef2bd-ccd0-4861-944e-a5b36688ded8",
@@ -2887,6 +2895,14 @@
             }
         },
         {
+            "Key": "da2bcfd6-0d3d-43af-8f31-d90e142acfb1",
+            "Value": {
+                "id": "2da059ff-ac93-42d0-b488-fa8a2c6a0b0d",
+                "resourcePath": "objects\\object40\\object40.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "da51aad5-7a46-4fd8-a5e0-c465fbeccabd",
             "Value": {
                 "id": "28856a68-aee9-46a0-8ffe-2e13a92de78d",
@@ -3487,6 +3503,14 @@
             }
         },
         {
+            "Key": "fd26adca-cee5-4789-baa5-922517fb4920",
+            "Value": {
+                "id": "02007361-671e-437d-ab00-2e2f20b4bfd4",
+                "resourcePath": "scripts\\player_battle_state\\player_battle_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fdcb211b-d8f2-409c-9420-791436034907",
             "Value": {
                 "id": "33a718a2-1d66-46a1-ae1c-67a8e72254d3",
@@ -3541,8 +3565,6 @@
         "f21c7423-53ae-41e8-8bb3-4c52936a8d05",
         "f183c076-8519-43c0-a367-8ff99a9445e4",
         "9ddf67a7-11ca-4c20-8e3c-b1d6cf125665",
-        "9510bc7c-73c3-4282-bf41-20459b88feba",
-        "32c05a4a-438c-4acb-801e-494a78f34845",
         "73a78e7f-0e01-43f0-bf98-f269a25506cf",
         "26898143-b6ef-48b6-936e-ed8f9593b197",
         "8606902d-679b-4db9-92ce-f5c5b1dadd34",
@@ -3550,7 +3572,10 @@
         "fdfa80a2-f9b5-4f1d-b127-9c5e3b77cc63",
         "911fbd1a-ec95-4778-ab6b-f4351c9073fe",
         "fa61c545-fb70-4a03-bc59-1709b754f9ea",
-        "0d905b3f-fe8c-413e-bfc0-776d4a819800"
+        "0d905b3f-fe8c-413e-bfc0-776d4a819800",
+        "fd26adca-cee5-4789-baa5-922517fb4920",
+        "9510bc7c-73c3-4282-bf41-20459b88feba",
+        "32c05a4a-438c-4acb-801e-494a78f34845"
     ],
     "tutorial": ""
 }

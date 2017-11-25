@@ -1,6 +1,17 @@
 /// @desc initialize battle variables
 // You can write your code in this editor
 
+//control battle background position
+if instance_exists(oCamera) {
+	x = oCamera.x - 320;
+	y = oCamera.y - 290;
+} else {
+	x = 400;
+	y = 160;
+}
+x += irandom_range(-18, 6) * 8;	//-18, 6
+image_index = 0
+
 //vars to control fade transition
 battle_state = 0;
 target_alpha = 1;
