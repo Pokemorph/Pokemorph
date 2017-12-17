@@ -1287,6 +1287,14 @@
             }
         },
         {
+            "Key": "6041fd6b-7ebb-402c-8870-d8cc260f345d",
+            "Value": {
+                "id": "6862f980-a9d1-4972-b6bf-15d559816f4a",
+                "resourcePath": "rooms\\TheLab\\TheLab.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "6104a03e-675b-475a-a41b-0d0c19c4a3d7",
             "Value": {
                 "id": "d5b4259d-0c29-4c35-9997-fd90b4a4aecf",
