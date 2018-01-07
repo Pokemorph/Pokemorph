@@ -927,11 +927,27 @@
             }
         },
         {
+            "Key": "41817cb9-fc4f-4699-b429-31349d03690c",
+            "Value": {
+                "id": "6ddc366a-1421-4c2f-b468-f77d65a581e5",
+                "resourcePath": "sprites\\spr_warp\\spr_warp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "41b7e7e7-0a7d-4baa-8555-adc385010213",
             "Value": {
                 "id": "bcf71013-1408-4db1-b8ee-675e0f1faada",
                 "resourcePath": "sprites\\battle_lapras\\battle_lapras.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "43135331-c7db-4ab8-911b-0caf36c9ce5e",
+            "Value": {
+                "id": "a1c435cd-5fec-46f3-9bb3-2881098a40b7",
+                "resourcePath": "objects\\obj_wall\\obj_wall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1028,6 +1044,14 @@
                 "id": "49fef2bd-ccd0-4861-944e-a5b36688ded8",
                 "resourcePath": "sprites\\battle_abra\\battle_abra.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4b258ae0-b196-4223-964e-0dd8a2a512a0",
+            "Value": {
+                "id": "2293ae8d-513f-473f-8f85-a6464efd180d",
+                "resourcePath": "scripts\\fadeout\\fadeout.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1151,6 +1175,14 @@
             }
         },
         {
+            "Key": "5540e9db-8c8d-42b0-ae97-beb889b44bf2",
+            "Value": {
+                "id": "25861de7-f1e7-4e24-9bf0-040ac94eb259",
+                "resourcePath": "objects\\obj_fade\\obj_fade.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "55576bca-6ec5-44e0-bcca-5304c79681ef",
             "Value": {
                 "id": "e0d28972-b447-4628-8ea3-877c2358cc53",
@@ -1231,6 +1263,14 @@
             }
         },
         {
+            "Key": "5ce5bd79-075f-4094-8300-9d0a0876e233",
+            "Value": {
+                "id": "36c431f0-63f0-4ac1-a1d7-3971fae5125b",
+                "resourcePath": "sprites\\spr_wall\\spr_wall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5d4d3c5f-7b90-44d2-b4d4-f968350072d1",
             "Value": {
                 "id": "e9f21267-d260-44db-913b-5ad5be2bd5d7",
@@ -1284,6 +1324,14 @@
                 "id": "4d64b617-bc3a-41f9-8e8d-fa4fba8c4800",
                 "resourcePath": "views\\60168dcf-8c36-43a2-ab71-4c7106c3b029.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6041fd6b-7ebb-402c-8870-d8cc260f345d",
+            "Value": {
+                "id": "6862f980-a9d1-4972-b6bf-15d559816f4a",
+                "resourcePath": "rooms\\TheLab\\TheLab.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1420,6 +1468,14 @@
                 "id": "1a0a5356-42c1-427d-9a3d-f296e285fb81",
                 "resourcePath": "sprites\\battle_poliwhirl\\battle_poliwhirl.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6ed78257-1130-447c-8d40-4b8fab5b2e35",
+            "Value": {
+                "id": "81d3bde7-93f3-45a0-b07a-47f72dbc8dc7",
+                "resourcePath": "objects\\obj_warp\\obj_warp.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3575,7 +3631,8 @@
         "0d905b3f-fe8c-413e-bfc0-776d4a819800",
         "fd26adca-cee5-4789-baa5-922517fb4920",
         "9510bc7c-73c3-4282-bf41-20459b88feba",
-        "32c05a4a-438c-4acb-801e-494a78f34845"
+        "32c05a4a-438c-4acb-801e-494a78f34845",
+        "4b258ae0-b196-4223-964e-0dd8a2a512a0"
     ],
     "tutorial": ""
 }

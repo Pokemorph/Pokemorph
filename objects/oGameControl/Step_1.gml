@@ -72,49 +72,30 @@ if instance_exists(dPad) with dPad {
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 2197A7CA
-/// @DnDArgument : "code" "/// @description get key input$(13_10)$(13_10)//check directional keys$(13_10)if keyboard_check(vk_right) or keyboard_check(ord("D")) {$(13_10)    right_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_axis_value(0, gp_axislh) >= 0.4 {$(13_10)    right_key = true;$(13_10)} else if dPad != noone and mouse_hold == true and dPad.dir == RIGHT {$(13_10)    right_key = true;$(13_10)} else {$(13_10)    right_key = false;$(13_10)}$(13_10)$(13_10)if keyboard_check (vk_left) or keyboard_check(ord("A")) {$(13_10)    left_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_axis_value(0, gp_axislh) <= -0.4 {$(13_10)    left_key = true;$(13_10)} else if dPad != noone and mouse_hold == true and dPad.dir == LEFT {$(13_10)    left_key = true;$(13_10)} else {$(13_10)    left_key = false;$(13_10)}$(13_10)$(13_10)if keyboard_check (vk_up) or keyboard_check(ord("W")) {$(13_10)    up_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_axis_value(0, gp_axislv) <= -0.4 {$(13_10)    up_key = true;$(13_10)} else if dPad != noone and mouse_hold == true and dPad.dir == UP {$(13_10)    up_key = true;$(13_10)} else {$(13_10)    up_key = false;$(13_10)}$(13_10)$(13_10)if keyboard_check (vk_down) or keyboard_check(ord("S")) {$(13_10)    down_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_axis_value(0, gp_axislv) >= 0.4 {$(13_10)    down_key = true;$(13_10)} else if dPad != noone and mouse_hold == true and dPad.dir == DOWN {$(13_10)    down_key = true;$(13_10)} else {$(13_10)    down_key = false;$(13_10)}$(13_10)$(13_10)//adjust the run state (are we running or are we not running) from key pressed$(13_10)if gamepad_is_connected(0) {$(13_10)    if ( abs(gamepad_axis_value(0, gp_axislh)) >= 0.8 ) or ( abs(gamepad_axis_value(0, gp_axislv)) >= 0.8 ) {$(13_10)        run_state = true;$(13_10)		run_key = true;$(13_10)    } else$(13_10)        run_state = false;$(13_10)		run_key = false;$(13_10)} if keyboard_check_pressed (vk_shift) {$(13_10)    run_state = !run_state;$(13_10)	run_key = true;$(13_10)} else if runButton != noone and runButton.click == true {$(13_10)    run_state = !run_state;$(13_10)	run_key = true;$(13_10)} else	run_key = false;$(13_10)$(13_10)//set the interact key$(13_10)if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) {$(13_10)    interact_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_button_check_pressed(0, gp_face1) {$(13_10)    interact_key = true;$(13_10)} else if talkButton != noone and talkButton.click == true {$(13_10)    interact_key = true;$(13_10)} else {$(13_10)    interact_key = false;$(13_10)}$(13_10)$(13_10)//the question key$(13_10)if keyboard_check_pressed(ord("E")) or keyboard_check_pressed(vk_control) {$(13_10)    question_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_button_check_pressed(0, gp_face2) {$(13_10)    question_key = true;$(13_10)} else if askButton != noone and askButton.click == true {$(13_10)    question_key = true;$(13_10)} else {$(13_10)    question_key = false;$(13_10)}$(13_10)$(13_10)//the menu key$(13_10)if keyboard_check_pressed(vk_escape) or keyboard_check_pressed(vk_backspace) {$(13_10)    menu_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_button_check_pressed(0, gp_start) {$(13_10)    menu_key = true;$(13_10)} else if menuButton != noone and menuButton.click == true {$(13_10)    menu_key = true;$(13_10)} else {$(13_10)    menu_key = false;$(13_10)}"
+/// @DnDArgument : "code" "/// @description get key input$(13_10)right_key = keyboard_check(vk_right) or keyboard_check(ord("D")) or$(13_10)	(dPad != noone and mouse_hold == true and dPad.dir == RIGHT);$(13_10)left_key = keyboard_check (vk_left) or keyboard_check(ord("A"))or$(13_10)	(dPad != noone and mouse_hold == true and dPad.dir == LEFT);$(13_10)down_key = keyboard_check (vk_down) or keyboard_check(ord("S"))or$(13_10)	(dPad != noone and mouse_hold == true and dPad.dir == DOWN);$(13_10)up_key = keyboard_check (vk_up) or keyboard_check(ord("W"))or$(13_10)	(dPad != noone and mouse_hold == true and dPad.dir == UP);$(13_10)	$(13_10)//if Gamepad is conected$(13_10)if (gamepad_is_connected(0)){$(13_10)	right_key = gamepad_button_check(0, gp_padr) or $(13_10)		(gamepad_axis_value(0, gp_axislh) >= 0.4);$(13_10)	left_key = gamepad_button_check(0, gp_padl)or $(13_10)		(gamepad_axis_value(0, gp_axislh) <= -0.4);$(13_10)	down_key = gamepad_button_check(0, gp_padd)or $(13_10)		(gamepad_axis_value(0, gp_axislv) <= -0.4);$(13_10)	up_key = gamepad_button_check(0, gp_padu)or $(13_10)		(gamepad_axis_value(0, gp_axislv) >= 0.4);$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)//adjust the run state (are we running or are we not running) from key pressed$(13_10)if gamepad_is_connected(0) {$(13_10)    if ( abs(gamepad_axis_value(0, gp_axislh)) >= 0.8 ) or ( abs(gamepad_axis_value(0, gp_axislv)) >= 0.8 ) {$(13_10)        run_state = true;$(13_10)		run_key = true;$(13_10)    } else$(13_10)        run_state = false;$(13_10)		run_key = false;$(13_10)} if keyboard_check_pressed (vk_shift) {$(13_10)    run_state = !run_state;$(13_10)	run_key = true;$(13_10)} else if runButton != noone and runButton.click == true {$(13_10)    run_state = !run_state;$(13_10)	run_key = true;$(13_10)} else	run_key = false;$(13_10)$(13_10)//set the interact key$(13_10)if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) {$(13_10)    interact_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_button_check_pressed(0, gp_face1) {$(13_10)    interact_key = true;$(13_10)} else if talkButton != noone and talkButton.click == true {$(13_10)    interact_key = true;$(13_10)} else {$(13_10)    interact_key = false;$(13_10)}$(13_10)$(13_10)//the question key$(13_10)if keyboard_check_pressed(ord("E")) or keyboard_check_pressed(vk_control) {$(13_10)    question_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_button_check_pressed(0, gp_face2) {$(13_10)    question_key = true;$(13_10)} else if askButton != noone and askButton.click == true {$(13_10)    question_key = true;$(13_10)} else {$(13_10)    question_key = false;$(13_10)}$(13_10)$(13_10)//the menu key$(13_10)if keyboard_check_pressed(vk_escape) or keyboard_check_pressed(vk_backspace) {$(13_10)    menu_key = true;$(13_10)} else if gamepad_is_connected(0) and gamepad_button_check_pressed(0, gp_start) {$(13_10)    menu_key = true;$(13_10)} else if menuButton != noone and menuButton.click == true {$(13_10)    menu_key = true;$(13_10)} else {$(13_10)    menu_key = false;$(13_10)}"
 /// @description get key input
-
-//check directional keys
-if keyboard_check(vk_right) or keyboard_check(ord("D")) {
-    right_key = true;
-} else if gamepad_is_connected(0) and gamepad_axis_value(0, gp_axislh) >= 0.4 {
-    right_key = true;
-} else if dPad != noone and mouse_hold == true and dPad.dir == RIGHT {
-    right_key = true;
-} else {
-    right_key = false;
+right_key = keyboard_check(vk_right) or keyboard_check(ord("D")) or
+	(dPad != noone and mouse_hold == true and dPad.dir == RIGHT);
+left_key = keyboard_check (vk_left) or keyboard_check(ord("A"))or
+	(dPad != noone and mouse_hold == true and dPad.dir == LEFT);
+down_key = keyboard_check (vk_down) or keyboard_check(ord("S"))or
+	(dPad != noone and mouse_hold == true and dPad.dir == DOWN);
+up_key = keyboard_check (vk_up) or keyboard_check(ord("W"))or
+	(dPad != noone and mouse_hold == true and dPad.dir == UP);
+	
+//if Gamepad is conected
+if (gamepad_is_connected(0)){
+	right_key = gamepad_button_check(0, gp_padr) or 
+		(gamepad_axis_value(0, gp_axislh) >= 0.4);
+	left_key = gamepad_button_check(0, gp_padl)or 
+		(gamepad_axis_value(0, gp_axislh) <= -0.4);
+	down_key = gamepad_button_check(0, gp_padd)or 
+		(gamepad_axis_value(0, gp_axislv) <= -0.4);
+	up_key = gamepad_button_check(0, gp_padu)or 
+		(gamepad_axis_value(0, gp_axislv) >= 0.4);
 }
 
-if keyboard_check (vk_left) or keyboard_check(ord("A")) {
-    left_key = true;
-} else if gamepad_is_connected(0) and gamepad_axis_value(0, gp_axislh) <= -0.4 {
-    left_key = true;
-} else if dPad != noone and mouse_hold == true and dPad.dir == LEFT {
-    left_key = true;
-} else {
-    left_key = false;
-}
 
-if keyboard_check (vk_up) or keyboard_check(ord("W")) {
-    up_key = true;
-} else if gamepad_is_connected(0) and gamepad_axis_value(0, gp_axislv) <= -0.4 {
-    up_key = true;
-} else if dPad != noone and mouse_hold == true and dPad.dir == UP {
-    up_key = true;
-} else {
-    up_key = false;
-}
-
-if keyboard_check (vk_down) or keyboard_check(ord("S")) {
-    down_key = true;
-} else if gamepad_is_connected(0) and gamepad_axis_value(0, gp_axislv) >= 0.4 {
-    down_key = true;
-} else if dPad != noone and mouse_hold == true and dPad.dir == DOWN {
-    down_key = true;
-} else {
-    down_key = false;
-}
 
 //adjust the run state (are we running or are we not running) from key pressed
 if gamepad_is_connected(0) {
