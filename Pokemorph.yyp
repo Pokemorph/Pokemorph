@@ -2767,6 +2767,14 @@
             }
         },
         {
+            "Key": "cc411eb3-8fda-4488-b9ed-30055346a8ef",
+            "Value": {
+                "id": "1319162e-0b35-4ace-932f-9c6f6a57ce55",
+                "resourcePath": "scripts\\player_paused_state\\player_paused_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "9399fba1-14f0-4374-8ece-dd889faeee18",
@@ -3632,6 +3640,7 @@
         "fd26adca-cee5-4789-baa5-922517fb4920",
         "9510bc7c-73c3-4282-bf41-20459b88feba",
         "32c05a4a-438c-4acb-801e-494a78f34845",
+        "cc411eb3-8fda-4488-b9ed-30055346a8ef",
         "4b258ae0-b196-4223-964e-0dd8a2a512a0"
     ],
     "tutorial": ""

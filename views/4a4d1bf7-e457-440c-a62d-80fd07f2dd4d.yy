@@ -6,7 +6,8 @@
     "children": [
         "fd26adca-cee5-4789-baa5-922517fb4920",
         "9510bc7c-73c3-4282-bf41-20459b88feba",
-        "32c05a4a-438c-4acb-801e-494a78f34845"
+        "32c05a4a-438c-4acb-801e-494a78f34845",
+        "cc411eb3-8fda-4488-b9ed-30055346a8ef"
     ],
     "filterType": "GMScript",
     "folderName": "player_states",
