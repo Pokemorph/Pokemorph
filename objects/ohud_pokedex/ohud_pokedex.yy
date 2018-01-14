@@ -1,33 +1,33 @@
 {
-    "id": "4466d5a6-5e06-4c37-bdf5-a4d5fe987f68",
+    "id": "2b75bd73-963e-4a02-88b3-c2e0f7f56859",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oHUD",
+    "name": "ohud_pokedex",
     "eventList": [
         {
-            "id": "4ab2db1c-691e-48bf-b5c9-32ee8fcb90f8",
+            "id": "5c8ed5aa-dd32-4311-b981-d81b24e36682",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "4466d5a6-5e06-4c37-bdf5-a4d5fe987f68"
+            "m_owner": "2b75bd73-963e-4a02-88b3-c2e0f7f56859"
         },
         {
-            "id": "d4d81b8a-3aa8-4d29-be69-574acac0d58c",
+            "id": "33e51a9c-29a9-4aaa-a4d9-321cd63c686a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
-            "m_owner": "4466d5a6-5e06-4c37-bdf5-a4d5fe987f68"
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "2b75bd73-963e-4a02-88b3-c2e0f7f56859"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "05aacbc4-ba9a-4fa4-9102-a71449ea6d1b",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "30168f28-6097-4bc1-8e73-56d011473e69",
+    "spriteId": "4fb26147-f31e-4826-b984-f4431c0e3f0b",
     "visible": true
 }

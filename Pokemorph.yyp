@@ -602,7 +602,7 @@
             "Key": "2b75bd73-963e-4a02-88b3-c2e0f7f56859",
             "Value": {
                 "id": "d9acf658-3837-4eab-a3d6-28f75ad53d53",
-                "resourcePath": "objects\\oHuDButton\\oHuDButton.yy",
+                "resourcePath": "objects\\ohud_pokedex\\ohud_pokedex.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3228,6 +3228,14 @@
                 "id": "3f16f814-1149-403a-973b-3a35567e82ec",
                 "resourcePath": "tilesets\\tiles_spring\\tiles_spring.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "ea4acce2-b431-43e0-89c4-4d0bc2061bee",
+            "Value": {
+                "id": "625fdebc-d7ff-497f-8c60-e06ec78703f0",
+                "resourcePath": "objects\\ohud_pokemorphs\\ohud_pokemorphs.yy",
+                "resourceType": "GMObject"
             }
         },
         {
