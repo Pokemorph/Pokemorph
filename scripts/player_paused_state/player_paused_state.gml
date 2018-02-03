@@ -2,6 +2,6 @@
 //in this state, controls are seized until the hud object is gone
 
 animating = false;
-if !instance_exists(oHUD) {
-	state = player_paused_state;
+if !instance_exists(parMenu) {
+	state = player_idle_state;
 }

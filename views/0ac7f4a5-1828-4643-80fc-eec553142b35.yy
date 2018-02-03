@@ -12,7 +12,8 @@
         "af9e99b9-9982-45dc-967c-6cd0e67679f4",
         "8977a5bf-8656-47c7-820b-b52078265560",
         "1c17b1ab-197d-4ee9-8c54-7bb0ede77d62",
-        "e0cca65a-22aa-4ca8-81d2-9a4319061656"
+        "e0cca65a-22aa-4ca8-81d2-9a4319061656",
+        "d0eb15e8-9f9f-435a-b7af-37ecdde3396b"
     ],
     "filterType": "GMObject",
     "folderName": "title screen",

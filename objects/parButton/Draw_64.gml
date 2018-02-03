@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description draw self
 
 if active		image_index = 2;
 else if hover	image_index = 1;

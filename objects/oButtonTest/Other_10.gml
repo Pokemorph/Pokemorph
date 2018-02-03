@@ -1,3 +1,3 @@
-/// @desc start new game
+/// @desc enter testing room
 
-room_goto(rm_test);
+//room_goto(rm_test);

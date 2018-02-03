@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description initialize buttons
 
 image_speed = 0;
 hover = false;
