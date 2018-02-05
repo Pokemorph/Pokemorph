@@ -6,4 +6,4 @@ if image_alpha <= 0 {
     fade = -1;
 }
 
-image_alpha += 0.2*fade;
+image_alpha += 0.1*fade;
