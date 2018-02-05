@@ -14,5 +14,5 @@ input_timer = 2;
 margin = 12;
 width = sprite_width - (margin*2);
 
-x = 48;
-y = 560-sprite_height;
+x = 400;
+y = 640-sprite_height;

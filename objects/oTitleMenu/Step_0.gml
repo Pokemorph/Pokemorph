@@ -21,7 +21,7 @@ if state == 0 {//lower opacity, and set up the menu buttons
 	else if buttons[2].click = true		room_goto(rm_pallet_town);	// load game
 	else if buttons[3].click = true		{
 		var newMenu = instance_create_depth(x, y, depth, oOptions);
-		newMenu.parent_menu = self.id;
+		//newMenu.parent_menu = self.id;
 		state = 2
 	}
 	else if buttons[4].click = true		game_end();					// quit game

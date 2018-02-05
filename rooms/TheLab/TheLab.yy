@@ -25,7 +25,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -47,7 +47,7 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "userdefined_depth": false,
-            "visible": true
+            "visible": false
         },
         {
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
@@ -76,7 +76,7 @@
                 "SerialiseHeight": 8,
                 "SerialiseWidth": 10,
                 "TileSerialiseData": [
-                    2147483648,14,2147483648,191,192,2147483648,2147483648,37,90,2147483648,
+                    2147483648,14,2147483648,0,191,192,2147483648,37,90,2147483648,
                     398,44,126,127,15,2147483648,2147483648,165,120,398,
                     428,74,156,157,45,275,276,2147483648,2147483648,428,
                     2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,0,0,0,
@@ -170,7 +170,7 @@
                 "SerialiseHeight": 8,
                 "SerialiseWidth": 10,
                 "TileSerialiseData": [
-                    2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
+                    2147483648,2147483648,2147483648,0,0,2147483648,2147483648,2147483648,2147483648,2147483648,
                     4,4,4,4,4,4,4,4,4,4,
                     4,4,4,4,4,4,4,4,4,4,
                     4,4,4,4,4,4,4,4,4,281,

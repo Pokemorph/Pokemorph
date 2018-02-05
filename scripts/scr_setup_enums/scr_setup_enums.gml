@@ -5,22 +5,19 @@
 #macro LEFT 2
 #macro DOWN 3
 #macro GRID_SIZE 32
-#macro ANIMATE_YOYO 2
-#macro ANIMATE_LOOP 1
-#macro ANIMATE_ONCE 0
-#macro TALK 0
-#macro FORMAT_TEXT 0
-#macro COLLISION_EMPTY	0
-#macro COLLISION_SOLID	1
-#macro COLLISION_WATER	2
-#macro COLLISION_GRASS	3
-#macro COLLISION_ICE	4
 #macro GAME_SPEED game_get_speed(gamespeed_fps)
 
 enum animate_type {
 	once,
 	loop,
 	yoyo,
+}
+
+enum directions {
+	right,
+	up,
+	left,
+	down,
 }
 
 enum battle_poses {

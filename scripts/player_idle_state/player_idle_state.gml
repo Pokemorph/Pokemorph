@@ -3,10 +3,10 @@
 
 //speed controls
 if oGameControl.run_state {
-	move_speed = 8;
+	move_speed = 6;
 	animation_speed = 6/30;
 } else {
-	move_speed = 4;
+	move_speed = 3;
 	animation_speed = 4/30;
 }
 
@@ -24,13 +24,13 @@ if is_moving == false {
 	}
 	if move_x != 0 or move_y != 0 {
 		direction = point_direction(x, y, x+move_x, y+move_y);
-		var tile_collision = find_tile_collision(x+move_x, y+move_y)
-		var collision = place_meeting(x+move_x, y+move_y, parSolid) or tile_collision == COLLISION_SOLID
+		var tile_collision = find_tile_collision(x+move_x, y+move_y);
+		var collision = place_meeting(x+move_x, y+move_y, parSolid) or tile_collision == collision_types.solid;
 		if (collision) {
 			move_x = 0;
 			move_y = 0;
 			animating = false;
-		} else if (tile_collision == COLLISION_WATER) {
+		} else if (tile_collision == collision_types.water) {
 			if !can_swim {	
 				move_x = 0;	
 				move_y = 0; 
@@ -61,10 +61,10 @@ if oGameControl.interact_key and !is_moving {
 	var tile_interaction = find_tile_collision(xx, yy);
 	if interactable {
 		animating = false;
-		state = player_talking_state
-		with interactable	event_user(TALK);
-	} else if tile_interaction == COLLISION_WATER {
-		//set the player state to fishing once the state engine is installed
+		state = player_talking_state;
+		with interactable	event_user(events.talk);
+	} else if tile_interaction == collision_types.water {
+		//set the player state to fishing once the fishing engine is installed
 	}
 }
 
@@ -94,11 +94,12 @@ if (is_moving == true)
 		tile_x = floor(x/GRID_SIZE);
 		tile_y = floor(y/GRID_SIZE);
 		//check for grass tiles and wild battles here
-		var tile_collision = find_tile_collision(x, y)
-		if tile_collision == COLLISION_GRASS {
+		var tile_collision = find_tile_collision(x, y);
+		if tile_collision == collision_types.grass {
 			var encounter = irandom_range(1, 100);
 			if encounter <= 10 {
-				show_debug_message("Wild battle encounter!")
+				show_debug_message("Wild battle encounter!");
+				set_music("mus_wildBattle");
 			}
 		}
 	}

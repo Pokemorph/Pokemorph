@@ -1,3 +1,8 @@
 /// @desc initialize menu
-// You can write your code in this editor
-buttons = [ohud_pokedex, noone, noone, noone, noone, noone];
+
+// Position hud menu on screen
+y = 160; x = 1220-sprite_width;
+
+state = 0;
+buttons = [];
+buttons[0] = instance_create_depth(x, y+40, depth-1, ohud_options);

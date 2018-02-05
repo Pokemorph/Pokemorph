@@ -1,4 +1,4 @@
-/// @desc position the lights
+/// @desc setup globals and position the lights
 
 global.BayName = "Bay";
 global.EeveeName = "Eevee";

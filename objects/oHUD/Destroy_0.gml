@@ -1,5 +1,8 @@
 /// @desc cleanup affixed menu
 // You can write your code in this editor
 
-var i = array_length_1d(buttons)
-repeat(i)	with buttons[i]		instance_destroy();
+for (var i=0; i<array_length_1d(buttons); i++) {
+	if instance_exists(buttons[i])		with buttons[i]	{
+		instance_destroy();
+	}
+}

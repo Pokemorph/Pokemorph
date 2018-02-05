@@ -1,6 +1,9 @@
 /// @desc cleanup affixed menu
-// You can write your code in this editor
+// for standard menus that merely use the buttons array, just loop through the array deleting everything
 
-with buttons[0]		instance_destroy();
-
+for (var i=0; i<array_length_1d(buttons); i++) {
+	if instance_exists(buttons[i])		with buttons[i]	{
+		instance_destroy();
+	}
+}
 //search for a higher menu
