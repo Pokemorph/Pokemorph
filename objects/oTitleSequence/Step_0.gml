@@ -28,7 +28,7 @@ if state == 0 {
         state++;
     }
 } else if state == 3 {  //switch to game title
-    audio_play_sound(mus_title, 10, true);
+    set_music("mus_title");
     sprite_index = title_background;
     button_title = instance_create_depth(x+sprite_width/2, y+8, -10, oButtonTitle);
     button_continue = instance_create_depth(x+sprite_width/2, y+440, -10, oTitleContinue);

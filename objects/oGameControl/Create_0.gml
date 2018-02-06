@@ -1,13 +1,16 @@
-/// @desc Initialize game records and macros
+/// @desc Initialize game controller
 randomize();
 global.min_level = 1;
 global.max_level = 3;
 
 //initialize game options
-sound = 100;
-music = 100;
+volume_sound = 1;
+volume_music = 1;
 text_speed = 30/room_speed;
 difficulty = 1;
+audio_group_set_gain(audiogroup_music, volume_music, 0);
+audio_group_set_gain(audiogroup_default, volume_sound, 0);
+audio_group_load(audiogroup_music);
 
 //initialize game control variables
 controlTimer = 0;
@@ -37,8 +40,8 @@ menuButton = instance_nearest(0, 0, oMenuButton);
 dPad = instance_nearest(0, 0, oDPad);
 lights = instance_nearest(0, 0, oGameData);
 
-
 //music control variables
+music_name = "mus_pallet";
 music = mus_pallet;
 intro = mus_pallet_intro;
 music_pause = true;

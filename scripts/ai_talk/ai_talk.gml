@@ -1,4 +1,5 @@
-
+/// @function ai_talk()
+/// @description Open dialog box
 
 if !instance_exists(oDialog)     {
     ai_lookat(oPlayer);

@@ -1,9 +1,4 @@
-///resume_music()
+/// @function resume_music()
+/// @description Instantly re-enable all active sounds.
 
-
-with oGameControl {
-	music_pause = false;
-	if intro != -1 {
-		audio_play_sound(intro, 10, false);
-	} else audio_play_sound(intro, 10, true);
-}
+audio_master_gain(1);

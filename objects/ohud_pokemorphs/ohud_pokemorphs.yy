@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "ohud_pokemorphs",
     "eventList": [
-        {
-            "id": "1e31fe91-5292-4906-a609-2862e8e6b989",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "ea4acce2-b431-43e0-89c4-4d0bc2061bee"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
