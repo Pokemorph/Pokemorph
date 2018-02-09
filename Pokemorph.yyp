@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "22027d68-d4e9-49f9-acf4-2621b1399697",
+            "Value": {
+                "id": "cbc58149-97be-4125-ad91-7b25a220d542",
+                "resourcePath": "sounds\\silence\\silence.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "225c4a97-286f-4d2c-9dd5-be3d69316be9",
             "Value": {
                 "id": "bf4579c7-9068-4258-aed6-ec422dd73c78",
@@ -687,6 +695,14 @@
             }
         },
         {
+            "Key": "2f190af1-9829-4bd6-9efa-85f669dcff29",
+            "Value": {
+                "id": "d7834ada-8032-421d-a437-3a3634a5defd",
+                "resourcePath": "views\\2f190af1-9829-4bd6-9efa-85f669dcff29.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2f6f279a-37af-416a-b8c8-c0e272ad9789",
             "Value": {
                 "id": "d68ef9e1-808f-4e63-9e18-01d8b0ee83b8",
@@ -780,6 +796,14 @@
                 "id": "5ad9a97c-17e4-466e-bb3b-a28dbf23837b",
                 "resourcePath": "sprites\\battle_white_vine\\battle_white_vine.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "362116f4-3787-449b-b90a-265cb91d29cd",
+            "Value": {
+                "id": "1bd3b43a-f797-4688-96b1-dc7522680477",
+                "resourcePath": "scripts\\pause_music\\pause_music.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3151,6 +3175,14 @@
             }
         },
         {
+            "Key": "dc94c5b3-dd24-47d4-8fa5-e4da4aed444a",
+            "Value": {
+                "id": "2b2e7f3f-f90a-4472-bfc9-b63e4dc01840",
+                "resourcePath": "scripts\\resume_music\\resume_music.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dd5873c1-778f-4a0c-9d6c-8a2c33224de1",
             "Value": {
                 "id": "a0e0b5a9-fd15-436c-abe2-89095cd0de18",
@@ -3348,14 +3380,6 @@
                 "id": "d264881d-45ba-4578-b398-52345fba7df2",
                 "resourcePath": "views\\e7e89dc0-dbc3-40b4-b79c-f6292d4e0ff1.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "e8192b7f-b3b0-437b-a6b1-839dd0f17805",
-            "Value": {
-                "id": "8a86b8d2-7b40-4089-8a2c-f5e7e31d6968",
-                "resourcePath": "scripts\\resume_music\\resume_music.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -3607,14 +3631,6 @@
             }
         },
         {
-            "Key": "f418fcc5-e503-445f-8e91-0fa94a0d1285",
-            "Value": {
-                "id": "9b18bcd5-ac69-4e7d-82cb-53c9a6dd3d3e",
-                "resourcePath": "scripts\\pause_music\\pause_music.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "f426d20b-86a3-4ed9-ae7e-e3a8f5842231",
             "Value": {
                 "id": "815ceb23-888c-4fa8-99b2-37320afec5d0",
@@ -3822,7 +3838,6 @@
         "f183c076-8519-43c0-a367-8ff99a9445e4",
         "9ddf67a7-11ca-4c20-8e3c-b1d6cf125665",
         "73a78e7f-0e01-43f0-bf98-f269a25506cf",
-        "26898143-b6ef-48b6-936e-ed8f9593b197",
         "8606902d-679b-4db9-92ce-f5c5b1dadd34",
         "bb89850e-dca2-489f-ba53-f2fd0a7bb317",
         "fdfa80a2-f9b5-4f1d-b127-9c5e3b77cc63",
@@ -3834,8 +3849,9 @@
         "32c05a4a-438c-4acb-801e-494a78f34845",
         "cc411eb3-8fda-4488-b9ed-30055346a8ef",
         "4b258ae0-b196-4223-964e-0dd8a2a512a0",
-        "f418fcc5-e503-445f-8e91-0fa94a0d1285",
-        "e8192b7f-b3b0-437b-a6b1-839dd0f17805"
+        "26898143-b6ef-48b6-936e-ed8f9593b197",
+        "362116f4-3787-449b-b90a-265cb91d29cd",
+        "dc94c5b3-dd24-47d4-8fa5-e4da4aed444a"
     ],
     "tutorial": ""
 }

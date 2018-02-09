@@ -4,6 +4,7 @@ global.min_level = 1;
 global.max_level = 3;
 
 //initialize game options
+volume_master = 1;
 volume_sound = 1;
 volume_music = 1;
 text_speed = 30/room_speed;
@@ -41,10 +42,9 @@ dPad = instance_nearest(0, 0, oDPad);
 lights = instance_nearest(0, 0, oGameData);
 
 //music control variables
-music_name = "mus_pallet";
-music = mus_pallet;
-intro = mus_pallet_intro;
-music_pause = true;
+music_name = "silence";
+music = silence;
+intro = silence;
 
 //inialize mouse cursor
 cursor_sprite = cursor_ball;

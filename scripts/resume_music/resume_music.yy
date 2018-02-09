@@ -1,5 +1,5 @@
 {
-    "id": "e8192b7f-b3b0-437b-a6b1-839dd0f17805",
+    "id": "dc94c5b3-dd24-47d4-8fa5-e4da4aed444a",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "resume_music",

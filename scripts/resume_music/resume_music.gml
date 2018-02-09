@@ -1,4 +1,3 @@
-/// @function resume_music()
-/// @description Instantly re-enable all active sounds.
+/// @function pause_music()
 
-audio_master_gain(1);
+oGameControl.volume_master = 1;
