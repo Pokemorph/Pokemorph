@@ -42,9 +42,13 @@ dPad = instance_nearest(0, 0, oDPad);
 lights = instance_nearest(0, 0, oGameData);
 
 //music control variables
-music_name = "silence";
-music = silence;
-intro = silence;
+music_name = "snd_silence";
+music = snd_silence;
+intro = snd_silence;
+last_song = "snd_silence";
+
+//weather variables
+global.weather = weather.sunny;
 
 //inialize mouse cursor
 cursor_sprite = cursor_ball;
@@ -59,9 +63,3 @@ window_set_size(global.win_scale*1336, screen_height);
 camera_set_view_size(view_camera[0], 1336, 900);
 display_set_gui_maximise(global.win_scale, global.win_scale, 0, 0);
 alarm[0] = 1;
-/*
-view_visible[0]=true;
-view_xport[0]=400*global.win_scale;
-view_yport[0]=156*global.win_scale;
-view_wport[0]=820*global.win_scale;
-view_hport[0]=480*global.win_scale;

@@ -1,5 +1,4 @@
 /// @desc initialize battle variables
-// You can write your code in this editor
 
 //control battle background position
 if instance_exists(oCamera) {

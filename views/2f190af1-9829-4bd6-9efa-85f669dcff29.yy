@@ -6,7 +6,8 @@
     "children": [
         "26898143-b6ef-48b6-936e-ed8f9593b197",
         "362116f4-3787-449b-b90a-265cb91d29cd",
-        "dc94c5b3-dd24-47d4-8fa5-e4da4aed444a"
+        "dc94c5b3-dd24-47d4-8fa5-e4da4aed444a",
+        "f377575e-b37a-4949-95d9-e66d605d2fef"
     ],
     "filterType": "GMScript",
     "folderName": "music_functions",

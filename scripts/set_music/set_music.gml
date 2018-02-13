@@ -11,6 +11,7 @@ with oGameControl {
 	if sound != music {
 		if audio_is_playing(music)		audio_stop_sound(music)
 		else if audio_is_playing(intro)	audio_stop_sound(intro)
+		last_song = music_name;
 		music_name = sound_id;
 		music = sound;
 		intro = sound_intro;

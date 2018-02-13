@@ -7,6 +7,23 @@
 #macro GRID_SIZE 32
 #macro GAME_SPEED game_get_speed(gamespeed_fps)
 
+enum weather {
+	sunny,
+	cloudy,
+	rainy,
+	stormy,
+	snowy,
+	windy,
+	evening,
+	night,
+	morning,
+	dark,
+	foggy,
+	hot,
+	ash,
+	sandstorm
+}
+
 enum animate_type {
 	once,
 	loop,
