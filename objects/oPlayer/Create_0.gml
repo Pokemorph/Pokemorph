@@ -16,8 +16,8 @@ face_directions = 4;
 current_frame = 1;
 
 //movement variables
-move_x = 0;
-move_y = 0;
+move_x = x;
+move_y = y;
 move_speed = 4;
 is_moving = false;
 speed_x = 0;

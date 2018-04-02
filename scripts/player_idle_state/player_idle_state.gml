@@ -4,10 +4,10 @@
 //speed controls
 if oGameControl.run_state {
 	move_speed = 6;
-	animation_speed = 6/30;
+	animation_speed = 6/GAME_SPEED;
 } else {
 	move_speed = 3;
-	animation_speed = 4/30;
+	animation_speed = 4/GAME_SPEED;
 }
 
 //find movement commands while not already moving
@@ -73,14 +73,14 @@ if oGameControl.interact_key and !is_moving {
 if (is_moving == true)
 {
 	//follow the designated movement until we approach the target, then stop
-	if abs(move_x) <= move_speed/2 {
+	if abs(move_x) <= abs(speed_x) {
 		x += move_x;
 		move_x = 0;
 	} else {
 		x += speed_x;
 		move_x -= speed_x;
 	}
-	if abs(move_y) <= move_speed/2 {
+	if abs(move_y) <= abs(speed_y) {
 		y += move_y;
 		move_y = 0;
 	} else {
@@ -98,9 +98,10 @@ if (is_moving == true)
 		if tile_collision == collision_types.grass {
 			var encounter = irandom_range(1, 100);
 			if encounter <= 10 {
-				show_debug_message("Wild battle encounter!");
 				set_music("mus_wildBattle");
 			}
+		} else {
+			set_music("mus_pallet");
 		}
 	}
 }
