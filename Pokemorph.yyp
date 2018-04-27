@@ -170,7 +170,7 @@
             "Key": "0d905b3f-fe8c-413e-bfc0-776d4a819800",
             "Value": {
                 "id": "ee8c6e95-de6a-4203-935b-280c8c1d971e",
-                "resourcePath": "scripts\\paralyse\\paralyse.yy",
+                "resourcePath": "scripts\\effect_paralyse\\effect_paralyse.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -691,6 +691,14 @@
             "Value": {
                 "id": "f2b8d581-98cb-4ab4-b033-99269f65f4c1",
                 "resourcePath": "views\\2e439480-6d0a-4312-9784-935e80a1606d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2ee5382b-49fc-4f37-b32c-9519ced45276",
+            "Value": {
+                "id": "52405ea3-3897-40a2-93e8-e3e589d7eb25",
+                "resourcePath": "views\\2ee5382b-49fc-4f37-b32c-9519ced45276.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1375,6 +1383,14 @@
             }
         },
         {
+            "Key": "5c8106de-5e75-4ec1-af76-b762aacddc1c",
+            "Value": {
+                "id": "565b1b6a-4ba4-4c98-9be4-02b2217b52b0",
+                "resourcePath": "sprites\\eevee_base\\eevee_base.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5ce5bd79-075f-4094-8300-9d0a0876e233",
             "Value": {
                 "id": "36c431f0-63f0-4ac1-a1d7-3971fae5125b",
@@ -1755,6 +1771,14 @@
             "Value": {
                 "id": "8f64c2fb-c31a-458c-9f08-7bddf2eb2deb",
                 "resourcePath": "sprites\\battle_magnemite\\battle_magnemite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "77f9eeaf-876f-4b21-a603-6b6f31dfa8cc",
+            "Value": {
+                "id": "da0d2598-ab70-4bb9-8bcc-b617ee293a48",
+                "resourcePath": "sprites\\spr_team_back\\spr_team_back.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2162,7 +2186,7 @@
             "Key": "911fbd1a-ec95-4778-ab6b-f4351c9073fe",
             "Value": {
                 "id": "ff94e538-56ba-4364-a5de-cfbf1e52931f",
-                "resourcePath": "scripts\\regen\\regen.yy",
+                "resourcePath": "scripts\\effect_regen\\effect_regen.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2628,6 +2652,14 @@
                 "id": "1404a649-460f-4412-939e-30dcb7517532",
                 "resourcePath": "sprites\\title_tutorial\\title_tutorial.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b4be8502-30d7-4743-8e5f-ee40cf6d37f0",
+            "Value": {
+                "id": "48ea92c9-636a-454a-b651-28822403b646",
+                "resourcePath": "views\\b4be8502-30d7-4743-8e5f-ee40cf6d37f0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3786,7 +3818,7 @@
             "Key": "fa61c545-fb70-4a03-bc59-1709b754f9ea",
             "Value": {
                 "id": "8a410164-40bb-47fe-b51d-2e5f2bd77175",
-                "resourcePath": "scripts\\poison\\poison.yy",
+                "resourcePath": "scripts\\effect_poison\\effect_poison.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3836,6 +3868,22 @@
                 "id": "02007361-671e-437d-ab00-2e2f20b4bfd4",
                 "resourcePath": "scripts\\player_battle_state\\player_battle_state.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fd5bcd48-e242-40c2-b9c1-45ab5d6c0232",
+            "Value": {
+                "id": "02a5361f-eaaf-47ba-8a78-5d61895e73df",
+                "resourcePath": "sprites\\spr_moves\\spr_moves.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd71935c-8bd9-49ff-bd07-b78cc629d951",
+            "Value": {
+                "id": "74a0c871-5500-45b2-9ea3-6bf6abdbe213",
+                "resourcePath": "sprites\\spr_checkbox\\spr_checkbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

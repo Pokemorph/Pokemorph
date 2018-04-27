@@ -31,3 +31,11 @@ can_swim = false;
 //image variables
 image_speed = 0;
 depth_layer = 0;
+global.newLevel = 5;
+global.newPokemon = dex_id.Bulbasaur;
+pokemon1 = instance_create_depth(0, 0, 0, parPokemon);
+pokemon2 = noone;
+pokemon3 = noone;
+pokemon4 = noone;
+pokemon5 = noone;
+pokemon6 = noone;

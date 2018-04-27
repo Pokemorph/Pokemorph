@@ -100,7 +100,7 @@ if (is_moving == true)
 			if encounter <= 10 {
 				set_music("mus_wildBattle");
 			}
-		} else {
+		} else if oGameControl.music_name = "mus_wildBattle" {
 			set_music("mus_pallet");
 		}
 	}

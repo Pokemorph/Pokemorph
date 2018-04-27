@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @desc cleanup data
 // You can write your code in this editor
 
-ds_grid_destroy(move_list);
+//ds_list_destroy(moves_known);

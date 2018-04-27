@@ -13,4 +13,10 @@ image_index = 0;
 alarm[0] = 1;
 run_state = 0;
 
-global.breedData[pokemon_id.Mew, pokemon_breedstats.catch_rate] = 0;
+global.newPokemon = global.EeveeName;
+global.newLevel = 1;
+
+global.breedData = ds_grid_create(stats_breed.catch_rate+1, dex_id.Mew+1);
+global.moveLists = ds_grid_create(80, 150);
+global.moves = ds_grid_create(12, 10);
+global.moveEffects = ds_grid_create(5, 1);
