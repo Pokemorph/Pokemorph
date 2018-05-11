@@ -1,4 +1,4 @@
-/// @description Initialize Player Sprite
+/// @description Initialize Player Sprite and Data
 
 //setup our finite state engine
 state = player_idle_state;
@@ -34,8 +34,11 @@ depth_layer = 0;
 global.newLevel = 5;
 global.newPokemon = dex_id.Bulbasaur;
 pokemon1 = instance_create_depth(0, 0, 0, parPokemon);
-pokemon2 = noone;
-pokemon3 = noone;
-pokemon4 = noone;
-pokemon5 = noone;
-pokemon6 = noone;
+pokemon1.hp_cur -= 10;
+pokemon1.nickname = "Bulb";
+global.newPokemon = dex_id.Ivysaur;
+pokemon2 = instance_create_depth(0, 0, 0, parPokemon);
+pokemon3 = instance_create_depth(0, 0, 0, parPokemon);;
+pokemon4 = instance_create_depth(0, 0, 0, parPokemon);;
+pokemon5 = instance_create_depth(0, 0, 0, parPokemon);;
+pokemon6 = instance_create_depth(0, 0, 0, parPokemon);;

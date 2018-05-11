@@ -1,0 +1,34 @@
+/// @description draw self
+// You can write your code in this editor
+
+//draw_set_alpha(0.2);
+draw_sprite(sprite_index, state, x, y);
+
+draw_set_color(c_black);
+draw_set_alpha(1);
+draw_set_halign(fa_left);
+
+if state = 0 {
+	var type_1 = type_to_text(ds_grid_get(global.breedData, morph.breed_ref, stats_breed.type1) )
+	var type_2 = type_to_text(ds_grid_get(global.breedData, morph.breed_ref, stats_breed.type2) )
+	//var hpMax = string(morph.hp_max);
+	
+	draw_set_font(fnt_stats_bold);
+	draw_text(x+20, y+48, "Type: " + type_1 + "/" + type_2 );
+	
+	draw_set_font(fnt_stats);
+	draw_text(x+20, y+88, "Level: " + string(morph.current_level) );
+	draw_text(x+20, y+128, "Exp: " + string(round(morph.current_xp)) + "/" + string(global.experience[morph.current_level]) );
+	draw_text(x+20, y+168, "HP: " + string(round(morph.hp_cur)) + "/" + string(round(morph.hp_max)) );
+	draw_text(x+20, y+208, "Attack: " + string(round(morph.atk_cur)) );
+	draw_text(x+20, y+248, "Defense: " + string(round(morph.def_cur)) );
+	draw_text(x+20, y+288, "Special Attack: " + string(round(morph.spatk_cur)) );
+	draw_text(x+20, y+328, "Special Defense: " + string(round(morph.spdef_cur)) );
+	draw_text(x+20, y+368, "Speed: " + string(round(morph.spd_cur)) );
+} else if state = 1 {
+	
+} else if state = 2 {
+	
+}
+
+draw_set_color(c_white);

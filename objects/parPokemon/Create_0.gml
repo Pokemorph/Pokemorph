@@ -24,7 +24,7 @@ var base_spd = ds_grid_get(global.breedData, breed_ref, stats_breed.spd);
 sprite_index = ds_grid_get(global.breedData, breed_ref, stats_breed.sprite);
 
 current_level = global.newLevel;
-current_xp = irandom_range(0, 10);
+current_xp = irandom_range(0, 100);
 hp_max = (base_hp/2 + (base_hp/20 * current_level)) * ev_hp + current_level;
 hp_cur = hp_max;
 atk_cur = (base_atk/5 + (base_atk/20 * current_level)) * ev_attack;

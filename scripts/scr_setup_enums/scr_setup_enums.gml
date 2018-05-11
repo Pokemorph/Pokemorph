@@ -38,8 +38,8 @@ enum directions {
 }
 
 enum battle_poses {
-	front,
 	back,
+	front,
 	horny,
 }
 
@@ -247,6 +247,7 @@ enum stats_breed {
 	height,
 	weight,
 	sprite,
+	picture,
 	type1,
 	type2,
 	hit_points,

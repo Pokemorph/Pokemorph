@@ -9,7 +9,8 @@ switch (run_state) {
 		global.breedData[# poke, stats_breed.flavor_text] = "Sunlight is stored in the seed on its back. When its stores are full the excess energy is processed as an aphrodisiac, forcing Bulbasaur to burn it off through ejaculation.";
 		global.breedData[# poke, stats_breed.height] = 0.71;
 		global.breedData[# poke, stats_breed.weight] = 6.9;
-		global.breedData[# poke, stats_breed.sprite] = battle_bulbasaur;
+		global.breedData[# poke, stats_breed.sprite] = spr_eevee_base;
+		global.breedData[# poke, stats_breed.picture] = battle_bulbasaur;
 		global.breedData[# poke, stats_breed.type1] = pokemon_type.grass;
 		global.breedData[# poke, stats_breed.type2] = pokemon_type.poison;
 		global.breedData[# poke, stats_breed.hit_points] = 45;
@@ -26,7 +27,8 @@ switch (run_state) {
 		global.breedData[# poke, stats_breed.flavor_text] = "Once the seed blossoms the weight forces Ivysaur on all fours, despite its strengthened leg muscles. Being forced into this position only heightens it's desires when its energy stores are overflowing.";
 		global.breedData[# poke, stats_breed.height] = 0.99;
 		global.breedData[# poke, stats_breed.weight] = 13;
-		global.breedData[# poke, stats_breed.sprite] = battle_ivysaur;
+		global.breedData[# poke, stats_breed.sprite] = spr_eevee_base;
+		global.breedData[# poke, stats_breed.picture] = battle_ivysaur;
 		global.breedData[# poke, stats_breed.type1] = pokemon_type.grass;
 		global.breedData[# poke, stats_breed.type2] = pokemon_type.poison;
 		global.breedData[# poke, stats_breed.hit_points] = 60;
@@ -43,7 +45,8 @@ switch (run_state) {
 		global.breedData[# poke, stats_breed.flavor_text] = "When Venusaur's flower is in full bloom it becomes very heavy and vibrant, and produces a nearly intoxicating aroma. Because of this, Venusaur is in a constant state of arousal. When its energy stores are overflowing, Venusaur will overpower anything near it for satisfaction."
 		global.breedData[# poke, stats_breed.height] = 2.01;
 		global.breedData[# poke, stats_breed.weight] = 100;
-		global.breedData[# poke, stats_breed.sprite] = battle_venusaur;
+		global.breedData[# poke, stats_breed.sprite] = spr_eevee_base;
+		global.breedData[# poke, stats_breed.picture] = battle_venusaur;
 		global.breedData[# poke, stats_breed.type1] = pokemon_type.grass;
 		global.breedData[# poke, stats_breed.type2] = pokemon_type.poison;
 		global.breedData[# poke, stats_breed.hit_points] = 80;
