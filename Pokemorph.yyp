@@ -162,7 +162,7 @@
             "Key": "0cea3e20-857a-4666-9cd7-5bb5fdc76b2c",
             "Value": {
                 "id": "17989875-b1b5-4e9a-8f78-f0f2230822d2",
-                "resourcePath": "sprites\\spr_nonmorph_pidgey\\spr_nonmorph_pidgey.yy",
+                "resourcePath": "sprites\\battle_pidgey_nm\\battle_pidgey_nm.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -452,6 +452,14 @@
                 "id": "dcc06824-b1f8-4617-a951-7d98dc2cf484",
                 "resourcePath": "sprites\\battle_koffing\\battle_koffing.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1fc4fd2a-b80e-4546-b2e3-0125b05d9f88",
+            "Value": {
+                "id": "d3a7b47f-5d8c-4c6b-bb0a-b10a33b37a00",
+                "resourcePath": "scripts\\init_move\\init_move.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1538,7 +1546,7 @@
             "Key": "6104a03e-675b-475a-a41b-0d0c19c4a3d7",
             "Value": {
                 "id": "d5b4259d-0c29-4c35-9997-fd90b4a4aecf",
-                "resourcePath": "sprites\\spr_nonmorph_rattata\\spr_nonmorph_rattata.yy",
+                "resourcePath": "sprites\\battle_rattata_nm\\battle_rattata_nm.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2402,7 +2410,7 @@
             "Key": "9cfd3241-1931-48af-89ae-f45ec809ae97",
             "Value": {
                 "id": "9f775a7e-5e84-4134-921a-8baefb2305a3",
-                "resourcePath": "sprites\\spr_nonmorph_spearow\\spr_nonmorph_spearow.yy",
+                "resourcePath": "sprites\\battle_spearow_nm\\battle_spearow_nm.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2823,6 +2831,14 @@
             }
         },
         {
+            "Key": "ba4dcebf-2d34-41db-8ce8-f2ccaf9d5643",
+            "Value": {
+                "id": "c55a26d6-c3d8-4d34-aa1f-a337aee37e66",
+                "resourcePath": "scripts\\new_pokemon\\new_pokemon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ba81f54b-25db-4f6e-8171-97895eb64b11",
             "Value": {
                 "id": "bccbf7d3-2c2e-42b3-8d37-7ff3abee7eae",
@@ -2930,7 +2946,7 @@
             "Key": "bffd04a9-f57c-4125-9be7-a8cf59f4fe34",
             "Value": {
                 "id": "ca85c99c-98d1-4f38-b727-9a5cfb949f87",
-                "resourcePath": "sprites\\spr_nonmorph_eevee\\spr_nonmorph_eevee.yy",
+                "resourcePath": "sprites\\battle_eevee_nm\\battle_eevee_nm.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4125,6 +4141,7 @@
         "f21c7423-53ae-41e8-8bb3-4c52936a8d05",
         "f183c076-8519-43c0-a367-8ff99a9445e4",
         "9ddf67a7-11ca-4c20-8e3c-b1d6cf125665",
+        "1fc4fd2a-b80e-4546-b2e3-0125b05d9f88",
         "73a78e7f-0e01-43f0-bf98-f269a25506cf",
         "8606902d-679b-4db9-92ce-f5c5b1dadd34",
         "bb89850e-dca2-489f-ba53-f2fd0a7bb317",
@@ -4141,7 +4158,8 @@
         "362116f4-3787-449b-b90a-265cb91d29cd",
         "dc94c5b3-dd24-47d4-8fa5-e4da4aed444a",
         "f377575e-b37a-4949-95d9-e66d605d2fef",
-        "79676b8e-7941-4ce4-9e7e-a7636db554b4"
+        "79676b8e-7941-4ce4-9e7e-a7636db554b4",
+        "ba4dcebf-2d34-41db-8ce8-f2ccaf9d5643"
     ],
     "tutorial": ""
 }

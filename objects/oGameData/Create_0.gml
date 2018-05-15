@@ -13,13 +13,17 @@ image_index = 0;
 alarm[0] = 1;
 run_state = 0;
 
-global.newPokemon = global.EeveeName;
+global.newPokemon = dex_id.Eevee;
 global.newLevel = 1;
 
-global.breedData = ds_grid_create(stats_breed.catch_rate+1, dex_id.Mew+1);
-global.moveLists = ds_grid_create(80, 150);
-global.moves = ds_grid_create(12, 10);
+global.breedData = ds_grid_create(stats_breed.catch_rate+1, dex_id.done);
+ds_grid_set_region(global.breedData, 0, 0, ds_grid_width(global.breedData), ds_grid_height(global.breedData), -1);
+global.moveLists = ds_grid_create(80, dex_id.done);
+ds_grid_set_region(global.moveLists, 0, 0, ds_grid_width(global.moveLists), ds_grid_height(global.moveLists), -1);
+global.moves = ds_grid_create(move_stats.done, moves.done);
+ds_grid_set_region(global.moves, 0, 0, ds_grid_width(global.moves), ds_grid_height(global.moves), -1);
 global.moveEffects = ds_grid_create(5, 1);
+ds_grid_set_region(global.moveEffects, 0, 0, ds_grid_width(global.moveEffects), ds_grid_height(global.moveEffects), -1);
 
 global.experience[49] = 570; global.experience[48] = 561; global.experience[47] = 551;
 global.experience[46] = 542; global.experience[45] = 532; global.experience[44] = 522;

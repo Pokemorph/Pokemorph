@@ -9,12 +9,13 @@ draw_set_alpha(1);
 draw_set_halign(fa_left);
 
 if state = 0 {
-	var type_1 = type_to_text(ds_grid_get(global.breedData, morph.breed_ref, stats_breed.type1) )
-	var type_2 = type_to_text(ds_grid_get(global.breedData, morph.breed_ref, stats_breed.type2) )
+	var type_1 = type_to_text(ds_grid_get(global.breedData, stats_breed.type1, morph.breed_ref) )
+	var type_2 = type_to_text(ds_grid_get(global.breedData, stats_breed.type2, morph.breed_ref) )
 	//var hpMax = string(morph.hp_max);
 	
 	draw_set_font(fnt_stats_bold);
-	draw_text(x+20, y+48, "Type: " + type_1 + "/" + type_2 );
+	if type_2 = "Unknown"	draw_text(x+20, y+48, "Type: " + type_1 );
+	else					draw_text(x+20, y+48, "Type: " + type_1 + "/" + type_2 );
 	
 	draw_set_font(fnt_stats);
 	draw_text(x+20, y+88, "Level: " + string(morph.current_level) );

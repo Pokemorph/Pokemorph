@@ -236,7 +236,12 @@ enum dex_id {
 	Dragonair	=148,
 	Dragonite	=149,
 	Mewtwo		=150,
-	Mew			=151
+	Mew			=151,
+	Eevee_nm	=152,
+	Pidgey_nm	=153,
+	Spearow_nm	=154,
+	Rattata_nm	=155,
+	done
 }
 
 enum stats_breed {
@@ -248,6 +253,7 @@ enum stats_breed {
 	weight,
 	sprite,
 	picture,
+	sex,
 	type1,
 	type2,
 	hit_points,
@@ -256,7 +262,8 @@ enum stats_breed {
 	special_attack,
 	special_defense,
 	spd,
-	catch_rate
+	catch_rate,
+	done
 }
 
 enum move_stats {
@@ -271,6 +278,7 @@ enum move_stats {
 	effect_chance,
 	effect,
 	description,
+	done
 }
 
 enum move_effects {
@@ -285,10 +293,11 @@ enum move_effects {
 	bound,
 	identified,
 	leech_seed,
+	done
 }
 
 enum moves {
 	tackle,
 	scratch,
-	
+	done
 }

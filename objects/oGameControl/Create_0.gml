@@ -2,6 +2,8 @@
 randomize();
 global.min_level = 1;
 global.max_level = 3;
+global.winmouse_x = 0;
+global.winmouse_y = 0;
 
 //initialize game options
 volume_master = 1;
@@ -62,4 +64,4 @@ if screen_height != 900 {	//run resize code
 window_set_size(global.win_scale*1336, screen_height);
 camera_set_view_size(view_camera[0], 1336, 900);
 display_set_gui_maximise(global.win_scale, global.win_scale, 0, 0);
-alarm[0] = 1;
+alarm[0] = 1; //set an alarm to center window, since this needs a frame to work properly

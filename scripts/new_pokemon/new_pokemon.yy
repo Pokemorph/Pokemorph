@@ -1,8 +1,8 @@
 {
-    "id": "79676b8e-7941-4ce4-9e7e-a7636db554b4",
+    "id": "ba4dcebf-2d34-41db-8ce8-f2ccaf9d5643",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "type_to_text",
+    "name": "new_pokemon",
     "IsCompatibility": false,
     "IsDnD": false
 }

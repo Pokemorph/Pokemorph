@@ -13,17 +13,17 @@ caught_time = date_current_datetime();
 caught_level = global.newLevel;
 caught_trainer = noone;
 breed_ref = global.newPokemon;
-nickname = global.breedData[# breed_ref, stats_breed.name];
+nickname = global.breedData[# stats_breed.name, breed_ref];
 
-var base_hp = ds_grid_get(global.breedData, breed_ref, stats_breed.hit_points);;
-var base_atk = ds_grid_get(global.breedData, breed_ref, stats_breed.attack);
-var base_def = ds_grid_get(global.breedData, breed_ref, stats_breed.defense);
-var base_spatk = ds_grid_get(global.breedData, breed_ref, stats_breed.special_attack);
-var base_spdef = ds_grid_get(global.breedData, breed_ref, stats_breed.special_defense);
-var base_spd = ds_grid_get(global.breedData, breed_ref, stats_breed.spd);
-sprite_index = ds_grid_get(global.breedData, breed_ref, stats_breed.sprite);
+var base_hp = ds_grid_get(global.breedData, stats_breed.hit_points, breed_ref);
+var base_atk = ds_grid_get(global.breedData, stats_breed.attack, breed_ref);
+var base_def = ds_grid_get(global.breedData, stats_breed.defense, breed_ref);
+var base_spatk = ds_grid_get(global.breedData, stats_breed.special_attack, breed_ref);
+var base_spdef = ds_grid_get(global.breedData, stats_breed.special_defense, breed_ref);
+var base_spd = ds_grid_get(global.breedData, stats_breed.spd, breed_ref);
+sprite_index = ds_grid_get(global.breedData, stats_breed.sprite, breed_ref);
 
-current_level = global.newLevel;
+current_level = caught_level;
 current_xp = irandom_range(0, 100);
 hp_max = (base_hp/2 + (base_hp/20 * current_level)) * ev_hp + current_level;
 hp_cur = hp_max;
