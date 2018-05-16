@@ -1,9 +1,5 @@
 
 //define macros
-#macro RIGHT 0
-#macro UP 1
-#macro LEFT 2
-#macro DOWN 3
 #macro GRID_SIZE 32
 #macro GAME_SPEED game_get_speed(gamespeed_fps)
 

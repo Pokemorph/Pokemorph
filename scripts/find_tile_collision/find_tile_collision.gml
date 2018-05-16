@@ -27,5 +27,9 @@ if tile_water != 0 and tile_terrain == 0 and tile_road == 0	{	return collision_t
 var tile_grass = tilemap_get_at_pixel(layer_tilemap_get_id("terrain"), xx, yy)
 if tile_grass >= 3 and tile_grass <= 6 {	return collision_types.grass; exit; }
 
+//check for outside room; no more base tiles here
+var tile_base = tilemap_get_at_pixel(layer_tilemap_get_id("base"), xx, yy);
+if tile_base = 0 and tile_terrain = 0 and tile_road = 0		{	return collision_types.solid; exit;	}
+
 //if no other conditions for returns are met, return the default, empty, 0 value
 return collision_types.empty;

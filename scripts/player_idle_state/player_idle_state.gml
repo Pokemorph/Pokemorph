@@ -23,10 +23,19 @@ if is_moving == false {
 		move_x = GRID_SIZE;
 	}
 	if move_x != 0 or move_y != 0 {
+		//direction tells our sprite which way to face
 		direction = point_direction(x, y, x+move_x, y+move_y);
+		//tile_collision returns an enum value with the collision type
 		var tile_collision = find_tile_collision(x+move_x, y+move_y);
-		var collision = place_meeting(x+move_x, y+move_y, parSolid) or tile_collision == collision_types.solid;
-		if (collision) {
+		
+		//objects derived from parSolid may block us or allow us to pass, so find one and ask it if solid
+		//note that without returning and then checking an array, only one solid in the space will answer
+		//so let's try not to build solid objects on top of each other
+		var collision = false; var obj = instance_place(x+move_x, y+move_y, parSolid); 
+		if instance_exists(obj) and obj.solid = true	collision = true;
+		
+		//now we can check both object and tile collisions together
+		if (collision = true or tile_collision == collision_types.solid) {
 			move_x = 0;
 			move_y = 0;
 			animating = false;
@@ -88,12 +97,14 @@ if (is_moving == true)
 		move_y -= speed_y;
 	}
 	
-	//when we stop, update tile, check wild battles, and tell the script we can move again
+	//when we stop, perform all checks and tell the script we can move again
 	if (move_x == 0 and move_y == 0) {
+		//update tile location and let game know we can move again
 		is_moving = false;
 		tile_x = floor(x/GRID_SIZE);
 		tile_y = floor(y/GRID_SIZE);
-		//check for grass tiles and wild battles here
+		
+		//check for grass tiles here to generate wild battles
 		var tile_collision = find_tile_collision(x, y);
 		if tile_collision == collision_types.grass {
 			var encounter = irandom_range(1, 100);
@@ -103,5 +114,8 @@ if (is_moving == true)
 		} else if oGameControl.music_name = "mus_wildBattle" {
 			set_music("mus_pallet");
 		}
+		
+		//check for teleport squares
+		
 	}
 }

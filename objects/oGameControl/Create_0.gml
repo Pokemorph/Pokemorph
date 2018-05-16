@@ -57,9 +57,9 @@ cursor_sprite = cursor_ball;
 
 //resize the screen if necessary
 var screen_height = window_get_height();
-if screen_height != 900 {	//run resize code
+if screen_height != 900 {	//if auto-sized screen is smaller than intended, run resize code
 	//screen_height -= 80;
-	global.win_scale = screen_height/900;	
+	global.win_scale = screen_height/900;
 } else global.win_scale = 1;
 window_set_size(global.win_scale*1336, screen_height);
 camera_set_view_size(view_camera[0], 1336, 900);

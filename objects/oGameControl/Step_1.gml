@@ -45,19 +45,20 @@ with parButton {
 	Get Keyboard and Controller input, and use button input
 */
 
+//read the dpad
 if instance_exists(dPad) with dPad {
 	if hover {
-		if global.winmouse_x <= x-17 {
-			dir = LEFT;
+		if global.winmouse_x*global.win_scale <= x-17 {
+			dir = directions.left;
 			//message_box("DIR is left. Click is " + string(click))
-		} else if global.winmouse_x >= x+17 {
-			dir = RIGHT;
+		} else if global.winmouse_x*global.win_scale >= x+17 {
+			dir = directions.right;
 			//message_box("DIR is right. Click is " + string(click))
-		} else if global.winmouse_y <= y-17 {
-			dir = UP;
+		} else if global.winmouse_y*global.win_scale <= y-17 {
+			dir = directions.up;
 			//message_box("DIR is up. Click is " + string(click))
-		} else if global.winmouse_y >= y+17 {
-			dir = DOWN;
+		} else if global.winmouse_y*global.win_scale >= y+17 {
+			dir = directions.down;
 			//message_box("DIR is down. Click is " + string(click))
 		} else {
 			dir = -1;
@@ -67,10 +68,10 @@ if instance_exists(dPad) with dPad {
 
 
 //keyboard directions
-right_key = keyboard_check(vk_right) or keyboard_check(ord("D")) or (dPad != noone and mouse_hold == true and dPad.dir == RIGHT);
-left_key = keyboard_check (vk_left) or keyboard_check(ord("A"))or (dPad != noone and mouse_hold == true and dPad.dir == LEFT);
-down_key = keyboard_check (vk_down) or keyboard_check(ord("S"))or (dPad != noone and mouse_hold == true and dPad.dir == DOWN);
-up_key = keyboard_check (vk_up) or keyboard_check(ord("W"))or (dPad != noone and mouse_hold == true and dPad.dir == UP);
+right_key = keyboard_check(vk_right) or keyboard_check(ord("D")) or (dPad != noone and mouse_hold == true and dPad.dir == directions.right);
+left_key = keyboard_check (vk_left) or keyboard_check(ord("A"))or (dPad != noone and mouse_hold == true and dPad.dir == directions.left);
+down_key = keyboard_check (vk_down) or keyboard_check(ord("S"))or (dPad != noone and mouse_hold == true and dPad.dir == directions.down);
+up_key = keyboard_check (vk_up) or keyboard_check(ord("W"))or (dPad != noone and mouse_hold == true and dPad.dir == directions.up);
 
 
 //gamepad directions
@@ -164,16 +165,16 @@ if menu_key or question_key or interact_key or run_key or
 if up_key or down_key or right_key or left_key {
 	if instance_exists(dPad) with dPad {
 		if other.left_key {
-			dir = LEFT;
+			dir = directions.left;
 			//show_debug_message("Going left");
 		} else if other.right_key {
-			dir = RIGHT;
+			dir = directions.right;
 			//show_debug_message("Going right");
 		} else if other.up_key {
-			dir = UP;
+			dir = directions.up;
 			//show_debug_message("Going up");
 		} else if other.down_key {
-			dir = DOWN;
+			dir = directions.down;
 			//show_debug_message("Going down");
 		}
 	}

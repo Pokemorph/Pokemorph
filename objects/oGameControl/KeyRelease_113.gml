@@ -4,7 +4,7 @@
 if instance_exists(oBattle) {
 	instance_destroy(oBattle);
 } else {
-	instance_create_depth(0, 0, -15, oBattle);
+	instance_create_depth(0, 0, -25, oBattle);
 	if instance_exists(oPlayer)	oPlayer.state=player_battle_state;
 }
 

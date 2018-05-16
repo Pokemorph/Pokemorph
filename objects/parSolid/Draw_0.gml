@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description draw self and debug
 // You can write your code in this editor
 
 draw_self();

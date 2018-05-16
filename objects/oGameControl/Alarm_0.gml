@@ -1,4 +1,4 @@
 /// @description Center Window
-// You can write your code in this editor
+// center the window in an alarm, because this function must occur 1 frame after resizing
 
 window_center();

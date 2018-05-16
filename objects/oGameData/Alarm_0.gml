@@ -23,4 +23,5 @@ switch (run_state) {
 		ds_grid_set(global.moveLists, 0, dex_id.Ivysaur, moves.tackle);
 		ds_grid_set(global.moveLists, 0, dex_id.Venusaur, moves.tackle);
 		ds_grid_set(global.moveLists, 0, dex_id.Eevee_nm, moves.tackle);
+		break;
 }

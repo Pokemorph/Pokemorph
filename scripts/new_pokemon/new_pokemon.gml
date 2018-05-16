@@ -6,6 +6,6 @@
 global.newPokemon = argument0;
 global.newLevel = argument1;
 
-var new = instance_create_depth(0,0,0, parPokemon);
+var new = instance_create_depth(0,0,0, oPokemon);
 
 return new;

@@ -1,6 +1,6 @@
-//handle imaging and depth
-tile_x = floor(x/GRID_SIZE);
-tile_y = floor(y/GRID_SIZE);
+/// @description initialize
+// You can write your code in this editor
 
-visible = false;
-image_speed = 0;
+// Inherit the parent event
+event_inherited();
+solid = true;
