@@ -8,7 +8,7 @@ draw_set_color(c_black);
 draw_set_alpha(1);
 draw_set_halign(fa_left);
 
-if state = 0 {
+if state = 0 {	//the stats mode
 	var type_1 = type_to_text(ds_grid_get(global.breedData, stats_breed.type1, morph.breed_ref) )
 	var type_2 = type_to_text(ds_grid_get(global.breedData, stats_breed.type2, morph.breed_ref) )
 	//var hpMax = string(morph.hp_max);
@@ -26,10 +26,32 @@ if state = 0 {
 	draw_text(x+20, y+288, "Special Attack: " + string(round(morph.spatk_cur)) );
 	draw_text(x+20, y+328, "Special Defense: " + string(round(morph.spdef_cur)) );
 	draw_text(x+20, y+368, "Speed: " + string(round(morph.spd_cur)) );
-} else if state = 1 {
-	
-} else if state = 2 {
-	
+} else if state = 1 {	//moves mode
+	draw_set_font(fnt_dialog);
+	if morph.moves_1 >= 0	{
+		draw_text(x+20, y+48, ds_grid_get(global.moves, move_stats.name, morph.moves_1));
+		draw_text(x+90, y+48, ds_grid_get(global.moves, move_stats.pwr, morph.moves_1));
+		draw_text(x+20, y+88, ds_grid_get(global.moves, move_stats.description, morph.moves_1));
+		draw_text(x+20, y+88, ds_grid_get(global.moves, move_stats.accuracy, morph.moves_1));
+	} if morph.moves_2 >= 0	{
+		draw_text(x+20, y+128, ds_grid_get(global.moves, move_stats.name, morph.moves_2));
+		draw_text(x+90, y+128, ds_grid_get(global.moves, move_stats.pwr, morph.moves_2));
+		draw_text(x+20, y+168, ds_grid_get(global.moves, move_stats.description, morph.moves_2));
+		draw_text(x+20, y+168, ds_grid_get(global.moves, move_stats.accuracy, morph.moves_2));
+	} if morph.moves_3 >= 0	{
+		draw_text(x+20, y+208, ds_grid_get(global.moves, move_stats.name, morph.moves_3));
+		draw_text(x+90, y+208, ds_grid_get(global.moves, move_stats.pwr, morph.moves_3));
+		draw_text(x+20, y+248, ds_grid_get(global.moves, move_stats.description, morph.moves_3));
+		draw_text(x+20, y+248, ds_grid_get(global.moves, move_stats.accuracy, morph.moves_3));
+	} if morph.moves_4 >= 0	{
+		draw_text(x+20, y+288, ds_grid_get(global.moves, move_stats.name, morph.moves_4));
+		draw_text(x+90, y+288, ds_grid_get(global.moves, move_stats.pwr, morph.moves_4));
+		draw_text(x+20, y+328, ds_grid_get(global.moves, move_stats.description, morph.moves_4));
+		draw_text(x+20, y+328, ds_grid_get(global.moves, move_stats.accuracy, morph.moves_4));
+	}
+} else if state = 2 {	//history mode
+	draw_set_font(fnt_dialog);
+	draw_text(x+20, y+48, string(ds_grid_get(global.breedData, stats_breed.flavor_text, morph.breed_ref)) );
 }
 
 draw_set_color(c_white);

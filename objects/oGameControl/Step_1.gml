@@ -20,6 +20,7 @@ if mouse_check_button_pressed(mb_left) {
 with parButton {
 	if position_meeting(global.winmouse_x, global.winmouse_y, self) {
 		hover = true;
+		click = false;
 	} else {
 		hover = false;
 		active = false;
@@ -29,7 +30,6 @@ with parButton {
 	if hover {
 		if mouse_check_button(mb_left) {
 			active = true;
-			click = false;
 		}
 		if mouse_check_button_released(mb_left) {
 			active = false;
