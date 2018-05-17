@@ -31,26 +31,35 @@ if is_moving == false {
 		//objects derived from parSolid may block us or allow us to pass, so find one and ask it if solid
 		//note that without returning and then checking an array, only one solid in the space will answer
 		//so let's try not to build solid objects on top of each other
-		var collision = false; var obj = instance_place(x+move_x, y+move_y, parSolid); 
-		if instance_exists(obj) and obj.solid = true	collision = true;
+		var collision = 0; var obj = instance_place(x+move_x, y+move_y, parSolid); 
+		if instance_exists(obj) {
+			if obj.solid == true	collision = 1; //this value tells the script that a solid object has been found
+			else					collision = -1; //this one tells us a NON-solid object has been found
+		}
 		
-		//now we can check both object and tile collisions together
-		if (collision = true or tile_collision == collision_types.solid) {
+		//now we can check both object and tile collisions
+		if collision == -1 { //if an object in our path has been set to non-solid, ignore all other collisions and move
+			is_moving = true;
+			animating = true;
+			speed_x = lengthdir_x(move_speed, direction);
+			speed_y = lengthdir_y(move_speed, direction);
+		} else if collision == 1 or tile_collision == collision_types.solid { //if a solid object or tile is there, stop
 			move_x = 0;
 			move_y = 0;
 			animating = false;
-		} else if (tile_collision == collision_types.water) {
+		} else if tile_collision == collision_types.water { //if there's water, try to swim; if we can't swim, stop
 			if !can_swim {	
 				move_x = 0;	
 				move_y = 0; 
 				animating = false;	
-			} else {
+			} else { //if we can swim, start swimming
+				//change Bay's sprite here (missing sprite)
 				is_moving = true;
 				animating = true;
 				speed_x = lengthdir_x(move_speed, direction);
 				speed_y = lengthdir_y(move_speed, direction);
 			}
-		} else {
+		} else { //if there are no solid objects or tiles, and no water, make the move
 			is_moving = true;
 			animating = true;
 			speed_x = lengthdir_x(move_speed, direction);
@@ -64,7 +73,7 @@ if is_moving == false {
 if oGameControl.interact_key and !is_moving {
 	var x_dir = sign(lengthdir_x(4, facing*90) );	var y_dir = sign(lengthdir_y(4, facing*90) );
 	
-	var xx = x + 16 * x_dir;		var yy = y + 16 * y_dir;
+	var xx = x + GRID_SIZE * x_dir;		var yy = y + GRID_SIZE * y_dir;
 	
 	var interactable = instance_place(xx, yy, parSolid);
 	var tile_interaction = find_tile_collision(xx, yy);
