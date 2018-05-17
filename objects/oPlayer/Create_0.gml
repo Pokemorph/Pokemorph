@@ -2,6 +2,8 @@
 
 //setup our finite state engine
 state = player_idle_state;
+last_room = -1;
+door_id = 0;
 
 //animation variables
 animation_direction=1;

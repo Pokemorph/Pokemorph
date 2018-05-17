@@ -8,7 +8,8 @@
         "57c18d29-9427-4011-b5d8-4f2647b8b4b0",
         "ef0247f3-e9bf-4186-9fc5-7c694b8d873c",
         "24cad22b-cde0-4b43-a772-771437c544b8",
-        "8f865530-e24c-496e-b861-ca3189a601e6"
+        "8f865530-e24c-496e-b861-ca3189a601e6",
+        "6ed78257-1130-447c-8d40-4b8fab5b2e35"
     ],
     "filterType": "GMObject",
     "folderName": "doors",

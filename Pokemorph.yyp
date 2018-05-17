@@ -1706,7 +1706,7 @@
             "Key": "6ed78257-1130-447c-8d40-4b8fab5b2e35",
             "Value": {
                 "id": "81d3bde7-93f3-45a0-b07a-47f72dbc8dc7",
-                "resourcePath": "objects\\obj_warp\\obj_warp.yy",
+                "resourcePath": "objects\\oWarp\\oWarp.yy",
                 "resourceType": "GMObject"
             }
         },

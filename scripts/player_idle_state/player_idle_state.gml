@@ -124,7 +124,20 @@ if (is_moving == true)
 			set_music("mus_pallet");
 		}
 		
-		//check for teleport squares
-		
+		//check for doors with teleport locations
+		var door = instance_place(x, y, parDoor);
+		if instance_exists(door) and door.next_room != noone { //we found a door and it has a teleport
+			if door.next_room = room { //this door teleports within the current room,
+				//so we'll grab the id of the door it's going to and teleport there
+				last_room = room;
+				door_id = door.door_to;
+				room_goto(door.next_room);
+			} else {
+				//grab the door data and teleport
+				last_room = room;
+				door_id = door.door_id;
+				room_goto(door.next_room);
+			}
+		}
 	}
 }
