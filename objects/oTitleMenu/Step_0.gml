@@ -16,7 +16,7 @@ if state == 0 {//lower opacity, and set up the menu buttons
     }
 } else if state == 1 {//search for button functions
 	if buttons[0].click = true			room_goto(rm_pallet_town);	// new game
-	else if buttons[1].click = true		room_goto(rm_test);			// test game
+	else if buttons[1].click = true		room_goto(rm_pallet_town);			// test game
 	//else if buttons[1].click = true	room_goto(rm_tutorial);		// play tutorial
 	else if buttons[2].click = true		room_goto(rm_pallet_town);	// load game
 	else if buttons[3].click = true		{

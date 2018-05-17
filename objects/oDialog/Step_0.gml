@@ -21,7 +21,10 @@ if oGameControl.interact_key {
         exit;
     } else {
         if cutscene != noone and instance_exists(cutscene){
-            with cutscene interact_state++;
+            with cutscene {
+				interact_state++;
+				event_user(0);
+			}
         }
         instance_destroy();
     }

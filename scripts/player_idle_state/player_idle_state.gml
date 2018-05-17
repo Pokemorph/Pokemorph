@@ -126,7 +126,7 @@ if (is_moving == true)
 		
 		//check for doors with teleport locations
 		var door = instance_place(x, y, parDoor);
-		if instance_exists(door) and door.next_room != noone { //we found a door and it has a teleport
+		if instance_exists(door) and room_exists(door.next_room) { //we found a door and it has a teleport
 			if door.next_room = room { //this door teleports within the current room,
 				//so we'll grab the id of the door it's going to and teleport there
 				last_room = room;

@@ -5,5 +5,6 @@ if !instance_exists(oDialog)     {
     ai_lookat(oPlayer);
     var dialog = instance_create_depth(x, y, 10, oDialog);
     dialog.text = text;
+	dialog.cutscene = id;
     with dialog event_user(events.format_text);
 }

@@ -1,5 +1,6 @@
 /// @description Initialize Player Sprite and Data
 
+event_inherited();
 //setup our finite state engine
 state = player_idle_state;
 last_room = -1;

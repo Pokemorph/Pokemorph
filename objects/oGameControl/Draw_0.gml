@@ -9,9 +9,11 @@ if instance_exists(parDepth) {
 	
 	//then we add those objects and their y coordinates to the grid
 	with parDepth {
-		dg[# 0, counter] = id;
-		dg[# 1, counter] = y;
-		counter++;
+		if !invisible {
+			dg[# 0, counter] = id;
+			dg[# 1, counter] = y;
+			counter++;
+		}
 	}
 	
 	//sort the grid by y coordinates

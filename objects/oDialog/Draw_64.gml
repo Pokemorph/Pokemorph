@@ -1,6 +1,6 @@
 /// @desc Draw textbox/text
 
-
+draw_set_color(c_white);
 draw_set_alpha(0.8)
 draw_self();
 draw_set_alpha(1)

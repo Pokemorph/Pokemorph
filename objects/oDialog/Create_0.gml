@@ -11,7 +11,7 @@ flip = false;
 cutscene = noone;
 input_timer = 2;
 
-margin = 12;
+margin = 16;
 width = sprite_width - (margin*2);
 
 x = 405;

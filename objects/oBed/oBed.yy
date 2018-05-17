@@ -5,7 +5,7 @@
     "name": "oBed",
     "eventList": [
         {
-            "id": "a1da72d7-76d3-448e-9ebe-ec069e8c3ec2",
+            "id": "ccf93006-826c-4773-8f20-48d407b6d460",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -17,7 +17,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "b922c85d-db08-4edf-ba14-4105a5380777",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

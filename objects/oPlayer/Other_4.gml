@@ -7,14 +7,14 @@ if instance_exists(parDoor) { //we found a door
 			other.y = y;
 			other.last_room = room;
 			other.direction = direction;
+			other.is_moving = true;
+			other.move_x = sign(lengthdir_x(GRID_SIZE, direction)) * GRID_SIZE;
+			other.move_y = sign(lengthdir_y(GRID_SIZE, direction)) * GRID_SIZE;
+			other.speed_x = lengthdir_x(other.move_speed, direction);
+			other.speed_y = lengthdir_y(other.move_speed, direction);
 			image_index = image_number-1;
 			solid = false;
 			event_user(0);
 		}
 	}
-	is_moving = true;
-	move_x = sign(lengthdir_x(GRID_SIZE, direction)) * GRID_SIZE;
-	move_y = sign(lengthdir_y(GRID_SIZE, direction)) * GRID_SIZE;
-	speed_x = lengthdir_x(move_speed, direction);
-	speed_y = lengthdir_y(move_speed, direction);
 }
