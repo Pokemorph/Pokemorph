@@ -3863,6 +3863,14 @@
             }
         },
         {
+            "Key": "eee6df64-0320-4da9-92c1-2eff53f76964",
+            "Value": {
+                "id": "d6e83078-de97-48c7-8ab4-a030bb244de3",
+                "resourcePath": "objects\\oTV\\oTV.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ef0247f3-e9bf-4186-9fc5-7c694b8d873c",
             "Value": {
                 "id": "dcf98d12-0134-4af3-9073-6b709f63d269",

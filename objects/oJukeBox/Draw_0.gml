@@ -1,7 +1,7 @@
 /// @description draw self and debug
 // You can write your code in this editor
 
-if audio_is_playing(oGameControl.music) or audio_is_playing(oGameControl.intro) {
+if audio_is_playing(oGameControl.music) and oGameControl.music != snd_silence or audio_is_playing(oGameControl.intro) {
 	image_speed = 1;
 } else {
 	image_speed = 0;
