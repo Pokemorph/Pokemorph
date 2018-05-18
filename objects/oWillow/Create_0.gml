@@ -3,6 +3,7 @@
 
 event_inherited();
 
+name = global.WillowName;
 text[0] = "Hey, Bay. Are you looking for Eevee?";
 text[0] += " I think she might be down by the bay, playing in the sand.";
 text[0] += " Eevee sure likes this little town. You should bring her back more often.";

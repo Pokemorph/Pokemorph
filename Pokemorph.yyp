@@ -815,6 +815,14 @@
             }
         },
         {
+            "Key": "32b22ace-e782-457c-874b-0dd2ce298f63",
+            "Value": {
+                "id": "b52b05c3-1416-49b8-a8b3-f30c0fe9a900",
+                "resourcePath": "scripts\\give_pokemon\\give_pokemon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "32c05a4a-438c-4acb-801e-494a78f34845",
             "Value": {
                 "id": "f93cdf42-43a0-45ef-8169-9bb3b54e9741",
@@ -906,7 +914,7 @@
             "Key": "37d80049-45e7-4026-80bc-1444e7cf0c9a",
             "Value": {
                 "id": "87a9cb82-af7a-4b1b-891a-eb7d103dcadc",
-                "resourcePath": "scripts\\ai_talk\\ai_talk.yy",
+                "resourcePath": "scripts\\say\\say.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1183,6 +1191,14 @@
             }
         },
         {
+            "Key": "49715eaf-ed6d-4e5e-b1ad-af524e4a2c34",
+            "Value": {
+                "id": "8f3b13c9-2057-4a52-99d3-25a5775e6770",
+                "resourcePath": "sprites\\spr_bulbasaur\\spr_bulbasaur.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4a023809-2342-4086-98a8-1b33c71c5f0f",
             "Value": {
                 "id": "eac97302-fb6f-47f2-93ef-e4fe8ab59643",
@@ -1324,6 +1340,14 @@
                 "id": "b039b076-73ec-43e0-b4a9-f0349105e736",
                 "resourcePath": "views\\52ca2d4c-37c0-4439-95db-2d80e1d20ab6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5372a4f6-93c5-4292-a198-d25c01acf24d",
+            "Value": {
+                "id": "d3e61d0e-27a3-47d6-93b5-da188394889e",
+                "resourcePath": "objects\\oEeveeFriend\\oEeveeFriend.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1572,6 +1596,14 @@
                 "id": "fa2548fa-b26e-441c-8d0a-4b49609da7a2",
                 "resourcePath": "sprites\\battle_jolteon\\battle_jolteon.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "62aefb8b-15e6-401f-9c11-b801578f79bd",
+            "Value": {
+                "id": "65a054e8-15c1-4f49-990a-e7fc3bd89db7",
+                "resourcePath": "objects\\oEevee\\oEevee.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3962,7 +3994,7 @@
             "Key": "f21c7423-53ae-41e8-8bb3-4c52936a8d05",
             "Value": {
                 "id": "ed930b9c-fbbc-453d-8359-5ed7b4df8679",
-                "resourcePath": "scripts\\ai_lookat\\ai_lookat.yy",
+                "resourcePath": "scripts\\look_at\\look_at.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4235,6 +4267,7 @@
         "4f0b1c72-3ede-4f34-945e-b1110316e8ff",
         "37d80049-45e7-4026-80bc-1444e7cf0c9a",
         "f21c7423-53ae-41e8-8bb3-4c52936a8d05",
+        "32b22ace-e782-457c-874b-0dd2ce298f63",
         "f183c076-8519-43c0-a367-8ff99a9445e4",
         "9ddf67a7-11ca-4c20-8e3c-b1d6cf125665",
         "1fc4fd2a-b80e-4546-b2e3-0125b05d9f88",

@@ -4,7 +4,6 @@ event_inherited();
 image_speed = 0;
 
 state=0;
-ai_interact=ai_talk;
 interact_state=0;
 name = "Default";
 

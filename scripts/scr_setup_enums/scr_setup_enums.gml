@@ -41,7 +41,7 @@ enum battle_poses {
 
 enum events {
 	talk = 0,
-	format_text = 0,
+	format_text = 1,
 }
 
 enum letter_buttons {

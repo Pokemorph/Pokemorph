@@ -3,6 +3,6 @@
 if !instance_exists(oDialog) {
 	var dialog = instance_create_depth(x, y, 10, oDialog);
 	dialog.text[0] = argument0;
-	dialog.cutscene = id;
+	dialog.cutscene = instance_id;
 	with dialog event_user(0);
 }

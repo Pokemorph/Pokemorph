@@ -2,6 +2,7 @@
 tile_x = floor(x/GRID_SIZE);
 tile_y = floor(y/GRID_SIZE);
 
+name = "Default";
 visible = false;
 invisible = false;
 image_speed = 0;

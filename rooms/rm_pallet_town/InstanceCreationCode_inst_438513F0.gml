@@ -1,0 +1,1 @@
+direction = directions.left*90;

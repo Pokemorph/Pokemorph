@@ -1,7 +1,7 @@
 /// @desc setup globals and position the lights
 
 global.BayName = "Bay";
-global.EeveeName = "Eevee";
+global.EeveeName = "Sandee";
 global.WillowName = "Willow";
 global.ReedName = "Reed";
 global.OakName = "Oak";

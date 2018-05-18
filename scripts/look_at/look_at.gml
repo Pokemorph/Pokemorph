@@ -1,4 +1,4 @@
-/// @function ai_lookat();
+/// @function look_at();
 /// @description Turn to face selected target.
 /// @arg target
 

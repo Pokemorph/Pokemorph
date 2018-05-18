@@ -1,8 +1,8 @@
 {
-    "id": "37d80049-45e7-4026-80bc-1444e7cf0c9a",
+    "id": "f21c7423-53ae-41e8-8bb3-4c52936a8d05",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ai_talk",
+    "name": "look_at",
     "IsCompatibility": false,
     "IsDnD": false
 }
