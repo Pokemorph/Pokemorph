@@ -21,7 +21,7 @@
         "d100c98c-3fda-4522-bbcc-36d36487bab7"
     ],
     "filterType": "GMSprite",
-    "folderName": "decorations",
+    "folderName": "doors and windows",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

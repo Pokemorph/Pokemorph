@@ -2,14 +2,20 @@
 
 //control battle background position
 if instance_exists(oCamera) {
-	x = oCamera.x - 320;
-	y = oCamera.y - 290;
+	xx = oCamera.x - 320;
+	yy = oCamera.y - 290;
 } else {
-	x = 400;
-	y = 160;
-}
-x += irandom_range(-18, 6) * 8;	//-18, 6
+	xx = 400;
+	yy = 160;
+} x = xx; y = yy;
 image_index = 0
+
+//get active menus and destroy them (for now, should only affect oHUD)
+hud = false;
+if instance_exists(oHUD) with oHUD {
+	other.hud = true;
+	instance_destroy();
+}
 
 //vars to control fade transition
 battle_state = 0;
@@ -25,6 +31,8 @@ enemy_trainer = noone;
 //functional battle vars (turn, etc)
 current_turn = 0;
 
+//initialize the battle menu
+menu = instance_create_depth(xx, yy, depth, oBattleMenu);
 
 /*
 	-----------CODE PLANNING!!!!!!

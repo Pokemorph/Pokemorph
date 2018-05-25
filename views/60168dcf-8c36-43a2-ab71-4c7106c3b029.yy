@@ -7,7 +7,7 @@
         "225c4a97-286f-4d2c-9dd5-be3d69316be9"
     ],
     "filterType": "GMSprite",
-    "folderName": "willow_sprites",
+    "folderName": "party sprites",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

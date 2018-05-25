@@ -4,7 +4,7 @@
 //audio_play_sound(snd_sxy_lick, 1, false);
 switch interact_state {
 	case 0:
-		look_at(oPlayer);
+		look_at(self, oPlayer);
 		say(name, "Bulba!");
 		break;
 	case 1: 

@@ -10,6 +10,6 @@ else if oPlayer.pokemon3 == noone	oPlayer.pokemon3 = argument0;
 else if oPlayer.pokemon4 == noone	oPlayer.pokemon4 = argument0;
 else if oPlayer.pokemon5 == noone	oPlayer.pokemon5 = argument0;
 else if oPlayer.pokemon6 == noone	oPlayer.pokemon6 = argument0;
-else {
-	//if the party is full, add the new pokemon to the storage array
+else {	//if the party is full, add the new pokemon to the storage array
+	
 }

@@ -21,8 +21,7 @@ if oGameControl.interact_key and input_timer <= 0 {
         exit;
     } else {
 		if instance_exists(cutscene)	with cutscene {
-			interact_state++;
-			alarm[1] = 1;
+			wait(0);
 		}
         instance_destroy();
     }

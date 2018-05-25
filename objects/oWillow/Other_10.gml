@@ -4,13 +4,15 @@
 //audio_play_sound(snd_sxy_lick, 1, false);
 switch interact_state {
 	case 0:
-		look_at(oPlayer);
+		look_at(self, oPlayer);
 		say(name, "Hey, Bay. Are you looking for Eevee? I think she might be down by the bay, playing in the sand. Eevee sure likes this little town. You should bring her back more often.");
 		break;
 	case 1: 
 		say(name, text[1]); 
 		break;
 	case 2:
+		wait(0.5);
+	case 3:
 		say(global.BayName, "Uh ... sure.");
 		break;
 	default:
