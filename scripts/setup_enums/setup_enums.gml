@@ -20,6 +20,32 @@ enum weather {
 	sandstorm
 }
 
+enum terrain {
+	beach,
+	pool,
+	building,
+	city,
+	cave,
+	cave2,
+	cave3,
+	computer,
+	desert,
+	dimension,
+	field,
+	forest,
+	forest_creepy,
+	forest_dark,
+	forest2,
+	snowy,
+	swamp,
+	swamp_water,
+	swamp2,
+	underwater,
+	volcano,
+	volcano2,
+	water,
+}
+
 enum animate_type {
 	once,
 	loop,
@@ -295,5 +321,21 @@ enum move_effects {
 enum moves {
 	tackle,
 	scratch,
+	done
+}
+
+enum items {
+	pokeball,
+	great_ball,
+	ultra_ball,
+	pokenip,
+	done
+}
+
+enum item_stats {
+	name,
+	flavor_text,
+	value,
+	sprite,
 	done
 }

@@ -13,12 +13,12 @@ buttons[1] = instance_create_depth(x+566, y+82, depth-1, oTeamMorph);
 buttons[0] = instance_create_depth(x+566, y+16, depth-1, oTeamMorph);
 
 //assign those buttons to their team members
-buttons[0].morph = oPlayer.pokemon1;
-buttons[1].morph = oPlayer.pokemon2;
-buttons[2].morph = oPlayer.pokemon3;
-buttons[3].morph = oPlayer.pokemon4;
-buttons[4].morph = oPlayer.pokemon5;
-buttons[5].morph = oPlayer.pokemon6;
+buttons[0].morph = oPlayer.pokemon[0];
+buttons[1].morph = oPlayer.pokemon[1];
+buttons[2].morph = oPlayer.pokemon[2];
+buttons[3].morph = oPlayer.pokemon[3];
+buttons[4].morph = oPlayer.pokemon[4];
+buttons[5].morph = oPlayer.pokemon[5];
 
 //create a second array with the stat page controls
 page_controls[2] = instance_create_depth(x+212, y+34, depth-1, parButton);

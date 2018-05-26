@@ -4,12 +4,12 @@
 
 
 //find an empty space and put the new pokemon in it
-if      oPlayer.pokemon1 == noone	oPlayer.pokemon1 = argument0;
-else if oPlayer.pokemon2 == noone	oPlayer.pokemon2 = argument0;
-else if oPlayer.pokemon3 == noone	oPlayer.pokemon3 = argument0;
-else if oPlayer.pokemon4 == noone	oPlayer.pokemon4 = argument0;
-else if oPlayer.pokemon5 == noone	oPlayer.pokemon5 = argument0;
-else if oPlayer.pokemon6 == noone	oPlayer.pokemon6 = argument0;
+if      oPlayer.pokemon[0] == noone	oPlayer.pokemon[0] = argument0;
+else if oPlayer.pokemon[1] == noone	oPlayer.pokemon[1] = argument0;
+else if oPlayer.pokemon[2] == noone	oPlayer.pokemon[2] = argument0;
+else if oPlayer.pokemon[3] == noone	oPlayer.pokemon[3] = argument0;
+else if oPlayer.pokemon[4] == noone	oPlayer.pokemon[4] = argument0;
+else if oPlayer.pokemon[5] == noone	oPlayer.pokemon[5] = argument0;
 else {	//if the party is full, add the new pokemon to the storage array
 	
 }

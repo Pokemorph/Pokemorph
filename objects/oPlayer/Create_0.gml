@@ -34,11 +34,12 @@ can_swim = false;
 //image variables
 image_speed = 0;
 depth_layer = 0;
-pokemon1 = new_pokemon(dex_id.Eevee_nm, 5);
-pokemon1.hp_cur -= 10;
-pokemon1.nickname = "Fluffee";
-pokemon2 = new_pokemon(dex_id.Bulbasaur, 3);
-pokemon3 = noone;
-pokemon4 = noone;
-pokemon5 = noone;
-pokemon6 = noone;
+pokemon = [];
+for ( var i = 5; i >= 0; i-- ) {
+	pokemon[i] = noone;
+}
+pokemon[0] = new_pokemon(dex_id.Eevee_nm, 8);
+pokemon[0].hp_cur -= 10;
+pokemon[0].nickname = "Fluffee";
+pokemon[1] = new_pokemon(dex_id.Eevee, 5);
+pokemon[1].nickname = "Sandee";
