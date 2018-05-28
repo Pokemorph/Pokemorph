@@ -20,7 +20,8 @@ if morph != noone {
 	draw_text(text_x, text_y, morph.nickname);
 	text_x += 16; text_y += 18;
 	draw_text(text_x, text_y, "Lvl " + string(morph.current_level));
-	draw_sprite(team_frame_gender, 0, text_x+52, text_y);
+	var gender = ds_grid_get(global.breedData, stats_breed.sex, morph.breed_ref);
+	draw_sprite(team_frame_gender, gender, text_x+52, text_y);
 	text_x = x+sprite_width-4;
 	draw_set_halign(fa_right);
 	draw_text(text_x, text_y, string(round(morph.hp_cur)) + "/" + string(round(morph.hp_max)));

@@ -25,6 +25,8 @@ ds_grid_set_region(global.moves, 0, 0, ds_grid_width(global.moves), ds_grid_heig
 global.moveEffects = ds_grid_create(5, 1);
 ds_grid_set_region(global.moveEffects, 0, 0, ds_grid_width(global.moveEffects), ds_grid_height(global.moveEffects), -1);
 
+//set experience per level to fixed numbers
+global.experience[50] = 99999999999999999999999;
 global.experience[49] = 570; global.experience[48] = 561; global.experience[47] = 551;
 global.experience[46] = 542; global.experience[45] = 532; global.experience[44] = 522;
 global.experience[43] = 513; global.experience[42] = 503; global.experience[41] = 494;

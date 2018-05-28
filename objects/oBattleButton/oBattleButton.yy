@@ -1,28 +1,28 @@
 {
-    "id": "2b2c7fba-b3d3-4f06-8cd6-939c343af0af",
+    "id": "664ef126-edd4-45f9-83ed-ffb0ec0260c8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oTeamMorph",
+    "name": "oBattleButton",
     "eventList": [
         {
-            "id": "d38d9f4d-3b5e-4111-b917-4d518671741a",
+            "id": "de3037a7-8b53-4210-a371-4a2cf23000c5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 64,
             "eventtype": 8,
-            "m_owner": "2b2c7fba-b3d3-4f06-8cd6-939c343af0af"
+            "m_owner": "664ef126-edd4-45f9-83ed-ffb0ec0260c8"
         },
         {
-            "id": "389caa06-c9d3-4acf-9d72-85fa228a3442",
+            "id": "353d1603-e3f0-4ab3-bbb1-d6d3372e2bad",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "2b2c7fba-b3d3-4f06-8cd6-939c343af0af"
+            "m_owner": "664ef126-edd4-45f9-83ed-ffb0ec0260c8"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "7b5bbfcd-056e-4782-b750-fab183b2be9d",
+    "spriteId": "cf372186-e4ac-4cff-8e95-a4d7d728db39",
     "visible": true
 }

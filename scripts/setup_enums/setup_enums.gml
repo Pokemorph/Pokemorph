@@ -3,6 +3,11 @@
 #macro GRID_SIZE 32
 #macro GAME_SPEED game_get_speed(gamespeed_fps)
 
+enum sexes {
+	female,
+	male
+}
+
 enum weather {
 	sunny,
 	cloudy,

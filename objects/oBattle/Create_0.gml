@@ -17,6 +17,12 @@ if instance_exists(oHUD) with oHUD {
 	instance_destroy();
 }
 
+//store the room music to switch back after battle (actual song change in battle caller script)
+if oGameControl.music_name = "mus_trainerEncounter"		song = oGameControl.last_song;
+else if oGameControl.music_name = "mus_teamRocket"		song = oGameControl.last_song;
+else if oGameControl.music_name = "snd_silence"			song = oGameControl.last_song;
+else													song = oGameControl.music_name;
+
 //vars to control fade transition
 battle_state = 0;
 target_alpha = 1;
@@ -34,6 +40,9 @@ pmon = player_team[0]; ppic = noone;
 emon = noone; epic = noone;
 player_x = xx; player_y = yy+76;
 enemy_x = xx+460; enemy_y = yy;
+//edges of screen: 400, 160, 1219, 640
+player_stats = instance_create_depth(1023, 440, depth, oBattleStats);
+enemy_stats = instance_create_depth(400, 200, depth, oBattleStats);
 
 //functional battle vars (turn, etc)
 current_turn = 0;

@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "11085eb2-89b0-4d11-9b63-df20df81f27c",
+            "Value": {
+                "id": "efdb3123-b279-4d1f-8063-64fec526f46a",
+                "resourcePath": "sounds\\mus_approach_intro\\mus_approach_intro.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "11433191-8ca5-4f78-ba88-280529f96976",
             "Value": {
                 "id": "7220235c-3945-4052-ba97-11730760d637",
@@ -412,6 +420,14 @@
                 "id": "6f1844ce-d30f-4308-a471-1a7ec024925d",
                 "resourcePath": "views\\18cab61b-6932-486f-9134-b3655e1f0809.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1903982a-a43a-41ee-80b6-6e7c4f35c773",
+            "Value": {
+                "id": "5b9da9b5-5208-4eaf-b3fb-7b0aeff684c9",
+                "resourcePath": "scripts\\set_pokemon_player\\set_pokemon_player.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -663,18 +679,18 @@
             }
         },
         {
+            "Key": "2739e43d-73de-4942-a248-5a59f64ad35f",
+            "Value": {
+                "id": "ddadd7d9-0365-4863-bf25-ffb623d6077d",
+                "resourcePath": "scripts\\battle_text_message\\battle_text_message.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "27d8f2e2-d10d-4c71-9578-8a5dde0bf072",
             "Value": {
                 "id": "37610ab4-0c12-4892-b6c7-99e0e3da98d6",
                 "resourcePath": "sprites\\spr_window_wood\\spr_window_wood.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "28080da6-a74d-4446-8288-5c14cf8c4637",
-            "Value": {
-                "id": "b5360f24-e377-4ad9-b028-8a7ba8e2f177",
-                "resourcePath": "sprites\\battle_button_morphs\\battle_button_morphs.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -940,6 +956,14 @@
                 "id": "c68255f4-b8bc-47ff-843b-022a6d3bbb10",
                 "resourcePath": "objects\\ohud_pokedex\\ohud_pokedex.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3741e4ea-8b92-4d3a-a8e7-4a359cfe9406",
+            "Value": {
+                "id": "5b08fa3c-bae9-4300-b1ba-b7207940c7ab",
+                "resourcePath": "scripts\\set_pokemon_enemy\\set_pokemon_enemy.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1292,6 +1316,14 @@
                 "id": "bda63ac9-5250-45ee-98da-f2d8144726b9",
                 "resourcePath": "views\\4b8fc98f-3663-45bd-973e-ef9fc3077b03.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4bb38746-49bc-4ee6-817d-f54468fb09be",
+            "Value": {
+                "id": "f598cb2d-97d9-4836-8725-0cb1c3d9bf7a",
+                "resourcePath": "fonts\\fnt_buttons\\fnt_buttons.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -1743,6 +1775,14 @@
             }
         },
         {
+            "Key": "664ef126-edd4-45f9-83ed-ffb0ec0260c8",
+            "Value": {
+                "id": "5a23b42d-2821-41bc-8422-18737777320a",
+                "resourcePath": "objects\\oBattleButton\\oBattleButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6b1bcb4a-410f-4fef-b425-d004e91747f7",
             "Value": {
                 "id": "a76dcc97-b51e-4200-92b3-2c938c42716b",
@@ -1959,6 +1999,14 @@
             }
         },
         {
+            "Key": "74a61b82-4f5f-4702-92ef-0fe25d88df46",
+            "Value": {
+                "id": "4a3fd828-4429-4970-b3a8-acaf5355e670",
+                "resourcePath": "scripts\\random_battle_start_text\\random_battle_start_text.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7613f04b-d351-4cf8-a834-487bfc8ba4bd",
             "Value": {
                 "id": "b1485d76-cb14-4288-8b04-a9a153895523",
@@ -2079,14 +2127,6 @@
             }
         },
         {
-            "Key": "7cd57a10-bc14-491d-b8c9-262aa98d73f9",
-            "Value": {
-                "id": "e38a4805-c037-4ce9-ac5d-25f6f9c1f9d5",
-                "resourcePath": "sprites\\battle_button_flee\\battle_button_flee.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "7ce50b5a-2991-4da9-af29-1e4e83d51efb",
             "Value": {
                 "id": "a1e9ba86-d75f-433a-85a6-6aab1a27b828",
@@ -2164,14 +2204,6 @@
                 "id": "51dbde06-1cc4-4656-bdcf-a510d0a0ef7e",
                 "resourcePath": "rooms\\room_battle\\room_battle.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "8044cf72-2a5a-4c1a-9ecf-77787ba00488",
-            "Value": {
-                "id": "fb859742-69fe-40b4-96ca-9536706fcd0b",
-                "resourcePath": "sprites\\battle_button_items\\battle_button_items.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -2420,6 +2452,14 @@
                 "id": "8180185c-4fb4-4b94-becc-cac0a81fd2f8",
                 "resourcePath": "sprites\\battle_pidgey\\battle_pidgey.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8e11bb51-882e-4caa-9d2a-469d91eb81fb",
+            "Value": {
+                "id": "9b65d8c4-738b-4d49-ba76-622428dff83f",
+                "resourcePath": "sounds\\mus_approach\\mus_approach.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2775,14 +2815,6 @@
             }
         },
         {
-            "Key": "a90fca69-3aaa-4b48-afca-74b4d5993cf4",
-            "Value": {
-                "id": "ab69db96-5f45-443b-b60b-21342a3797f8",
-                "resourcePath": "sprites\\battle_button_attack\\battle_button_attack.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "f4230457-ec10-4396-9011-6486ffe78017",
@@ -2988,6 +3020,14 @@
                 "id": "9c4bfcff-9db7-40b5-91f4-911ead92d7d8",
                 "resourcePath": "sounds\\snd_weather_thunder\\snd_weather_thunder.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "b63222a5-193b-4033-9390-11db19930809",
+            "Value": {
+                "id": "61a65de6-7a2c-4411-8d7f-9a938d6f0936",
+                "resourcePath": "objects\\oBattleStats\\oBattleStats.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3442,7 +3482,7 @@
             "Key": "cf372186-e4ac-4cff-8e95-a4d7d728db39",
             "Value": {
                 "id": "dcbf571d-aecf-4959-b374-4a7b6ee9259b",
-                "resourcePath": "sprites\\battle_button_blank\\battle_button_blank.yy",
+                "resourcePath": "sprites\\battle_button\\battle_button.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4127,6 +4167,14 @@
             }
         },
         {
+            "Key": "f1e3286e-a85d-4515-b34b-4b289034609e",
+            "Value": {
+                "id": "106352f5-6fe1-432f-a8f4-767a7da75419",
+                "resourcePath": "scripts\\random_battle_change_pokemon\\random_battle_change_pokemon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f1e38fa9-d51e-4b51-89cc-4f1a8391ea02",
             "Value": {
                 "id": "15ca81b6-bb99-43e0-8f83-fda542d94441",
@@ -4419,6 +4467,7 @@
         "8606902d-679b-4db9-92ce-f5c5b1dadd34",
         "9ddf67a7-11ca-4c20-8e3c-b1d6cf125665",
         "1fc4fd2a-b80e-4546-b2e3-0125b05d9f88",
+        "ba4dcebf-2d34-41db-8ce8-f2ccaf9d5643",
         "7a7693db-636a-48a7-9cd7-47853b7b0ede",
         "05e1c0c5-6eeb-4e7e-99e8-c75adb74a441",
         "f21c7423-53ae-41e8-8bb3-4c52936a8d05",
@@ -4436,6 +4485,12 @@
         "362116f4-3787-449b-b90a-265cb91d29cd",
         "dc94c5b3-dd24-47d4-8fa5-e4da4aed444a",
         "f377575e-b37a-4949-95d9-e66d605d2fef",
+        "0f4836a3-a816-41a2-a202-c9055f08026f",
+        "1903982a-a43a-41ee-80b6-6e7c4f35c773",
+        "3741e4ea-8b92-4d3a-a8e7-4a359cfe9406",
+        "2739e43d-73de-4942-a248-5a59f64ad35f",
+        "74a61b82-4f5f-4702-92ef-0fe25d88df46",
+        "f1e3286e-a85d-4515-b34b-4b289034609e",
         "4f0b1c72-3ede-4f34-945e-b1110316e8ff",
         "f183c076-8519-43c0-a367-8ff99a9445e4",
         "bb89850e-dca2-489f-ba53-f2fd0a7bb317",
@@ -4444,9 +4499,7 @@
         "fa61c545-fb70-4a03-bc59-1709b754f9ea",
         "0d905b3f-fe8c-413e-bfc0-776d4a819800",
         "4b258ae0-b196-4223-964e-0dd8a2a512a0",
-        "79676b8e-7941-4ce4-9e7e-a7636db554b4",
-        "ba4dcebf-2d34-41db-8ce8-f2ccaf9d5643",
-        "0f4836a3-a816-41a2-a202-c9055f08026f"
+        "79676b8e-7941-4ce4-9e7e-a7636db554b4"
     ],
     "tutorial": ""
 }

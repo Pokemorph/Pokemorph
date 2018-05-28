@@ -7,7 +7,7 @@
 /// @argument weight
 /// @argument sprite
 /// @argument picture
-/// @argument female
+/// @argument sex
 /// @argument type1
 /// @argument type2
 /// @argument hp

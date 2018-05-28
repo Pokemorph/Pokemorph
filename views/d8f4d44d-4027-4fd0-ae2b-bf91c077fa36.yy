@@ -8,7 +8,8 @@
         "c5d6c7d3-2339-4971-90dd-0642ad223a79",
         "c81cbde8-2970-49fc-b0c9-2c23e49e0cd4",
         "c3fd5ed5-1d67-416f-adb7-2089846fd2e5",
-        "ea668ef3-f660-4d37-9223-4430e740ae94"
+        "ea668ef3-f660-4d37-9223-4430e740ae94",
+        "4bb38746-49bc-4ee6-817d-f54468fb09be"
     ],
     "filterType": "GMFont",
     "folderName": "fonts",

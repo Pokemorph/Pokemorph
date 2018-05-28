@@ -4,10 +4,7 @@ if instance_exists(button_return) and button_return.click = true	{
 	instance_destroy();
 }
 if instance_exists(button_choose) and button_choose.click = true	{
-	if instance_exists(oBattle)	with oBattle {
-		pmon = other.active_morph;
-		event_user(0);
-	}
+	set_pokemon_player(active_morph);
 	instance_destroy();
 }
 

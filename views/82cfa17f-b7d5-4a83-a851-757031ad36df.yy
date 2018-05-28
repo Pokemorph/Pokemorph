@@ -6,7 +6,9 @@
     "children": [
         "390f304f-d40c-44da-ab12-69c4a7a6d9f1",
         "6ff8c0aa-3eff-443b-abc7-daeb2a150bd8",
-        "1e5d5cac-da56-4ad3-846a-c2e7450980ee"
+        "1e5d5cac-da56-4ad3-846a-c2e7450980ee",
+        "664ef126-edd4-45f9-83ed-ffb0ec0260c8",
+        "b63222a5-193b-4033-9390-11db19930809"
     ],
     "filterType": "GMObject",
     "folderName": "battle screen",

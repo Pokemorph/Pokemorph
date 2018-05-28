@@ -3,7 +3,7 @@
 ///@argument trainer
 ///@argument team_list
 ///@argument background_id
-///@argument music
+///@argument "music"
 ///@argument ai_script
 ///@argument can_flee
 ///@argument can_catch
@@ -24,5 +24,6 @@ with instance_create_depth(0, 0, -15, oBattle) {
 	enemy_ai = ai_script;
 	capture = can_catch;
 	emon = enemy_team[0];
+	set_music(mus);
 	event_user(0);
 }
