@@ -6,6 +6,8 @@ draw_set_color(c_white);
 draw_set_alpha(0.8);
 draw_self();
 
+if instance_exists(parent)	active_morph = parent.active_pokemon;
+
 //only draw remainder if active morph exists
 if instance_exists(active_morph)	{
 	//now before changing draw color to black for the text, draw the bars
@@ -32,3 +34,4 @@ draw_rectangle(x+6, y+30, x+6+exp_width, y+30+exp_height, true);
 
 //clean up universal draw functions
 draw_set_color(c_white);
+draw_set_alpha(1);

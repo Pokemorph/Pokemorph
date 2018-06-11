@@ -38,11 +38,11 @@ spdef_cur = (base_spdef/5 + (base_spdef/20 * current_level)) * ev_specdef;
 status = -1;
 
 //stat mods act as multipliers for permanent stats during battle
-atk_mod = 1;
-def_mod = 1;
-spd_mod = 1;
-spatk_mod = 1;
-spdef_mod = 1;
+atk_lvl = 0;
+def_lvl = 0;
+spd_lvl = 0;
+spatk_lvl = 0;
+spdef_lvl = 0;
 
 /*
 	MOVE ACQUISITION SECTION

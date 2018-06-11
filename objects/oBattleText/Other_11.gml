@@ -17,13 +17,14 @@ if (text != undefined) {
 	//loop through pages
 	for(var i = 0; i < array_size; i++) {
 		//first find and replace any instances of placeholder strings with appropriate strings
-		var pmon = parent.pmon; var emon = parent.emon;
+		/*var pmon = parent.pmon; var emon = parent.emon;
 		var pname = pmon.nickname; var ename = emon.nickname;
 		
 		text[i] = string_replace_all(text[i], "pmon", string(pname) );
 		text[i] = string_replace_all(text[i], "emon", string(ename) );
 		text[i] = string_replace_all(text[i], "ptrain", string(parent.player_trainer) );
 		text[i] = string_replace_all(text[i], "etrain", string(parent.enemy_trainer) );
+		*/
 		
 		var count = 0;
 		//loop through the characters

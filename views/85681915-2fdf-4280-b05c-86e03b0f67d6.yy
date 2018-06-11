@@ -7,7 +7,8 @@
         "8606902d-679b-4db9-92ce-f5c5b1dadd34",
         "9ddf67a7-11ca-4c20-8e3c-b1d6cf125665",
         "1fc4fd2a-b80e-4546-b2e3-0125b05d9f88",
-        "ba4dcebf-2d34-41db-8ce8-f2ccaf9d5643"
+        "ba4dcebf-2d34-41db-8ce8-f2ccaf9d5643",
+        "2f9f7dbd-0199-4c57-bdd3-94f6aab739b6"
     ],
     "filterType": "GMScript",
     "folderName": "initialization scripts",

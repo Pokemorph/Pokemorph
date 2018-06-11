@@ -2,11 +2,9 @@
 // if battle exists, destroy it. If not, create it
 
 if instance_exists(oBattle) {
-	instance_destroy(oBattle);
+	instance_destroy(oBattle1);
 } else if instance_exists(oPlayer) {
-	var t = "default";
-	var team = [new_pokemon(dex_id.Bulbasaur, 4), new_pokemon(dex_id.Bulbasaur, 3)];
-	start_battle(t, team, terrain.field, "mus_wildBattle", scr_battleAI_basic, true, true);
-	//instance_create_depth(0, 0, -25, oBattle);
-	if instance_exists(oPlayer)	oPlayer.state=player_battle_state;
+	var t = new_team(battle_willow, "Willow", scr_battleAI_basic, new_pokemon(dex_id.Bulbasaur, 4), new_pokemon(dex_id.Eevee_nm, 5) );
+	scr_battle(terrain.field, "mus_wildBattle", true, true, t);
+	oPlayer.state=player_battle_state;
 }

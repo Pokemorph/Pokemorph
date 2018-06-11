@@ -15,7 +15,7 @@ hud = false;
 if instance_exists(oHUD) with oHUD {
 	other.hud = true;
 	instance_destroy();
-}
+} menu = noone; text_box = instance_create_depth(xx, yy+376, depth-1, oBattleText);
 
 //store the room music to switch back after battle (actual song change in battle caller script)
 if oGameControl.music_name = "mus_trainerEncounter"		song = oGameControl.last_song;
@@ -23,61 +23,23 @@ else if oGameControl.music_name = "mus_teamRocket"		song = oGameControl.last_son
 else if oGameControl.music_name = "snd_silence"			song = oGameControl.last_song;
 else													song = oGameControl.music_name;
 
-//vars to control fade transition
-battle_state = 0;
-target_alpha = 1;
-alpha = 0;
-
-//variables to hold the necessary player-team and enemy-team pokemon data
-player_team = oPlayer.pokemon;
-enemy_team[0] = noone;
-enemy_ai = noone;
-player_trainer = global.BayName;
-enemy_trainer = "";
-flee = false;
-catch = true;
-pmon = player_team[0]; ppic = noone;
-emon = noone; epic = noone;
-player_x = xx; player_y = yy+76;
-enemy_x = xx+460; enemy_y = yy;
-//edges of screen: 400, 160, 1219, 640
-player_stats = instance_create_depth(1023, 440, depth, oBattleStats);
-enemy_stats = instance_create_depth(400, 200, depth, oBattleStats);
-
-//functional battle vars (turn, etc)
-current_turn = 0;
-current_player = 0;	//set this to 0 for player control and increment it for the ai's control
-
-//initialize the battle menu
-menu = instance_create_depth(xx, yy, depth, oBattleMenu);
-text_box = instance_create_depth(xx, yy+376, depth-1, oBattleText);
 
 /*
-	-----------CODE PLANNING!!!!!!
-	Okay, so what needs to happen, in sequence, after a battle is called for?
-		A battle object should be instantiated
-		Battle object should be fed pertinent data (enemy team, background, music, etc)
-		Once data is absorbed, battle object should fade-out and move to battle room
-		Once in battle room, battle object should fade-in and place trainers
-		Opponent should slide to back of room and deploy first pokemon
-		{Buttons should appear to select first pokemon
-		Buttons should disappear, player should slide out of sight and deploy chosen pokemon}
-		Skip last two; instead, auto-select first pokemon in both teams
-		Main battle loop should begin
-			Player turn activates command buttons and awaits instruction
-			Battle object acts on command
-			Turn rolls over
-			If enemy is not dead, enemy chooses action (for now, ATTACK)
-			If a combatant loses health, call next one if available
-			If no new combatant is available, end battle loop
-			Otherwise, roll-over turn to player
-				Now, how to administer the main battle loop...?
-				I could use states, like heartbeast, and cycle through those states until
-				an exit clause is reached. In fact, as I think about it, that's the only
-				way I can think of, whether those states are built-in or in script form.
-		On battle loop end, divide and administer exp and give out cash
-		Gather any necessary battle statistics
-		Fade-out and move back to last room
-		Fade-in
-		Pass gathered data to the caller
-		Cleanup data and destroy battle object
+	Battle Data Section
+	
+	edges of playable screen: 400-x1, 160-y1, 1219-x2, 640-y2
+*/
+
+combatants = [];			//an array to store all combatant objects used by this battle
+active_pokemon = noone;		//use this to store the currently active pokemon
+active_combatant = 0		//iterator for tracking the active combat space
+turn_phase = 0;				//use this to track command, sort, and execution phases of turns
+turn_count = 0;				//keeps track of turns passed; useful for stats and multi-turn effects
+actions_list = ds_grid_create(6, 5)				//used for sorting actions before execution
+//actions_list will store user_id, action_type, action_data, action_target, priority
+last_action = noone; last_action_data = noone;	//these two store the last chosen action
+last_action_target = noone;
+player_x = [xx, xx+200, xx+400]; player_y = yy+76;
+enemy_x = [xx+460, xx+260, xx+60]; enemy_y = yy;//these store positions of different combatants
+stats_x = [400, 410, 420, 1023, 1033, 1043];
+stats_y = [160, 200, 240, 360, 400, 440];		//store the positions of stat blocks

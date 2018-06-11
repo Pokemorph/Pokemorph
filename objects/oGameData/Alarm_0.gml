@@ -13,8 +13,9 @@ switch (run_state) {
 		alarm[0] = 1;
 		break;
 	case 20: //start the moves here. This leaves me space for extra cases to initialize new pokemon
-		init_move(moves.tackle, "Tackle", noone, noone, noone, 40, pokemon_type.normal, false, 100, 0, noone, "A full body glomp, indicative of an overeager, attention-seeking pokemon.");
-		init_move(moves.scratch, "Scratch", noone, noone, noone, 35, pokemon_type.normal, false, 100, 0, noone, "A feisty move, often performed in self defense.");
+		init_move(moves.tackle, "Tackle", noone, noone, noone, 40, 0, pokemon_type.normal, false, 100, 0, noone, "A full body glomp, indicative of an overeager, attention-seeking pokemon.");
+		init_move(moves.scratch, "Scratch", noone, noone, noone, 35, 0, pokemon_type.normal, false, 100, 0, noone, "A feisty move, often performed in self defense.");
+		init_move(moves.quick_attack, "Quick Attack", noone, noone, noone, 40, 1, pokemon_type.normal, false, 100, 0, noone, "A fast attack that can catch foes off their guard.");
 		run_state = 25;
 		alarm[0] = 1;
 		break;
@@ -25,5 +26,6 @@ switch (run_state) {
 		ds_grid_set(global.moveLists, 0, dex_id.Venusaur, moves.tackle);
 		ds_grid_set(global.moveLists, 0, dex_id.Eevee, moves.tackle);
 		ds_grid_set(global.moveLists, 0, dex_id.Eevee_nm, moves.tackle);
+		ds_grid_set(global.moveLists, 2, dex_id.Eevee, moves.quick_attack);
 		break;
 }

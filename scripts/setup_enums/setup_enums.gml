@@ -75,6 +75,13 @@ enum events {
 	format_text = 1,
 }
 
+enum battle_actions {
+	just_wait,
+	use_move,
+	use_item,
+	change_pokemon,
+}
+
 enum letter_buttons {
 	talk,
 	ask,
@@ -299,6 +306,7 @@ enum move_stats {
 	sprite_enemy,
 	sound,
 	pwr,
+	priority,
 	type,
 	special,
 	accuracy,
@@ -326,6 +334,7 @@ enum move_effects {
 enum moves {
 	tackle,
 	scratch,
+	quick_attack,
 	done
 }
 

@@ -4,8 +4,11 @@ if instance_exists(button_return) and button_return.click = true	{
 	instance_destroy();
 }
 if instance_exists(button_choose) and button_choose.click = true	{
-	set_pokemon_player(active_morph);
-	instance_destroy();
+	if instance_exists(oBattle) if active_morph.hp_cur > 0 {
+		oBattle.last_action = battle_actions.change_pokemon;
+		oBattle.last_action_data = active_morph;
+		instance_destroy();
+	} else			instance_destroy();
 }
 
 //change active pokemorphs

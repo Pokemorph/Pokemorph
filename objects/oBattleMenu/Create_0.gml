@@ -5,8 +5,9 @@
 event_inherited();
 
 x = 896; y = 480;
-state = 0;
-active_morph = oPlayer.pokemon[0];
+state = 1;
+par = noone;
+active_morph = noone;
 
 buttons[0] = instance_create_depth(x+18, y+18, depth-1, oBattleButton); buttons[0].text = "Attack";
 buttons[1] = instance_create_depth(x+170, y+18, depth-1, oBattleButton); buttons[1].text = "Morphs";
