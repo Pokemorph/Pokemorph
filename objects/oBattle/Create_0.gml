@@ -36,7 +36,7 @@ active_combatant = 0		//iterator for tracking the active combat space
 turn_phase = 0;				//use this to track command, sort, and execution phases of turns
 turn_count = 0;				//keeps track of turns passed; useful for stats and multi-turn effects
 actions_list = ds_grid_create(6, 5)				//used for sorting actions before execution
-//actions_list will store user_id, action_type, action_data, action_target, priority
+ds_grid_clear(actions_list, noone);	//will store user_id, action_type, action_data, action_target, priority
 last_action = noone; last_action_data = noone;	//these two store the last chosen action
 last_action_target = noone;
 player_x = [xx, xx+200, xx+400]; player_y = yy+76;
