@@ -1,7 +1,5 @@
 /// @desc Initialize game controller
 randomize();
-global.min_level = 1;
-global.max_level = 3;
 global.winmouse_x = 0;
 global.winmouse_y = 0;
 

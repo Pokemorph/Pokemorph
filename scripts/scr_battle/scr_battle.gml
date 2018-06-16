@@ -13,6 +13,7 @@ with instance_create_depth(0, 0, -15, oBattle) {
 	set_music(argument[1]);
 	flee = argument[2];
 	capture = argument[3];
+	oPlayer.state=player_battle_state;
 	
 	if argument_count == 5 {
 		combatants[0] = new_team(oPlayer.trainer_pic, oPlayer.trainer_name, oPlayer.ai_script, oPlayer.pokemon[0], oPlayer.pokemon[1], oPlayer.pokemon[2], oPlayer.pokemon[3], oPlayer.pokemon[4], oPlayer.pokemon[5]);
@@ -21,8 +22,8 @@ with instance_create_depth(0, 0, -15, oBattle) {
 		combatants[i] = argument[i+4];
 		combatants[i].depth = depth-1;
 	}
-	combatant_count = round(array_length_2d(combatants, 0)/2 );
+	combatant_count = round(array_length_1d(combatants)/2 );
 	
-	//set combatant positions and collect their names for the text
-	
+	//run the event to set combatant positions and collect their names for the text
+	event_user(0);
 }

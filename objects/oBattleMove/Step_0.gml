@@ -21,7 +21,6 @@ if state == 0	{ //calculate damage for later use and feed text to textbox to ann
 		active_combatant = other.target_combatant_id;
 		script_execute(combatants[active_combatant].ai_script);
 		active_combatant = temp;
-		other.state++;
 	} else {
 		state++;
 	}

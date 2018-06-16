@@ -9,8 +9,13 @@ if instance_exists(button_choose) and button_choose.click = true	{
 			oBattle.last_action = battle_actions.change_pokemon;
 			oBattle.last_action_data = active_morph;
 			instance_destroy();
+			exit;
 		}
-	} else			instance_destroy();
+	} else	{
+		instance_destroy();
+		exit;
+	}
+	
 }
 
 //change active pokemorphs

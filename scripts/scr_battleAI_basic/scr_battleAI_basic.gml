@@ -5,6 +5,17 @@ var user = combatants[active_combatant];
 var act = combatants[active_combatant].active_pokemon; var team = combatants[active_combatant].pokemon;
 //if instance_exists(active_combatant)	act = active_combatant.active_pokemon;
 if act.hp_cur <= 0	{ //if enemy pokemon is defeated
+	//if we've been defeated, immediately remove our action from the action list
+	for (var i = 0; i < ds_grid_height(actions_list); i++) {
+		if ds_grid_get(actions_list, 0, i) == active_combatant {
+			ds_grid_set(actions_list, 0, i, noone);
+			ds_grid_set(actions_list, 1, i, noone);
+			ds_grid_set(actions_list, 2, i, noone);
+			ds_grid_set(actions_list, 3, i, noone);
+			ds_grid_set(actions_list, 4, i, noone);
+			break;
+		}
+	}
 	
 	//gather surviving team array for selection	
 	var len = array_length_1d(team), arr = [];
@@ -18,22 +29,11 @@ if act.hp_cur <= 0	{ //if enemy pokemon is defeated
 		//select random pokemon from list of available
 		var r = irandom_range(0, array_length_1d(arr)-1);
 		set_pokemon_enemy(arr[r]);
-		
-		//now to search for an action with our signature and remove it from the list
-		for (var i = 0; i < ds_grid_height(actions_list); i++) {
-			if ds_grid_get(actions_list, 0, i) == active_combatant {
-				ds_grid_set(actions_list, 0, i, noone);
-				ds_grid_set(actions_list, 1, i, noone);
-				ds_grid_set(actions_list, 2, i, noone);
-				ds_grid_set(actions_list, 3, i, noone);
-				ds_grid_set(actions_list, 4, i, noone);
-				break;
-			}
-		}
 	} else { //if we have no pokemon to switch in, simply pass us by
 		combatants[active_combatant].active_pokemon = noone;
 		active_combatant++;
 	}
+	if instance_exists(oBattleMove) with oBattleMove state++;
 } else	{	//if our pokemon is not dead, let's choose our action
 	var arr = [];
 	if act.moves_4 > -1 arr[3] = act.moves_4;

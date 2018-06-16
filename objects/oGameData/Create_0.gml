@@ -1,21 +1,28 @@
 /// @desc setup globals and position the lights
 
+//global character names we can refer to for dialog
 global.BayName = "Bay";
-global.EeveeName = "Sandee";
+global.EeveeName = "Eevee";
 global.WillowName = "Willow";
 global.ReedName = "Reed";
 global.OakName = "Oak";
 global.AngelicaName = "Angelica";
 global.DamienName = "Damien";
 
+//make sure we aren't moving and get ready to run data initialization phases in alarm[0]
 image_speed = 0;
 image_index = 0;
 alarm[0] = 1;
 run_state = 0;
 
+//initialize variables that tell new pokemon what to become
 global.newPokemon = dex_id.Eevee;
 global.newLevel = 1;
+global.wildList = [];
+global.min_level = 1;
+global.max_level = 3;
 
+//initialize the grids for breed data, moves, effects, and move lists
 global.breedData = ds_grid_create(stats_breed.catch_rate+1, dex_id.done);
 ds_grid_set_region(global.breedData, 0, 0, ds_grid_width(global.breedData), ds_grid_height(global.breedData), -1);
 global.moveLists = ds_grid_create(80, dex_id.done);

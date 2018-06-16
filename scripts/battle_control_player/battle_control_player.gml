@@ -5,7 +5,7 @@ var user = combatants[active_combatant];
 var act = combatants[active_combatant].active_pokemon; var team = combatants[active_combatant].pokemon;
 //if instance_exists(active_combatant)	act = active_combatant.active_pokemon;
 if act.hp_cur <= 0	{ //run defeat checker codes
-	//before eerything else, check to see if team menu has sent us a new pokemon
+	//before everything else, check to see if team menu has sent us a new pokemon
 	if last_action_data != noone {
 		combatants[active_combatant].active_pokemon = last_action_data;
 		act = combatants[active_combatant].active_pokemon;
@@ -13,6 +13,7 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 		battle_text_message(random_battle_change_pokemon(combatants[active_combatant].active_pokemon));
 		last_action_data = noone;
 		last_action = noone;
+		if instance_exists(oBattleMove) with oBattleMove state++;
 		exit;
 	}
 	

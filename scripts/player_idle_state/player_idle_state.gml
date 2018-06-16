@@ -113,17 +113,6 @@ if (is_moving == true)
 		tile_x = floor(x/GRID_SIZE);
 		tile_y = floor(y/GRID_SIZE);
 		
-		//check for grass tiles here to generate wild battles
-		var tile_collision = find_tile_collision(x, y);
-		if tile_collision == collision_types.grass {
-			var encounter = irandom_range(1, 100);
-			if encounter <= 10 {
-				set_music("mus_wildBattle");
-			}
-		} else if oGameControl.music_name = "mus_wildBattle" {
-			set_music("mus_pallet");
-		}
-		
 		//check for doors with teleport locations
 		var door = instance_place(x, y, parDoor);
 		if instance_exists(door) and room_exists(door.next_room) { //we found a door and it has a teleport
@@ -132,11 +121,26 @@ if (is_moving == true)
 				last_room = room;
 				door_id = door.door_to;
 				room_goto(door.next_room);
-			} else {
-				//grab the door data and teleport
+				exit;
+			} else { //this door teleports to a new room,
+				//so grab the door data and teleport
 				last_room = room;
 				door_id = door.door_id;
 				room_goto(door.next_room);
+				exit;
+			}
+		}
+		
+		//check for grass tiles here to generate wild battles
+		//check this after looking for doors so doors placed on grass tiles will still function
+		var tile_collision = find_tile_collision(x, y);
+		if tile_collision == collision_types.grass {
+			var encounter = irandom_range(1, 100);
+			if encounter <= 10 {
+				var rand = irandom_range(0, array_length_1d(global.wildList)-1 );
+				var lvl = irandom_range(global.min_level, global.max_level);
+				var poke = global.wildList[rand];
+				wild_battle(terrain.field, "mus_wildBattle", new_pokemon(poke, lvl) );
 			}
 		}
 	}
