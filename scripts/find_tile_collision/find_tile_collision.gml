@@ -24,8 +24,8 @@ var tile_water = tilemap_get_at_pixel(layer_tilemap_get_id("water"), xx, yy);
 if tile_water != 0 and tile_terrain == 0 and tile_road == 0	{	return collision_types.water;	exit;	}
 
 //check for a grass collision
-var tile_grass = tilemap_get_at_pixel(layer_tilemap_get_id("terrain"), xx, yy)
-if tile_grass >= 3 and tile_grass <= 6 {	return collision_types.grass; exit; }
+var tile_grass = tilemap_get_at_pixel(layer_tilemap_get_id("grass"), xx, yy)
+if tile_grass != 0 {	return collision_types.grass; exit; }
 
 //check for outside room; no more base tiles here
 var tile_base = tilemap_get_at_pixel(layer_tilemap_get_id("base"), xx, yy);

@@ -6,7 +6,7 @@ if hud == true	instance_create_depth(0, 0, 0, oHUD);
 //ds_list_destroy(enemy_team);
 ds_grid_destroy(actions_list);
 
-
+if instance_exists(parent)	parent.alarm[1] = 1;
 set_music(song);
 
 if instance_exists(menu)			with menu instance_destroy();

@@ -18,7 +18,9 @@ if turn_phase == 0 { //introductory phase
 		var act = combatants[i].active_pokemon;
 		if instance_exists(act)	enemy_hp += act.hp_cur;
 	}
+	
 	if player_hp <= 0 or enemy_hp <= 0 { //end battle function
+		//show_message("Player hp: " + string(player_hp) + "/nEnemy hp: " + string(enemy_hp) );
 		instance_destroy(); exit;
 	}
 	

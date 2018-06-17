@@ -131,6 +131,10 @@ if (is_moving == true)
 			}
 		}
 		
+		//check for beds
+		var bed = instance_place(x, y, oBed);
+		if instance_exists(bed)	with bed event_user(1);
+		
 		//check for grass tiles here to generate wild battles
 		//check this after looking for doors so doors placed on grass tiles will still function
 		var tile_collision = find_tile_collision(x, y);

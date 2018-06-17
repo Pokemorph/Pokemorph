@@ -335,6 +335,7 @@ enum moves {
 	tackle,
 	scratch,
 	quick_attack,
+	bite,
 	done
 }
 

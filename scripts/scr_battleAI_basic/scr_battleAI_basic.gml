@@ -3,8 +3,7 @@
 //start off by checking for pokemon defeat
 var user = combatants[active_combatant];
 var act = combatants[active_combatant].active_pokemon; var team = combatants[active_combatant].pokemon;
-//if instance_exists(active_combatant)	act = active_combatant.active_pokemon;
-if act.hp_cur <= 0	{ //if enemy pokemon is defeated
+if act != noone and act.hp_cur <= 0	{ //if enemy pokemon is defeated
 	//if we've been defeated, immediately remove our action from the action list
 	for (var i = 0; i < ds_grid_height(actions_list); i++) {
 		if ds_grid_get(actions_list, 0, i) == active_combatant {
@@ -34,7 +33,7 @@ if act.hp_cur <= 0	{ //if enemy pokemon is defeated
 		active_combatant++;
 	}
 	if instance_exists(oBattleMove) with oBattleMove state++;
-} else	{	//if our pokemon is not dead, let's choose our action
+} else if act != noone	{	//if our pokemon is not dead, let's choose our action
 	var arr = [];
 	if act.moves_4 > -1 arr[3] = act.moves_4;
 	if act.moves_3 > -1 arr[2] = act.moves_3;

@@ -4,8 +4,20 @@
 var user = combatants[active_combatant];
 var act = combatants[active_combatant].active_pokemon; var team = combatants[active_combatant].pokemon;
 //if instance_exists(active_combatant)	act = active_combatant.active_pokemon;
-if act.hp_cur <= 0	{ //run defeat checker codes
-	//before everything else, check to see if team menu has sent us a new pokemon
+if act != noone and act.hp_cur <= 0	{ //run defeat checker codes
+	//if we've been defeated, immediately remove our action from the action list
+	for (var i = 0; i < ds_grid_height(actions_list); i++) {
+		if ds_grid_get(actions_list, 0, i) == active_combatant {
+			ds_grid_set(actions_list, 0, i, noone);
+			ds_grid_set(actions_list, 1, i, noone);
+			ds_grid_set(actions_list, 2, i, noone);
+			ds_grid_set(actions_list, 3, i, noone);
+			ds_grid_set(actions_list, 4, i, noone);
+			break;
+		}
+	}
+	
+	//next, check to see if team menu has sent us a new pokemon
 	if last_action_data != noone {
 		combatants[active_combatant].active_pokemon = last_action_data;
 		act = combatants[active_combatant].active_pokemon;
@@ -17,6 +29,7 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 		exit;
 	}
 	
+	//if we have another pokemon that can replace this one, send us to the team menu to select it
 	var len = array_length_1d(team), arr = [];
 	for (var i = 0; i < len; i++) {
 		if instance_exists(team[i]) and team[i].hp_cur > 0 {
@@ -35,21 +48,12 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 				}
 			}
 		}
-		//now to search for an action with our signature and remove it from the list
-		for (var i = 0; i > ds_grid_height(actions_list); i++) {
-			if ds_grid_get(actions_list, 0, i) == active_combatant {
-				ds_grid_set(actions_list, 0, i, noone);
-				ds_grid_set(actions_list, 1, i, noone);
-				ds_grid_set(actions_list, 2, i, noone);
-				ds_grid_set(actions_list, 3, i, noone);
-				ds_grid_set(actions_list, 4, i, noone);
-				break;
-			}
-		}
-	} else { //defeat codes
-		instance_destroy();
-	}
-} else { //our pokemon is not defeated, run regular command codes
+	} else { //if we have no pokemon to switch in, simply pass us by
+		combatants[active_combatant].active_pokemon = noone;
+		active_combatant++;
+		if instance_exists(oBattleMove) with oBattleMove state++;
+	} 
+} else if act != noone { //our pokemon is not defeated, run regular command codes
 	if !instance_exists(menu)	{
 		menu = instance_create_depth(x, y, depth-1, oBattleMenu)
 		menu.par = combatants[other.active_combatant];

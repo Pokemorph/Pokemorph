@@ -679,6 +679,14 @@
             }
         },
         {
+            "Key": "23a25bf0-8d89-4249-b154-1143ecb3a030",
+            "Value": {
+                "id": "491f6e20-03c0-4a8f-8691-4e75dd1ae575",
+                "resourcePath": "scripts\\trainer_battle\\trainer_battle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "243961c8-d2ae-4077-8018-f4f1f7a86950",
             "Value": {
                 "id": "ee2e1921-4797-4675-aa0f-dfb7a176688e",
@@ -1450,7 +1458,7 @@
             "Key": "4bb38746-49bc-4ee6-817d-f54468fb09be",
             "Value": {
                 "id": "f598cb2d-97d9-4836-8725-0cb1c3d9bf7a",
-                "resourcePath": "fonts\\fnt_buttons\\fnt_buttons.yy",
+                "resourcePath": "fonts\\fnt_battle_buttons\\fnt_battle_buttons.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -4783,6 +4791,14 @@
             }
         },
         {
+            "Key": "fbaac8a5-4285-45de-b181-ef474824bcc5",
+            "Value": {
+                "id": "f23fe097-d935-48eb-992d-93fa7f454ec4",
+                "resourcePath": "sounds\\snd_heal\\snd_heal.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "fd1158e3-bc4b-4aec-bfb6-7eec49de4b61",
             "Value": {
                 "id": "8b808c6d-327f-4d02-8f35-3a85df6eb6c0",
@@ -4878,6 +4894,7 @@
         "6600c787-a673-4241-b005-fa91f202e7e7",
         "5c254bd4-de69-494d-befb-0e23529904eb",
         "0f45c26d-f09e-4746-8f0f-dbdf743fe2e0",
+        "23a25bf0-8d89-4249-b154-1143ecb3a030",
         "fd26adca-cee5-4789-baa5-922517fb4920",
         "9510bc7c-73c3-4282-bf41-20459b88feba",
         "32c05a4a-438c-4acb-801e-494a78f34845",

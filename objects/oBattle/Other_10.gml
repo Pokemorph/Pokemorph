@@ -18,8 +18,8 @@ if combatant_count == 1 {//it's a mono-battle
 	with oBattleCombatant image_index = pose;
 		
 	//now generate the stats page for each combatant
-	combatants[0].stats = instance_create_depth(stats_x[5], stats_y[5], depth-2, oBattleStats);
-	combatants[1].stats = instance_create_depth(stats_x[2], stats_y[0], depth-2, oBattleStats);
+	combatants[0].stats = instance_create_depth(stats_x[5], stats_y[5], depth-1, oBattleStats);
+	combatants[1].stats = instance_create_depth(stats_x[2], stats_y[0], depth-1, oBattleStats);
 	with combatants[0].stats	parent = other.combatants[0];
 	with combatants[1].stats	parent = other.combatants[1];
 		
@@ -40,10 +40,10 @@ if combatant_count == 1 {//it's a mono-battle
 	with oBattleCombatant image_index = pose;
 		
 	//now generate the stats page for each combatant
-	combatants[0].stats = instance_create_depth(stats_x[4], stats_y[5], depth-2, oBattleStats);
-	combatants[1].stats = instance_create_depth(stats_x[5], stats_y[4], depth-2, oBattleStats);
-	combatants[2].stats = instance_create_depth(stats_x[2], stats_y[0], depth-2, oBattleStats);
-	combatants[3].stats = instance_create_depth(stats_x[0], stats_y[1], depth-2, oBattleStats);
+	combatants[0].stats = instance_create_depth(stats_x[4], stats_y[5], depth-1, oBattleStats);
+	combatants[1].stats = instance_create_depth(stats_x[5], stats_y[4], depth-1, oBattleStats);
+	combatants[2].stats = instance_create_depth(stats_x[2], stats_y[0], depth-1, oBattleStats);
+	combatants[3].stats = instance_create_depth(stats_x[0], stats_y[1], depth-1, oBattleStats);
 	with combatants[0].stats	parent = other.combatants[0];
 	with combatants[1].stats	parent = other.combatants[1];
 	with combatants[2].stats	parent = other.combatants[2];
@@ -71,12 +71,12 @@ if combatant_count == 1 {//it's a mono-battle
 	with oBattleCombatant image_index = pose;
 		
 	//now generate the stats page for each combatant
-	combatants[0].stats = instance_create_depth(stats_x[3], stats_y[5], depth-2, oBattleStats);
-	combatants[1].stats = instance_create_depth(stats_x[4], stats_y[4], depth-2, oBattleStats);
-	combatants[2].stats = instance_create_depth(stats_x[5], stats_y[3], depth-2, oBattleStats);
-	combatants[3].stats = instance_create_depth(stats_x[2], stats_y[0], depth-2, oBattleStats);
-	combatants[4].stats = instance_create_depth(stats_x[1], stats_y[1], depth-2, oBattleStats);
-	combatants[5].stats = instance_create_depth(stats_x[0], stats_y[2], depth-2, oBattleStats);
+	combatants[0].stats = instance_create_depth(stats_x[3], stats_y[5], depth-1, oBattleStats);
+	combatants[1].stats = instance_create_depth(stats_x[4], stats_y[4], depth-1, oBattleStats);
+	combatants[2].stats = instance_create_depth(stats_x[5], stats_y[3], depth-1, oBattleStats);
+	combatants[3].stats = instance_create_depth(stats_x[2], stats_y[0], depth-1, oBattleStats);
+	combatants[4].stats = instance_create_depth(stats_x[1], stats_y[1], depth-1, oBattleStats);
+	combatants[5].stats = instance_create_depth(stats_x[0], stats_y[2], depth-1, oBattleStats);
 	with combatants[0].stats	parent = other.combatants[0];
 	with combatants[1].stats	parent = other.combatants[1];
 	with combatants[2].stats	parent = other.combatants[2];

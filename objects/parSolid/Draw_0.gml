@@ -3,6 +3,7 @@
 
 draw_self();
 
-draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
+//draw bounding box for testing
+//draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 //draw_set_font(fnt_dialog);
 //draw_text(x, y+16, string(id) );

@@ -30,6 +30,7 @@ else													song = oGameControl.music_name;
 	edges of playable screen: 400-x1, 160-y1, 1219-x2, 640-y2
 */
 
+parent = noone;				//set this to an instance id to advance cutscene when battle ends
 combatants = [];			//an array to store all combatant objects used by this battle
 active_pokemon = noone;		//use this to store the currently active pokemon
 active_combatant = 0		//iterator for tracking the active combat space
@@ -41,5 +42,5 @@ last_action = noone; last_action_data = noone;	//these two store the last chosen
 last_action_target = noone;
 player_x = [xx, xx+200, xx+400]; player_y = yy+76;
 enemy_x = [xx+460, xx+260, xx+60]; enemy_y = yy;//these store positions of different combatants
-stats_x = [400, 410, 420, 1023, 1033, 1043];
+stats_x = [400, 415, 430, 1013, 1028, 1043];
 stats_y = [160, 200, 240, 360, 400, 440];		//store the positions of stat blocks

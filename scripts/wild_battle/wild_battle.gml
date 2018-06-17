@@ -21,4 +21,4 @@ var n = new_team(noone, "", scr_battleAI_basic, p[0]);
 n.pokemon = p;
 
 //and finally, call the battle script using our new team and the specified background and music
-scr_battle(back, music, true, true, n);
+scr_battle(back, music, noone, true, true, n);

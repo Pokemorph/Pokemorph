@@ -53,7 +53,7 @@ global.weather = weather.sunny;
 //inialize mouse cursor
 cursor_sprite = cursor_ball;
 
-//resize the screen if necessary
+//resize the screen if necessary, then prepare to center it
 var screen_height = window_get_height();
 if screen_height != 900 {	//if auto-sized screen is smaller than intended, run resize code
 	//screen_height -= 80;
