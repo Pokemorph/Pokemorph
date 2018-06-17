@@ -1,9 +1,16 @@
 ///basic battle AI; provides randomized NPC decisions to the battle object
 
-//start off by checking for pokemon defeat
+//start off by getting some basic values
 var user = combatants[active_combatant];
 var act = combatants[active_combatant].active_pokemon; var team = combatants[active_combatant].pokemon;
-if act != noone and act.hp_cur <= 0	{ //if enemy pokemon is defeated
+
+//if we've already been defeated, pass our turn and exit this script
+if act == noone	{
+	active_combatant++;
+	exit;
+}
+
+if act != noone and act.hp_cur <= 0	{ //run defeat codes
 	//if we've been defeated, immediately remove our action from the action list
 	for (var i = 0; i < ds_grid_height(actions_list); i++) {
 		if ds_grid_get(actions_list, 0, i) == active_combatant {

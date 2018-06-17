@@ -3183,14 +3183,6 @@
             }
         },
         {
-            "Key": "b0aa81a3-531f-40d0-b6ca-b6adb0f5012c",
-            "Value": {
-                "id": "6fe0d90d-e011-4b7f-85d6-aabc54c8c45f",
-                "resourcePath": "scripts\\battle_control_player\\battle_control_player.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b0c890b7-0b0c-4e86-95ca-8e2f613c3ea0",
             "Value": {
                 "id": "697de2d6-fbfc-4fa9-a986-7ee1fcdf4e3c",
@@ -3316,6 +3308,14 @@
                 "id": "0aa01613-075e-4542-ba44-ba12c22d2d12",
                 "resourcePath": "scripts\\scr_battleAI_player\\scr_battleAI_player.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b7fcad85-e4ba-4440-841d-4b7b4c1176d7",
+            "Value": {
+                "id": "7196bb57-9ff9-4032-aca4-ae0e9689f5b5",
+                "resourcePath": "views\\b7fcad85-e4ba-4440-841d-4b7b4c1176d7.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -4893,7 +4893,6 @@
         "526406ed-f926-447e-8458-b5660288f557",
         "6600c787-a673-4241-b005-fa91f202e7e7",
         "5c254bd4-de69-494d-befb-0e23529904eb",
-        "0f45c26d-f09e-4746-8f0f-dbdf743fe2e0",
         "23a25bf0-8d89-4249-b154-1143ecb3a030",
         "fd26adca-cee5-4789-baa5-922517fb4920",
         "9510bc7c-73c3-4282-bf41-20459b88feba",
@@ -4903,16 +4902,16 @@
         "362116f4-3787-449b-b90a-265cb91d29cd",
         "dc94c5b3-dd24-47d4-8fa5-e4da4aed444a",
         "f377575e-b37a-4949-95d9-e66d605d2fef",
-        "aafd2ee0-4cbb-4e17-823a-79675976cd01",
         "0f4836a3-a816-41a2-a202-c9055f08026f",
         "b7ec2027-20c1-4ab6-85a4-d708add933bc",
+        "aafd2ee0-4cbb-4e17-823a-79675976cd01",
+        "0f45c26d-f09e-4746-8f0f-dbdf743fe2e0",
         "1903982a-a43a-41ee-80b6-6e7c4f35c773",
         "3741e4ea-8b92-4d3a-a8e7-4a359cfe9406",
         "2739e43d-73de-4942-a248-5a59f64ad35f",
         "74a61b82-4f5f-4702-92ef-0fe25d88df46",
         "f1e3286e-a85d-4515-b34b-4b289034609e",
         "1d41dc07-d8fa-4af1-afbc-e09dd099a833",
-        "b0aa81a3-531f-40d0-b6ca-b6adb0f5012c",
         "b2b5cd5f-32f5-415e-87a8-91162226d41f",
         "4f0b1c72-3ede-4f34-945e-b1110316e8ff",
         "f183c076-8519-43c0-a367-8ff99a9445e4",

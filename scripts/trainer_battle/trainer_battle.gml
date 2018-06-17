@@ -11,11 +11,11 @@ var back = argument[0]; var music = argument[1];
 //gather player trainer data
 var p = new_team(oPlayer.trainer_pic, oPlayer.trainer_name, oPlayer.ai_script, oPlayer.pokemon[0], oPlayer.pokemon[1], oPlayer.pokemon[2], oPlayer.pokemon[3], oPlayer.pokemon[4], oPlayer.pokemon[5])
 
-if argument_count > 4	scr_battle(back, music, self, true, true, p, p, p, argument[2], argument[3], argument[4]);
-else if argument_count > 3	scr_battle(back, music, self, true, true, p, p, argument[2], argument[3]);
-else	scr_battle(back, music, self, true, true, p, argument[2]);
+var t1 = argument[2];
+if argument_count > 3	var t2 = argument[3];
+if argument_count > 4	var t3 = argument[4];
 
-
-
-//and finally, call the battle script using our new team and the specified background and music
-scr_battle(back, music, self, true, true, n);
+//call battle script using as many trainers as we were passed arguments for
+if argument_count > 4	scr_battle(back, music, self, true, true, p, p, p, t1, t2, t3);
+else if argument_count > 3	scr_battle(back, music, self, true, true, p, p, t1, t2);
+else	scr_battle(back, music, self, true, true, p, t1);

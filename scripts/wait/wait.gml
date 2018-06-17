@@ -4,5 +4,6 @@
 
 var sec = argument0*60;
 if sec <= 0		sec = 1;
-alarm[1] = sec;
 interact_state++;
+if instance_exists(oPlayer) oPlayer.state = player_talking_state;
+alarm[1] = sec;

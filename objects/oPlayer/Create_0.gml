@@ -38,7 +38,7 @@ depth_layer = 0;
 //trainer data
 trainer_pic = battle_bay;
 trainer_name = global.BayName;
-ai_script = battle_control_player;
+ai_script = scr_battleAI_player;
 pose = battle_poses.back;
 pokemon = [];
 for ( var i = 5; i >= 0; i-- ) {

@@ -1,7 +1,7 @@
 /// @description interaction code
 // You can write your code in this editor
 
-//audio_play_sound(snd_sxy_lick, 1, false);
+
 switch interact_state {
 	case 0:
 		look_at(self, oPlayer);
@@ -14,6 +14,13 @@ switch interact_state {
 		wait(0.5);
 	case 3:
 		say(global.BayName, "Uh ... sure.");
+		break;
+	case 4:
+		var me = new_team(battle_willow, "Willow", scr_battleAI_basic, new_pokemon(dex_id.Eevee, 4) )
+		trainer_battle(terrain.field, "mus_trainerBattle", me);
+		break;
+	case 5:
+		say(name, "That was fun. We should do this again sometime.");
 		break;
 	default:
 		oPlayer.state = player_idle_state;

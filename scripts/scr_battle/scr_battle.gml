@@ -20,7 +20,7 @@ with instance_create_depth(0, 0, -15, oBattle) {
 	if argument_count == 6 { //if only one combatant is defined for us, assume the player is the other one
 		combatants[0] = new_team(oPlayer.trainer_pic, oPlayer.trainer_name, oPlayer.ai_script, oPlayer.pokemon[0], oPlayer.pokemon[1], oPlayer.pokemon[2], oPlayer.pokemon[3], oPlayer.pokemon[4], oPlayer.pokemon[5]);
 		combatants[1] = argument[5];
-	} else	for ( var i = 0; i <= argument_count-5; i++ ) {
+	} else	for ( var i = 0; i < argument_count-5; i++ ) {
 		combatants[i] = argument[i+5];
 		combatants[i].depth = depth-1;
 	}
