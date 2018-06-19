@@ -9,7 +9,6 @@ switch interact_state {
 		break;
 	case 1: 
 		give_pokemon(new_pokemon(dex_id.Bulbasaur, 5));
-		audio_play_sound(snd_sxy_lick, 0, false);
 		say("", "Eevee's friend has joined your party!");
 		break;
 	default:

@@ -2,7 +2,8 @@
 
 //iterate through all combatants to set their depth and sprite index
 for (var i = 0; i < array_length_1d(combatants); i++) {
-	var t = combatants[i].active_pokemon; t = t.breed_ref
+	var t = combatants[i].active_pokemon;
+	t = t.breed_ref;
 	combatants[i].sprite_index = ds_grid_get(global.breedData, stats_breed.picture, t);
 	//modify combatant depth to appear above battle object
 	combatants[i].depth = depth-1;

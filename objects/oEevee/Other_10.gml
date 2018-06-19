@@ -11,7 +11,6 @@ switch interact_state {
 		var n = new_pokemon(dex_id.Eevee, 5);
 		n.nickname = global.EeveeName;
 		give_pokemon(n);
-		audio_play_sound(snd_sxy_lick, 0, false);
 		say("", "Eevee has joined your party!");
 		break;
 	default:

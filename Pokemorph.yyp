@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "181d8e56-d7e2-4687-943d-a1c1f03fba00",
+            "Value": {
+                "id": "feac68be-f94c-4d27-a88f-4c553ace6d80",
+                "resourcePath": "sprites\\battle_transition_pokeball\\battle_transition_pokeball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "18cab61b-6932-486f-9134-b3655e1f0809",
             "Value": {
                 "id": "6f1844ce-d30f-4308-a471-1a7ec024925d",
@@ -1596,6 +1604,14 @@
                 "id": "dc5445ed-04d8-4d56-bd6f-b32e3530aeae",
                 "resourcePath": "sprites\\options_volumebarmarker\\options_volumebarmarker.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "541a9c0b-c392-4465-8f2e-16acea58633e",
+            "Value": {
+                "id": "ab50dbe3-44ce-418c-a7ed-00662be32a9c",
+                "resourcePath": "fonts\\fnt_dialog_bold\\fnt_dialog_bold.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -4299,6 +4315,14 @@
             "Value": {
                 "id": "43514720-9f25-40c6-a5bd-0bc9a869022e",
                 "resourcePath": "sprites\\spr_door_glass\\spr_door_glass.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e6c7c4c6-e02a-4857-93dd-06e7ad5e8ac3",
+            "Value": {
+                "id": "cbbd8e2c-f866-46bc-9d32-b88e01ca8279",
+                "resourcePath": "sprites\\battle_transition_back\\battle_transition_back.yy",
                 "resourceType": "GMSprite"
             }
         },

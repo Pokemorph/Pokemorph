@@ -4,6 +4,7 @@
 
 
 //find an empty space and put the new pokemon in it
+audio_play_sound(snd_get_pokemon, 3, false);
 if      oPlayer.pokemon[0] == noone	oPlayer.pokemon[0] = argument0;
 else if oPlayer.pokemon[1] == noone	oPlayer.pokemon[1] = argument0;
 else if oPlayer.pokemon[2] == noone	oPlayer.pokemon[2] = argument0;

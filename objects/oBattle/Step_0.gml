@@ -20,7 +20,6 @@ if turn_phase == 0 { //introductory phase
 	}
 	
 	if player_hp <= 0 or enemy_hp <= 0 { //end battle function
-		//show_message("Player hp: " + string(player_hp) + "/nEnemy hp: " + string(enemy_hp) );
 		instance_destroy(); exit;
 	}
 	
