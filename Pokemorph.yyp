@@ -2887,6 +2887,14 @@
             }
         },
         {
+            "Key": "9f39f3e1-0932-414c-852f-40402c69dd21",
+            "Value": {
+                "id": "b4f755c3-9c19-4760-95cf-65d3702ea0f0",
+                "resourcePath": "objects\\oBattleTransition\\oBattleTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9f97f073-3336-4c91-b039-b3510228984a",
             "Value": {
                 "id": "0e2ec05b-2469-467d-94bb-da2190127967",

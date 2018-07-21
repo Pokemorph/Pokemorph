@@ -18,9 +18,10 @@ with n {
 	for ( var i = 0; i < array_length_1d(pokemon); i++ ) {
 		if instance_exists(pokemon[i]) and pokemon[i].hp_cur > 0 {
 			active_pokemon = pokemon[i]; break;
+			sprite_index = trainer_pic;
 		}
 	}
-	sprite_index = trainer_pic;
+	if sprite_exists(trainer_pic) 	sprite_index = trainer_pic;
 }
 
 return n;

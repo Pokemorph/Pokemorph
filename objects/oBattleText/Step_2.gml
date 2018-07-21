@@ -6,7 +6,12 @@ if input_timer <= 0 and text[0] != "" {
 	input_timer--
 	exit;
 }
-text_visible = string_copy(text[text_page], 1, round(text_count));
+
+if text[0] = "player"	{ //while the active page is set to default, display a "what will you do" message
+	var act = noone;
+	with parent		act = combatants[active_combatant].active_pokemon;
+	text_visible = "What will " + string(act.nickname) + " do?";
+} else		text_visible = string_copy(text[text_page], 1, round(text_count));
 
 if oGameControl.interact_key and input_timer <= 0 {
     if text_count < string_length(text[text_page])   {

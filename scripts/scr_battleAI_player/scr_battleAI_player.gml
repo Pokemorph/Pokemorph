@@ -64,6 +64,7 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 		menu = instance_create_depth(x, y, depth-1, oBattleMenu)
 		menu.par = combatants[other.active_combatant];
 	} else { //if menu already exists, we wait for input objects to set last_action
+		battle_text_message("player");
 		if last_action = battle_actions.use_move {
 			var prio = ds_grid_get(global.moves, move_stats.priority, last_action_data);
 			var mult = get_stat_modifier(round(act.spd_lvl) );
@@ -77,6 +78,7 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 			last_action = noone; last_action_data = noone; last_action_target = noone;
 			if instance_exists(menu) with menu instance_destroy();
 			active_combatant++;
+			battle_text_message("");
 			//show_message("Player chose a move.")
 		} else if last_action = battle_actions.change_pokemon {
 			var prio = 6000;
@@ -89,6 +91,7 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 			last_action = noone; last_action_data = noone; last_action_target = noone;
 			if instance_exists(menu) with menu instance_destroy();
 			active_combatant++;
+			battle_text_message("");
 			//show_message("Player chose to change pokemon.")
 		} else if last_action = battle_actions.use_item {
 			var mult = get_stat_modifier(round(act.spd_lvl) );
@@ -102,10 +105,12 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 			last_action = noone; last_action_data = noone; last_action_target = noone;
 			if instance_exists(menu) with menu instance_destroy();
 			active_combatant++;
+			battle_text_message("");
 		} else if last_action == battle_actions.just_wait {
 			last_action = noone; last_action_data = noone; last_action_target = noone;
 			if instance_exists(menu) with menu instance_destroy();
 			active_combatant++;
+			battle_text_message("");
 		}
 	}
 }

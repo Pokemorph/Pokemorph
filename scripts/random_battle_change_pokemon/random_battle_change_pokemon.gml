@@ -1,9 +1,9 @@
 ///@function random_battle_change_pokemon()
-///@argument pokemon_id
+///@argument nickname(s)
 
 if instance_exists(oBattle)	{
 	var text = "";
-	var name = argument0.nickname;
+	var name = argument0;
 	var rand = irandom_range(0, 9);
 	
 	switch rand {

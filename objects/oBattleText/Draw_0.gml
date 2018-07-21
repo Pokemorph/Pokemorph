@@ -1,5 +1,4 @@
-/// @desc Increment and draw the text
-
+/// @desc draw the text
 draw_set_color(c_white);
 draw_self();
 draw_set_font(fnt_dialog);

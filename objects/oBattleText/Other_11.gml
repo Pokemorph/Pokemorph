@@ -2,7 +2,9 @@
 // this event will reformat the full text in order to tell gamemaker when to break a line
 
 if (text != undefined) {
-
+	//upon receiving the format command, reset the text values
+	text_count = 0;
+	
 	//set font
 	draw_set_font(fnt_dialog);
 	
@@ -16,8 +18,9 @@ if (text != undefined) {
     
 	//loop through pages
 	for(var i = 0; i < array_size; i++) {
-		//first find and replace any instances of placeholder strings with appropriate strings
-		/*var pmon = parent.pmon; var emon = parent.emon;
+		/*
+		//find and replace any instances of placeholder strings with appropriate strings
+		var pmon = parent.pmon; var emon = parent.emon;
 		var pname = pmon.nickname; var ename = emon.nickname;
 		
 		text[i] = string_replace_all(text[i], "pmon", string(pname) );
@@ -41,7 +44,7 @@ if (text != undefined) {
 
 				text[i] = string_insert("\n", text[i], last_space);
 			}
-            count++
+            count++;
             char = string_char_at(text[i], count);
         }
     }

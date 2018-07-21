@@ -12,8 +12,8 @@
 if argument_count == 6 {
 	var p = new_team(oPlayer.trainer_pic, oPlayer.trainer_name, oPlayer.ai_script, oPlayer.pokemon[0], oPlayer.pokemon[1], oPlayer.pokemon[2], oPlayer.pokemon[3], oPlayer.pokemon[4], oPlayer.pokemon[5]);
 } else {
-	var p = argument[i+5];
-} 
+	var p = argument[5];
+}
 if p.active_pokemon == noone	exit; 
 else {
 	var act = p.active_pokemon;
@@ -39,5 +39,5 @@ with instance_create_depth(0, 0, -15, oBattle) {
 	combatant_count = round(array_length_1d(combatants)/2 );
 	
 	//run the event to set combatant positions and collect their names for the text
-	event_user(0);
+	//event_user(0);
 }

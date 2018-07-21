@@ -9,13 +9,15 @@ if instance_exists(oCamera) {
 	yy = 160;
 } x = xx - irandom(200); y = yy - irandom(100);
 image_index = 0
+visible = false;
+instance_create_depth(0, 0, 10, oBattleTransition);
 
 //get active menus and destroy them (for now, should only affect oHUD)
 hud = false;
 if instance_exists(oHUD) with oHUD {
 	other.hud = true;
 	instance_destroy();
-} menu = noone; text_box = instance_create_depth(xx, yy+376, depth-1, oBattleText);
+} menu = noone; text_box = noone;
 
 //store the room music to switch back after battle (actual song change in battle caller script)
 if oGameControl.music_name = "mus_trainerEncounter"		song = oGameControl.last_song;
@@ -30,6 +32,7 @@ else													song = oGameControl.music_name;
 	edges of playable screen: 400-x1, 160-y1, 1219-x2, 640-y2
 */
 
+animation_state = 0;		//use this to track the animation sequences
 parent = noone;				//set this to an instance id to advance cutscene when battle ends
 combatants = [];			//an array to store all combatant objects used by this battle
 active_pokemon = noone;		//use this to store the currently active pokemon
@@ -44,3 +47,4 @@ player_x = [xx, xx+200, xx+400]; player_y = yy+76;
 enemy_x = [xx+460, xx+260, xx+60]; enemy_y = yy;//these store positions of different combatants
 stats_x = [400, 415, 430, 1013, 1028, 1043];
 stats_y = [160, 200, 240, 360, 400, 440];		//store the positions of stat blocks
+text_timer = 0;
