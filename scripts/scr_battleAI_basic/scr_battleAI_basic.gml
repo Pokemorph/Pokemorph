@@ -35,9 +35,25 @@ if act != noone and act.hp_cur <= 0	{ //run defeat codes
 		//select random pokemon from list of available
 		var r = irandom_range(0, array_length_1d(arr)-1);
 		set_pokemon_enemy(arr[r]);
-	} else { //if we have no pokemon to switch in, simply pass us by
-		combatants[active_combatant].active_pokemon = noone;
-		active_combatant++;
+	} else { //if we have no pokemon to switch in, check for defeat and pass us by
+		
+		var enemy_hp = 0; var player_hp = 0;
+		for (var i = 0; i < combatant_count; i++) {
+			var act = combatants[i].active_pokemon;
+			if instance_exists(act)	player_hp += act.hp_cur;
+		} for (var i = combatant_count; i < array_length_1d(combatants); i++) {
+			var act = combatants[i].active_pokemon;
+			if instance_exists(act)	enemy_hp += act.hp_cur;
+		}
+	
+		if player_hp <= 0 or enemy_hp <= 0 { //end battle function
+			//trigger end battle with the final turn phase
+			turn_phase = 9;
+			exit;
+		} else {
+			combatants[active_combatant].active_pokemon = noone;
+			active_combatant++;
+		}
 	}
 	if instance_exists(oBattleMove) with oBattleMove state++;
 } else if act != noone	{	//if our pokemon is not dead, let's choose our action
@@ -52,6 +68,11 @@ if act != noone and act.hp_cur <= 0	{ //run defeat codes
 	prio = (prio*1000) + (act.spd_cur * mult);
 	
 	//now that we have our attack selected, let's set the action list entry data
+	//first we'll set the user
+	//then the action type
+	//the action data, in this case the move id
+	//then the target combatant
+	//and finally the priority for sorting
 	ds_grid_set(actions_list, 0, active_combatant, active_combatant);
 	ds_grid_set(actions_list, 1, active_combatant, battle_actions.use_move);
 	ds_grid_set(actions_list, 2, active_combatant, arr[r]);

@@ -4,6 +4,7 @@
 ///@argument move_id
 ///@argument target_id
 ///@argument crit
+
 //in order to perform necessary calculations in this phase, get vital data
 var user_id = argument0, move_id = argument1, target_id = argument2;
 if argument3	var crit = 1.5;		//if move is determined to be a crit, increase damage

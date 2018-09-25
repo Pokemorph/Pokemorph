@@ -16,7 +16,7 @@ switch interact_state {
 		say(global.BayName, "Uh ... sure.");
 		break;
 	case 4:
-		var me = new_team(battle_willow, "Willow", scr_battleAI_basic, new_pokemon(dex_id.Eevee, 4) )
+		var me = new_team(battle_willow, "Willow", scr_battleAI_basic, new_pokemon(dex_id.Eevee, 4), new_pokemon(dex_id.Bulbasaur, 4) )
 		trainer_battle(terrain.field, "mus_trainerBattle", me);
 		break;
 	case 5:

@@ -47,4 +47,4 @@ player_x = [xx, xx+200, xx+400]; player_y = yy+76;
 enemy_x = [xx+460, xx+260, xx+60]; enemy_y = yy;//these store positions of different combatants
 stats_x = [400, 415, 430, 1013, 1028, 1043];
 stats_y = [160, 200, 240, 360, 400, 440];		//store the positions of stat blocks
-text_timer = 0;
+text_timer = 0;				//tracks delay, in frames, before erasing text and advancing battle

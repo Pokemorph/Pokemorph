@@ -25,10 +25,8 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 	
 	//next, check to see if team menu has sent us a new pokemon
 	if last_action_data != noone {
-		combatants[active_combatant].active_pokemon = last_action_data;
+		set_pokemon_player(last_action_data);
 		act = combatants[active_combatant].active_pokemon;
-		combatants[active_combatant].sprite_index = ds_grid_get(global.breedData, stats_breed.picture, act.breed_ref);
-		battle_text_message(random_battle_change_pokemon(combatants[active_combatant].active_pokemon));
 		last_action_data = noone;
 		last_action = noone;
 		if instance_exists(oBattleMove) with oBattleMove state++;
@@ -44,7 +42,7 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 	}
 	if array_length_1d(arr) > 0 {
 		//if team menu isn't open, open it
-		if !instance_exists(oTeamMenu)	instance_create_depth(x, y, depth-2, oTeamMenu);
+		if !instance_exists(oTeamMenu)	instance_create_depth(x, y, depth-3, oTeamMenu);
 		
 		if instance_exists(oBattleMenu) with oBattleMenu { //this shouldn't trigger, but just in case...
 			state = 2;
@@ -54,10 +52,27 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 				}
 			}
 		}
-	} else { //if we have no pokemon to switch in, simply pass us by
-		combatants[active_combatant].active_pokemon = noone;
-		active_combatant++;
-		if instance_exists(oBattleMove) with oBattleMove state++;
+	} else { //if we have no pokemon to switch in, check for defeat, or pass us by
+		
+		var enemy_hp = 0; var player_hp = 0;
+		for (var i = 0; i < combatant_count; i++) {
+			var act = combatants[i].active_pokemon;
+			if instance_exists(act)	player_hp += act.hp_cur;
+		} for (var i = combatant_count; i < array_length_1d(combatants); i++) {
+			var act = combatants[i].active_pokemon;
+			if instance_exists(act)	enemy_hp += act.hp_cur;
+		}
+	
+		if player_hp <= 0 or enemy_hp <= 0 { //trigger end battle phase
+			//show_message("End Battle triggered")
+			turn_phase = 9;
+			exit;
+		} else {
+			combatants[active_combatant].active_pokemon = noone;
+			active_combatant++;
+		}
+		
+		//if instance_exists(oBattleMove) with oBattleMove state++;
 	} 
 } else { //our pokemon is not defeated, run regular command codes
 	if !instance_exists(menu)	{
@@ -69,10 +84,10 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 			var prio = ds_grid_get(global.moves, move_stats.priority, last_action_data);
 			var mult = get_stat_modifier(round(act.spd_lvl) );
 			prio = (prio*1000) + (act.spd_cur * mult);
-			ds_grid_set(actions_list, 0, active_combatant, active_combatant);
-			ds_grid_set(actions_list, 1, active_combatant, battle_actions.use_move);
-			ds_grid_set(actions_list, 2, active_combatant, last_action_data); //in this case, stores move id
-			ds_grid_set(actions_list, 3, active_combatant, 1);
+			ds_grid_set(actions_list, 0, active_combatant, active_combatant); //register user
+			ds_grid_set(actions_list, 1, active_combatant, battle_actions.use_move); //tell game to make move
+			ds_grid_set(actions_list, 2, active_combatant, last_action_data); //register move id
+			ds_grid_set(actions_list, 3, active_combatant, combatant_count); //register target
 			//ds_grid_set(actions_list, 3, turn_state, last_action_target);
 			ds_grid_set(actions_list, 4, active_combatant, prio);
 			last_action = noone; last_action_data = noone; last_action_target = noone;

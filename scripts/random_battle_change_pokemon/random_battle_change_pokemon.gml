@@ -1,5 +1,5 @@
 ///@function random_battle_change_pokemon()
-///@argument nickname(s)
+///@argument nickname
 
 if instance_exists(oBattle)	{
 	var text = "";

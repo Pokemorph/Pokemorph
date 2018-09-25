@@ -12,7 +12,8 @@
         "89695de4-4ff7-4c4b-a632-b64e527658ae",
         "9f97f073-3336-4c91-b039-b3510228984a",
         "3c212bda-85f2-4b10-aebd-cad4272fb306",
-        "e683e5e8-927e-4515-88a8-0e81a6d94c05"
+        "e683e5e8-927e-4515-88a8-0e81a6d94c05",
+        "2500e68b-d997-438d-b5a5-372fb8203f54"
     ],
     "filterType": "GMSprite",
     "folderName": "Team Rocket",

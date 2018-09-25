@@ -6,7 +6,8 @@
     "children": [
         "f68c7410-dee7-4234-8591-489f4ca1ec56",
         "bb1478b1-112a-4221-81cc-4e572faee2bf",
-        "c26043a2-51a3-450c-b8e4-6f2290e17162"
+        "c26043a2-51a3-450c-b8e4-6f2290e17162",
+        "f5aa48dc-120f-45bb-adc4-af3549443252"
     ],
     "filterType": "GMSprite",
     "folderName": "battle_arts",

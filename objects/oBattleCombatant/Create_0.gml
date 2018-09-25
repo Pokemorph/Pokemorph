@@ -2,8 +2,8 @@
 // This object will hold all data necessary for an AI-controlled slot in battle;
 // trainer info, pokemon team, and an AI script for choosing its actions in combat
 
-trainer_name = "Bubbalicious";
-trainer_pic = battle_bubba;
+trainer_name = "Deadman";
+trainer_pic = battle_dedde_man;
 ai_script = scr_battleAI_basic;
 stats = noone;
 is_enemy = true;

@@ -1,8 +1,8 @@
-/// @description Manage the battle intro animation
+/// @description battle intro animation
 if animation_state == 0 {
 	if visible == true {
-		text_box = instance_create_depth(xx, yy+376, depth-1, oBattleText);
-		text_box.text[0] = "";
+		text_box = instance_create_depth(xx, yy+376, depth-2, oBattleText);
+		battle_text_message("");
 		
 		//iterate through all combatants to set their depth and initial appearance
 		for (var i = 0; i < array_length_1d(combatants); i++) {
@@ -78,7 +78,7 @@ if animation_state == 0 {
 			
 			//and then collect the enemy's name for the text function
 			n = combatants[1].trainer_name;
-			if n = "default" or n == "Bubbalicious" or n == "" { //no trainer here
+			if n = "default" or n == "" { //no trainer here
 				n = combatants[1].active_pokemon; n = n.nickname;
 				t = false;
 			} else { //if a trainer name is found
@@ -152,13 +152,18 @@ if animation_state == 0 {
 			var n = string(n1.nickname);
 		}
 		battle_text_message(random_battle_change_pokemon(n));
+		text_timer = 1*GAME_SPEED;
 		animation_state++;
 	} else { //text timer has timed down, but we have no trainer, so skip ahead to the player choose text
 		animation_state = 4;
 		text_timer = 3 * GAME_SPEED;
 	}
 } else if animation_state == 3 { //move enemies off screen, then reposition them and set active pokemon
-	if combatants[combatant_count].x >= enemy_x[0]+400 {
+	if combatants[combatant_count].x < enemy_x[0]+400 { // if enemy is not at the end of its movement, move it
+		for (var i = combatant_count; i < array_length_1d(combatants); i++) {
+			combatants[i].x += 5;
+		}
+	} else { //enemy has reached the end of its movement; snap it back and change to morph art
 		if combatant_count == 1 {//it's a mono-battle
 			with combatants[combatant_count]	{
 				sprite_index = ds_grid_get(global.breedData, stats_breed.picture, active_pokemon.breed_ref);
@@ -207,10 +212,6 @@ if animation_state == 0 {
 		//at the end of all of this, advance the state
 		animation_state++;
 		text_timer = 3*GAME_SPEED;
-	} else { // if enemy combatant is not at the end of its movement
-		for (var i = combatant_count; i < array_length_1d(combatants); i++) {
-			combatants[i].x += 5;
-		}
 	}
 } else if animation_state == 4 {
 	if text_box.text[0] == "" {
@@ -219,7 +220,7 @@ if animation_state == 0 {
 	if text_timer > 0	{
 		text_timer--;
 	}
-	else { //text timer has timed down or text is now blank, display enemy choose text
+	else { //text timer has timed down or text is now blank, display player choose text
 		var n = "";
 		if combatant_count == 3 {
 			var n1 = combatants[0].active_pokemon;
@@ -235,10 +236,15 @@ if animation_state == 0 {
 			var n = string(n1.nickname);
 		}
 		battle_text_message(random_battle_change_pokemon(n));
+		text_timer = 1*GAME_SPEED;
 		animation_state++;
 	}
 } else if animation_state == 5 { //move player off screen, then reposition them and set active pokemon
-	if combatants[0].x <= player_x[0]-400 {
+	if combatants[0].x > player_x[0]-400 { // if player combatant is not at the end of its movement
+		for (var i = 0; i < combatant_count; i++) {
+			combatants[i].x -= 5;
+		}
+	} else { //player has reached the end of its movement, snap back and change to starting morph
 		if combatant_count == 1 {//it's a mono-battle
 			//fix the position and sprite of each combatant
 			with combatants[0]	{
@@ -294,10 +300,6 @@ if animation_state == 0 {
 		//at the end of all of this, advance the state
 		animation_state++;
 		text_timer = 2*GAME_SPEED;
-	} else { // if player combatant is not at the end of its movement
-		for (var i = 0; i < combatant_count; i++) {
-			combatants[i].x -= 5;
-		}
 	}
 } else if animation_state == 6 {
 	if text_box.text[0] == "" {

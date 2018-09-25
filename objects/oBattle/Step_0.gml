@@ -1,24 +1,10 @@
-/// @desc control state variables and the battle
+/// @desc control battle state engine
 // You can write your code in this editor
 
 if turn_phase == 0 { //introductory phase
 	event_user(0);
 } else if turn_phase == 1 { //command phase
-	//start by checking for an end to the battle. If one side or the other has no hp left, end battle
-	var enemy_hp = 0; var player_hp = 0;
-	for (var i = 0; i < combatant_count; i++) {
-		var act = combatants[i].active_pokemon;
-		if instance_exists(act)	player_hp += act.hp_cur;
-	} for (var i = combatant_count; i < array_length_1d(combatants); i++) {
-		var act = combatants[i].active_pokemon;
-		if instance_exists(act)	enemy_hp += act.hp_cur;
-	}
-	
-	if player_hp <= 0 or enemy_hp <= 0 { //end battle function
-		instance_destroy(); exit;
-	}
-	
-	//now run ai for each combatant in order
+	//run ai for each combatant in order
 	if array_length_1d(combatants) > active_combatant {
 		if instance_exists(combatants[active_combatant]) { //make sure instance exists before calling its ai
 			if text_box.text[0] == "" or text_box.text[0] == "player" {
@@ -67,4 +53,6 @@ if turn_phase == 0 { //introductory phase
 		active_combatant = 0;
 		turn_phase = 1;
 	}
+} else if turn_phase = 9 {
+	event_user(1);
 }
