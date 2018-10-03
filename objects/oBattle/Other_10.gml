@@ -19,10 +19,10 @@ if animation_state == 0 {
 		
 		if combatant_count == 1 {//it's a mono-battle
 			//start by setting the position of the objects
-			combatants[0].x = player_x[0]-1000; 
+			combatants[0].x = player_x[0]-800; 
 			combatants[0].y = player_y; 
 			combatants[0].pose = battle_poses.back;
-			combatants[1].x = enemy_x[0]-1000; 
+			combatants[1].x = enemy_x[0]+800; 
 			combatants[1].y = enemy_y; 
 			combatants[1].pose = battle_poses.front;
 		} else if combatant_count == 2 { //for a double battle
@@ -33,10 +33,10 @@ if animation_state == 0 {
 			combatants[1].x = player_x[2]-1000; 
 			combatants[1].y = player_y; 
 			combatants[1].pose = battle_poses.back;
-			combatants[2].x = enemy_x[0]-1000; 
+			combatants[2].x = enemy_x[0]+1000; 
 			combatants[2].y = enemy_y; 
 			combatants[2].pose = battle_poses.front;
-			combatants[3].x = enemy_x[2]-1000; 
+			combatants[3].x = enemy_x[2]+1000; 
 			combatants[3].y = enemy_y; 
 			combatants[3].pose = battle_poses.front;
 		} else if combatant_count == 3 { //and now for triple battle
@@ -50,13 +50,13 @@ if animation_state == 0 {
 			combatants[2].x = player_x[2]-1000; 
 			combatants[2].y = player_y; 
 			combatants[2].pose = battle_poses.back;
-			combatants[3].x = enemy_x[0]-1000; 
+			combatants[3].x = enemy_x[0]+1000; 
 			combatants[3].y = enemy_y; 
 			combatants[3].pose = battle_poses.front;
-			combatants[4].x = enemy_x[1]-1000; 
+			combatants[4].x = enemy_x[1]+1000; 
 			combatants[4].y = enemy_y; 
 			combatants[4].pose = battle_poses.front;
-			combatants[5].x = enemy_x[2]-1000; 
+			combatants[5].x = enemy_x[2]+1000; 
 			combatants[5].y = enemy_y; 
 			combatants[5].pose = battle_poses.front;
 		}
@@ -66,8 +66,10 @@ if animation_state == 0 {
 	}
 } else if animation_state == 1 {
 	if combatants[0].x < player_x[0] {
-		for ( i = 0; i < array_length_1d(combatants); i++) {
+		for ( i = 0; i < combatant_count; i++) {
 			combatants[i].x += 5;
+		} for ( i = combatant_count; i < array_length_1d(combatants); i++) {
+			combatants[i].x -= 5;
 		}
 	} else {
 		var n = ""; var t = true;

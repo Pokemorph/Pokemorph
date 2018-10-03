@@ -6,7 +6,7 @@
 ///@argument pokemon_1
 ///@argument ...
 
-var n = instance_create_depth(0, 0, 0, oBattleCombatant);
+var n = instance_create_depth(-1000, -1000, 0, oBattleCombatant);
 
 with n {
 	trainer_pic = argument[0];

@@ -15,11 +15,11 @@ if animation_state == 0 {
 	//start by checking each combatant for a trainer, and moving it into position at the side if one exists
 	if combatant_count == 1 { //for a standard battle
 		if sprite_exists(combatants[0].trainer_pic) {
-			combatants[0].x = player_x[0]-1000; 
+			combatants[0].x = player_x[0]-400; 
 			combatants[0].y = player_y;
 			combatants[0].sprite_index = combatants[0].trainer_pic;
 		} if sprite_exists(combatants[1].trainer_pic) {
-			combatants[1].x = enemy_x[0]+1000; 
+			combatants[1].x = enemy_x[0]+400; 
 			combatants[1].y = enemy_y;
 			combatants[1].sprite_index = combatants[1].trainer_pic;
 		}
@@ -114,8 +114,11 @@ if animation_state == 0 {
 		if money > 0 {
 			if victory == true {
 				battle_text_message("You received " + string(money) + " dollars!");
+				oPlayer.money += money;
 			} else {
 				battle_text_message("You lost " + string(money) + " dollars!");
+				if oPlayer.money - money > 0	oPlayer.money -= money;
+				else oPlayer.money = 0;
 			}
 			
 			audio_play_sound(snd_get_money, 1, false);

@@ -49,3 +49,5 @@ pokemon[0].hp_cur -= 10;
 pokemon[0].nickname = "Fluffee";
 pokemon[1] = new_pokemon(dex_id.Eevee, 5);
 pokemon[1].nickname = "Sandee";
+
+money = 0;	//use this to track currently available money for display/use in shops
