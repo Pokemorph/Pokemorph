@@ -17,7 +17,7 @@ switch interact_state {
 		break;
 	case 4:
 		var me = new_team(battle_willow, "Willow", scr_battleAI_basic, new_pokemon(dex_id.Eevee, 4), new_pokemon(dex_id.Bulbasaur, 4) )
-		trainer_battle(terrain.field, "mus_trainerBattle", me);
+		trainer_battle(terrain.field, "mus_trainerBattle", 50, me);
 		break;
 	case 5:
 		say(name, "That was fun. We should do this again sometime.");

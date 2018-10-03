@@ -77,56 +77,26 @@ if animation_state == 0 {
 			combatants[1].x = enemy_x[0];
 			
 			//and then collect the enemy's name for the text function
-			n = combatants[1].trainer_name;
-			if n = "default" or n == "" { //no trainer here
-				n = combatants[1].active_pokemon; n = n.nickname;
-				t = false;
-			} else { //if a trainer name is found
-				t = true;
-			}
+			n = get_combatants_name(combatants[1]);
 		} else if combatant_count == 2 { //for a double battle
 			//start by setting the position of the objects to make them appear
 			combatants[0].x = player_x[0]; combatants[1].x = player_x[2];
 			combatants[2].x = enemy_x[0]; combatants[3].x = enemy_x[2];
 					
 			//and then collect the enemy's names for the text function
-			var n1 = combatants[2].trainer_name; var n2 = combatants[3].trainer_name;
-			if n1 = "default" or n1 == "Bubbalicious" or n1 == "" { //no trainer here
-				n1 = combatants[2].active_pokemon; n1 = n1.nickname;
-				if n2 = "default" or n2 == "Bubbalicious" or n2 == "" { //no trainer here either
-					n2 = combatants[3].active_pokemon; n2 = n2.nickname;
-					t = false;
-				}
-			} else { //if a trainer name is found
-				t = true;
-			} n = n1 + " and " + n2;
+			n = get_combatants_name(combatants[2], combatants[3]);
 		} else if combatant_count == 3 { //and now for triple battle
 			//start by setting the position of the objects to make them appear
 			combatants[0].x = player_x[0]; combatants[1].x = player_x[1]; combatants[2].x = player_x[2];
 			combatants[3].x = enemy_x[0]; combatants[4].x = enemy_x[1]; combatants[5].x = enemy_x[2];
 			
 			//and then collect the enemy's names for the text function
-			var n1 = combatants[3].trainer_name;
-			var n2 = combatants[4].trainer_name;
-			var n3 = combatants[5].trainer_name;
-			if n1 = "default" or n1 == "Bubbalicious" or n1 == "" { //no trainer here
-				n1 = combatants[3].active_pokemon; n1 = n1.nickname;
-				if n2 = "default" or n2 == "Bubbalicious" or n2 == "" { //no trainer here either
-					n2 = combatants[4].active_pokemon; n3 = n3.nickname;
-					if n3 = "default" or n2 == "Bubbalicious" or n2 == "" { //no trainer here either
-						n3 = combatants[5].active_pokemon; n3 = n3.nickname;
-						t = false;
-					}
-				}
-			} else { //if a trainer name is found
-				t = true;
-			} 
-			
-			n = n1 + " and " + n2 + " and " + n3;
+			n = get_combatants_name(combatants[3], combatants[4], combatants[5]);
 		}
 		
 		//here, we use the names collected in the size-specific ifs to display start text and move on
 		battle_text_message(random_battle_start_text(n, t));
+		
 		text_timer = 3*GAME_SPEED;
 		animation_state++;
 	}

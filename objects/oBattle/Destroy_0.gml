@@ -12,10 +12,10 @@ set_music(song);
 if instance_exists(menu)			with menu instance_destroy();
 if instance_exists(text_box)		with text_box instance_destroy();
 
-for (var i = 0; i < array_length_1d(combatants); i++) {
+for (var i = 0; i < array_length_1d(combatants); i++) { //for each combatant in combat
+	//destroy the stats display
 	if instance_exists(combatants[i].stats)		with combatants[i].stats	instance_destroy();
+	//and then, the combatant itself
 	if instance_exists(combatants[i])			with combatants[i]			instance_destroy();
+	
 }
-
-//if instance_exists(player_stats)	with player_stats instance_destroy();
-//if instance_exists(enemy_stats)		with enemy_stats instance_destroy();

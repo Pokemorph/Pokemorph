@@ -66,6 +66,11 @@ if act != noone and act.hp_cur <= 0	{ //run defeat codes
 	var prio = ds_grid_get(global.moves, move_stats.priority, arr[r]);
 	var mult = get_stat_modifier(round(act.spd_lvl) );
 	prio = (prio*1000) + (act.spd_cur * mult);
+	var targ = irandom_range(0, combatant_count-1); //choose a random player-side target
+	
+	while targ == noone	targ = irandom_range(0, combatant_count-1); //and don't trip up on defeated foe
+	//note to self, this will lead to an infinite loop if the AI gets to run while no enemies are on the field
+	//but since the AIs check for battle end in the moment of death, it should never come to this
 	
 	//now that we have our attack selected, let's set the action list entry data
 	//first we'll set the user
@@ -76,7 +81,7 @@ if act != noone and act.hp_cur <= 0	{ //run defeat codes
 	ds_grid_set(actions_list, 0, active_combatant, active_combatant);
 	ds_grid_set(actions_list, 1, active_combatant, battle_actions.use_move);
 	ds_grid_set(actions_list, 2, active_combatant, arr[r]);
-	ds_grid_set(actions_list, 3, active_combatant, 0);
+	ds_grid_set(actions_list, 3, active_combatant, targ);
 	ds_grid_set(actions_list, 4, active_combatant, prio);
 	active_combatant++;
 	

@@ -32,9 +32,11 @@ else													song = oGameControl.music_name;
 	edges of playable screen: 400-x1, 160-y1, 1219-x2, 640-y2
 */
 
+money = 0;					//prize money for winning
 animation_state = 0;		//use this to track the animation sequences
 parent = noone;				//set this to an instance id to advance cutscene when battle ends
 combatants = [];			//an array to store all combatant objects used by this battle
+combatant_count = 0;		//stores the number of combatants on each side of the battle
 active_pokemon = noone;		//use this to store the currently active pokemon
 active_combatant = 0		//iterator for tracking the active combat space
 turn_phase = 0;				//use this to track command, sort, and execution phases of turns

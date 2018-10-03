@@ -84,10 +84,15 @@ if act.hp_cur <= 0	{ //run defeat checker codes
 			var prio = ds_grid_get(global.moves, move_stats.priority, last_action_data);
 			var mult = get_stat_modifier(round(act.spd_lvl) );
 			prio = (prio*1000) + (act.spd_cur * mult);
+			//randomize current target; temporary fix for lacking a targeting state
+			var targ = irandom_range(combatant_count, array_length_1d(combatants)-1 );
+			while targ == noone targ = irandom_range(combatant_count, array_length_1d(combatants)-1 );
+			//note to self, this loop will circle infinitely if the targeting system runs with no opponents
+			
 			ds_grid_set(actions_list, 0, active_combatant, active_combatant); //register user
 			ds_grid_set(actions_list, 1, active_combatant, battle_actions.use_move); //tell game to make move
 			ds_grid_set(actions_list, 2, active_combatant, last_action_data); //register move id
-			ds_grid_set(actions_list, 3, active_combatant, combatant_count); //register target
+			ds_grid_set(actions_list, 3, active_combatant, targ); //register target
 			//ds_grid_set(actions_list, 3, turn_state, last_action_target);
 			ds_grid_set(actions_list, 4, active_combatant, prio);
 			last_action = noone; last_action_data = noone; last_action_target = noone;

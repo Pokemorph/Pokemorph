@@ -1666,7 +1666,7 @@
             "Key": "5540e9db-8c8d-42b0-ae97-beb889b44bf2",
             "Value": {
                 "id": "25861de7-f1e7-4e24-9bf0-040ac94eb259",
-                "resourcePath": "objects\\obj_fade\\obj_fade.yy",
+                "resourcePath": "objects\\oFade\\oFade.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2892,6 +2892,14 @@
                 "id": "f8ef9317-bad9-4e11-a128-f4e045db6378",
                 "resourcePath": "sprites\\battle_tentacruel\\battle_tentacruel.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d43475e-41c1-4224-96d3-7ddb9f238eef",
+            "Value": {
+                "id": "65a1866c-2894-4557-98ce-540f1f5a45ec",
+                "resourcePath": "scripts\\random_battle_end_text\\random_battle_end_text.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4471,6 +4479,14 @@
             }
         },
         {
+            "Key": "ec59dda8-b80d-45e7-b90e-06e8f79bfb5c",
+            "Value": {
+                "id": "7f209814-8322-40e2-8cc3-4918399ec81d",
+                "resourcePath": "scripts\\get_combatants_name\\get_combatants_name.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ed294e16-dc3b-41ac-b208-93a0676cbc06",
             "Value": {
                 "id": "731490c7-7c47-4124-b3dc-53c1ea0f5521",
@@ -4999,8 +5015,10 @@
         "2739e43d-73de-4942-a248-5a59f64ad35f",
         "74a61b82-4f5f-4702-92ef-0fe25d88df46",
         "f1e3286e-a85d-4515-b34b-4b289034609e",
+        "9d43475e-41c1-4224-96d3-7ddb9f238eef",
         "1d41dc07-d8fa-4af1-afbc-e09dd099a833",
         "b2b5cd5f-32f5-415e-87a8-91162226d41f",
+        "ec59dda8-b80d-45e7-b90e-06e8f79bfb5c",
         "4f0b1c72-3ede-4f34-945e-b1110316e8ff",
         "f183c076-8519-43c0-a367-8ff99a9445e4",
         "bb89850e-dca2-489f-ba53-f2fd0a7bb317",

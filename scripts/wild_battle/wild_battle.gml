@@ -19,6 +19,7 @@ if argument_count > 7	p[5] = argument[7];
 //create a combatant object using the gathered array
 var n = new_team(noone, "", scr_battleAI_basic, p[0]);
 n.pokemon = p;
+var st = random_battle_start_text(get_combatants_name(n), false);
 
 //and finally, call the battle script using our new team and the specified background and music
-scr_battle(back, music, noone, true, true, n);
+scr_battle(back, music, noone, true, true, 0, n);

@@ -20,7 +20,7 @@ if instance_exists(oBattle)	{
 			case 8: text = name + " used Stare!"; break;
 			case 9: text = name + " is throwing a tantrum!"; break;
 		}
-	} else {	//	trainer battle section
+	} else {	//	trainer battle
 		switch rand {
 			case 0: text = name + " challenges you!"; break;
 			case 1: text = name + " insulted your mother!"; break;
