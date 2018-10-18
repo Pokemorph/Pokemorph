@@ -10,6 +10,7 @@ name = "Default";
 dialog = noone;
 dialog_page = 0;
 text[0] = "Hello, Bay. This is a dialog box. Just to show you what dialog boxes can do.";
+answer = -1;		//use this to track player answers to questions
 //animation variables
 animation_direction=1;
 animation_speed = 4/game_get_speed(gamespeed_fps);

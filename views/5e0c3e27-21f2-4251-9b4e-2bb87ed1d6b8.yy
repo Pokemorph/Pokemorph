@@ -12,7 +12,9 @@
         "e5a0acfc-3038-48e2-a08f-521dee696c77",
         "a788db5a-4cc1-45e9-951e-174d125b9c2b",
         "472b4b1a-5e3d-4290-b34b-7d385356a13f",
-        "31a9ea79-26a7-4aa1-bc80-5e0cff78637f"
+        "31a9ea79-26a7-4aa1-bc80-5e0cff78637f",
+        "a1ebf5d3-33cf-4c73-9b3e-02b7e359ee55",
+        "fe3eb990-0879-4864-b817-9fc7b4490791"
     ],
     "filterType": "GMSprite",
     "folderName": "overland ui",

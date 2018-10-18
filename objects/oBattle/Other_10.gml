@@ -126,7 +126,26 @@ if animation_state == 0 {
 		battle_text_message(random_battle_change_pokemon(n));
 		text_timer = 1*GAME_SPEED;
 		animation_state++;
-	} else { //text timer has timed down, but we have no trainer, so skip ahead to the player choose text
+	} else { //we have no trainer, so setup everything here and skip to player choose text
+		if combatant_count == 1 {//it's a mono-battle
+			//generate the stats page for each combatant
+			combatants[1].stats = instance_create_depth(stats_x[2], stats_y[0], depth-1, oBattleStats);
+			with combatants[1].stats	parent = other.combatants[1];
+		} else if combatant_count == 2 { //for a double battle
+			//generate the stats page for each combatant
+			combatants[2].stats = instance_create_depth(stats_x[2], stats_y[0], depth-1, oBattleStats);
+			combatants[3].stats = instance_create_depth(stats_x[0], stats_y[1], depth-1, oBattleStats);
+			with combatants[2].stats	parent = other.combatants[2];
+			with combatants[3].stats	parent = other.combatants[3];
+		} else if combatant_count == 3 { //and now for triple battle
+			//generate the stats page for each combatant
+			combatants[3].stats = instance_create_depth(stats_x[2], stats_y[0], depth-1, oBattleStats);
+			combatants[4].stats = instance_create_depth(stats_x[1], stats_y[1], depth-1, oBattleStats);
+			combatants[5].stats = instance_create_depth(stats_x[0], stats_y[2], depth-1, oBattleStats);
+			with combatants[3].stats	parent = other.combatants[3];
+			with combatants[4].stats	parent = other.combatants[4];
+			with combatants[5].stats	parent = other.combatants[5];
+		}
 		animation_state = 4;
 		text_timer = 3 * GAME_SPEED;
 	}
@@ -157,6 +176,12 @@ if animation_state == 0 {
 				image_index = pose;
 				x = other.enemy_x[2];
 			}
+			
+			//now generate the stats page for each combatant
+			combatants[2].stats = instance_create_depth(stats_x[2], stats_y[0], depth-1, oBattleStats);
+			combatants[3].stats = instance_create_depth(stats_x[0], stats_y[1], depth-1, oBattleStats);
+			with combatants[2].stats	parent = other.combatants[2];
+			with combatants[3].stats	parent = other.combatants[3];
 		} else if combatant_count == 3 { //and now for triple battle
 			//fix the position and sprite of each combatant
 			with combatants[combatant_count]	{

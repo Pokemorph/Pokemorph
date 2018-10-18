@@ -2,8 +2,8 @@
 
 //control battle background position
 if instance_exists(oCamera) {
-	xx = oCamera.x - 268;
-	yy = oCamera.y - 290;
+	xx = round(oCamera.x - 268);
+	yy = round(oCamera.y - 290);
 } else {
 	xx = 400;
 	yy = 160;

@@ -20,9 +20,26 @@ if oGameControl.interact_key and input_timer <= 0 {
         input_timer = GAME_SPEED/4;
         exit;
     } else {
-		if instance_exists(cutscene)	with cutscene {
+		if instance_exists(parent)	with parent {
 			wait(0);
 		}
         instance_destroy();
     }
+}
+
+if array_length_1d(menu_array) > 0 {
+	var click = noone;
+	for (var i = 0; i < array_length_1d(choices); i++) {
+		if menu_array[i+1].click == true	{
+			click = i;
+		}
+	}
+	
+	if click != noone and input_timer <= 0 and text_count >= string_length(text[text_page]) {
+		if instance_exists(parent)	with parent {
+			answer = click;
+			wait(0);
+		}
+        instance_destroy();
+	}
 }

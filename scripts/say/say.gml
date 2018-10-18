@@ -11,6 +11,6 @@ if !instance_exists(oDialog)     {
     dialog.text[0] = argument1;
 	dialog.name = argument0;
 	dialog.input_timer = GAME_SPEED/4;
-	dialog.cutscene = id;
+	dialog.parent = id;
     with dialog event_user(events.format_text);
 }
